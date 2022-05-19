@@ -79,3 +79,21 @@ Place the item in the screen area and when is created you will see in the right 
 Add all the items you need and do not forget to click on the save button. An orange reminder will appear until you save the progress:
 
 ![screenitems4](graphics/screenitems4.PNG)
+
+# Connections
+
+# Tags
+
+# Connect tags to screen items
+
+# Alarms
+
+# Logs
+
+# Trends
+
+# Load a project into runtime
+
+## Start a project in runtime
+
+# Working with the runtime
