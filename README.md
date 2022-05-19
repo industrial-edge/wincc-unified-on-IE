@@ -138,6 +138,19 @@ This document describes how to use the WinCC Unifed on Edge app. The application
 -	Tia Portal V17
 -	S7-PLCSIM Advanced V4.0
 
+## Documentation
+
+You can find information about the installation and tutorial in the following link:
+
+
+
+You can find further documentation and help in the following links
+
+* [Industrial Edge Hub](https://iehub.eu1.edge.siemens.cloud/#/documentation)
+* [Industrial Edge Forum](https://www.siemens.com/industrial-edge-forum)
+* [Industrial Edge landing page](https://new.siemens.com/global/en/products/automation/topic-areas/industrial-edge/simatic-edge.html)
+* [Industrial Edge GitHub page](https://github.com/industrial-edge)
+
 ## Installation
 
 Import both app files into your app catalog of your Industrial Edge Management and start thr installation:
