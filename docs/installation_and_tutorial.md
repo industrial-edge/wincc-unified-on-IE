@@ -31,3 +31,14 @@ Once you are in the WinCC Unified Online Engineering you can click on create a p
 Now you will see your created project where you can click on and start working on it.
 
 ![createproject2](graphics/createproject2.PNG)
+
+# Creating a device
+
+Clicking on a created project will lead you to the following screen:
+![device1](graphics/device1.PNG)
+
+On the left bar there will be available a tree with all the projects created. On the right bar we can start to deploy and create our device. Click on the add device button to create a new one.
+![device2](graphics/device2.PNG)
+
+Now, the device should appear created in the project:
+![device3](graphics/device3.PNG)
