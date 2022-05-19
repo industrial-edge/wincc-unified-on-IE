@@ -1,4 +1,4 @@
-# Installation
+## Installation
 
 Import both app files into your app catalog of your Industrial Edge Management and start thr installation:
 1.	Login on the IEM where you control your IED.
@@ -23,7 +23,7 @@ Import both app files into your app catalog of your Industrial Edge Management a
 
   ![installation6](graphics/installation6.JPG)
 
-# Creating a project
+## Creating a project
 
 Once you are in the WinCC Unified Online Engineering you can click on create a project to start a new engineering project:
 
@@ -33,7 +33,7 @@ Now you will see your created project where you can click on and start working o
 
 ![createproject2](graphics/createproject2.PNG)
 
-# Creating a device
+## Creating a device
 
 Clicking on a created project will lead you to the following screen:
 
