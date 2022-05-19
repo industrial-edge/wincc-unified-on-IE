@@ -127,25 +127,13 @@ General Task
 
 ### Used components
 
--	Industrial Edge Management (IEM) V1.4.0-42
-  -	IE Databus V1.6.3
-  -	IE Databus Configurator V1.6.19
-  -	SIMATIC S7 Connector V1.6.0-8
-  -	SIMATIC S7 Connector Configurator V1.6.0-7
-  -	WinCC Unified Online Engineering V1.1.0
-  -	WinCC Unified Runtime V1.1.0-3
+- Industrial Edge Management (IEM) V1.4.0-42
+  - IE Databus V1.6.3
+  - IE Databus Configurator V1.6.19
+  - SIMATIC S7 Connector V1.6.0-8
+  - SIMATIC S7 Connector Configurator V1.6.0-7
+  - WinCC Unified Online Engineering V1.1.0
+  - WinCC Unified Runtime V1.1.0-3
 -	Industrial Edge Device 1.5.0-21
 -	Tia Portal V17
 -	S7-PLCSIM Advanced V4.0
-- (#writing-good-how-to-or-tutorial)
-  - (#description)
-    - overview
-    - (#general-task)
-  - (#requirements)
-    - (#prerequisites)
-    - (#used-components)
-  - (#installation)
-  - (#usage)
-  - [Documentation](#documentation)
-  - [Contribution](#contribution)
-  - [Licence and Legal Information](#licence-and-legal-information)
