@@ -150,10 +150,10 @@ Import both app files into your app catalog of your Industrial Edge Management:
 ![installation2](docs/graphics/installation2.PNG)
 
 Install both apps on your Industrial Edge Device:
-5.	Click on the app icon.
-6.	Install the app.
-7.	Select your IED.
-8.	Click on Install now.
+5. Click on the app icon.
+6. Install the app.
+7. Select your IED.
+8. Click on Install now.
 
 ![installation3](docs/graphics/installation3.PNG)
 ![installation4](docs/graphics/installation4.PNG)
