@@ -82,6 +82,26 @@ Add all the items you need and do not forget to click on the save button. An ora
 
 ## Connections
 
+To create a connection between the WinCC and a PLC go to connections:
+
+![connections1](graphics/connections1.PNG)
+
+Write a name for your connection, the connection type (how you are connected to the PLC, in this case via OPC-UA) and the adress of the connection:
+
+![connections2](graphics/connections2.PNG)
+
+Above Tags, you will see the new connection created:
+
+![connections3](graphics/connections3.PNG)
+
+Click on the three dots to start searching for the data on the PLC:
+
+![connections4](graphics/connections4.PNG)
+
+When the search is done, the data will appear:
+
+![connections5](graphics/connections5.PNG)
+
 ## Tags
 
 ## Connect tags to screen items
