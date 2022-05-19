@@ -163,4 +163,4 @@ Import both app files into your app catalog of your Industrial Edge Management a
 9.	Click on the app icon to start WinCC Unified Online Engineering.
 10.	Click on the app icon to start WinCC Unified Runtime.
 
-  ![installation6](docs/graphics/installation6.PNG)
+  ![installation6](docs/graphics/installation6.JPG)
