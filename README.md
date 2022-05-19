@@ -110,8 +110,8 @@ Please read the [Legal information](LICENSE.txt).
 ## Description
 ### Overview
 This document describes how to use the WinCC Unifed on Edge app. The application is used to generate our screens based on wincc and load them in the runtime to be able to execute them in our edge device.
-General Task
 
+### General Task
 
 ## Requirements
 
@@ -137,3 +137,11 @@ General Task
 -	Industrial Edge Device 1.5.0-21
 -	Tia Portal V17
 -	S7-PLCSIM Advanced V4.0
+
+## Installation
+
+Import both app files into your app catalog of your Industrial Edge Management:
+1.	Login on the IEM where you control your IED.
+2.	Go to the catalog.
+3.	Import the application.
+4.	Browse the app files and import them.
