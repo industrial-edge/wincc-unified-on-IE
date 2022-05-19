@@ -60,3 +60,7 @@ Click on Screens to create our first one and click on add screen button to add t
 The screen created will appear in our Screens.
 
 ![createscreen3](graphics/createscreen3.PNG)
+
+
+# Screen items
+
