@@ -110,3 +110,30 @@ Please read the [Legal information](LICENSE.txt).
 ## Description
 ### Overview
 This document describes how to use the WinCC Unifed on Edge app. The application is used to generate our screens based on wincc and load them in the runtime to be able to execute them in our edge device.
+General Task
+
+
+## Requirements
+
+### Prerequisites
+
+•	Access to an Industrial Edge Management System (IEM)
+•	Onboarded Industrial Edge Device on IEM
+•	Installed System Configurators for Databus and S7 Connector
+•	Installed System Apps Databus and S7 Connector
+•	Edge device is connected to PLC
+•	TIA Portal project loaded on PLC
+•	HTML-5 capable Internet browser
+
+### Used components
+
+•	Industrial Edge Management (IEM) V1.4.0-42
+o	IE Databus V1.6.3
+o	IE Databus Configurator V1.6.19
+o	SIMATIC S7 Connector V1.6.0-8
+o	SIMATIC S7 Connector Configurator V1.6.0-7
+o	WinCC Unified Online Engineering V1.1.0
+o	WinCC Unified Runtime V1.1.0-3
+•	Industrial Edge Device 1.5.0-21
+•	Tia Portal V17
+•	S7-PLCSIM Advanced V4.0
