@@ -145,3 +145,5 @@ Import both app files into your app catalog of your Industrial Edge Management:
 2.	Go to the catalog.
 3.	Import the application.
 4.	Browse the app files and import them.
+
+![installation1](docs/graphics/installation1.png)
