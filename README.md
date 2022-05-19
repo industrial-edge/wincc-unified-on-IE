@@ -106,3 +106,7 @@ Please read the [Legal information](LICENSE.txt).
 
 
 # WinCC Unified application example
+
+## DESCRIPTION
+Overview
+This document describes how to use the WinCC Unifed on Edge app. The application is used to generate our screens based on wincc and load them in the runtime to be able to execute them in our edge device.
