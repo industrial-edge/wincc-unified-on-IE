@@ -23,3 +23,10 @@ Import both app files into your app catalog of your Industrial Edge Management a
 
   ![installation6](graphics/installation6.JPG)
 
+# Creating a project
+
+Once you are in the WinCC Unified Online Engineering you can click on create a project to start a new engineering project.
+
+
+Now you will see your created project where you can click on and start working on it.
+
