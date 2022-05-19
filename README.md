@@ -137,3 +137,15 @@ General Task
 -	Industrial Edge Device 1.5.0-21
 -	Tia Portal V17
 -	S7-PLCSIM Advanced V4.0
+- [Writing good how-to or tutorial](#writing-good-how-to-or-tutorial)
+  - [Description](#description)
+    - [Overview](#overview)
+    - [General Task](#general-task)
+  - [Requirements](#requirements)
+    - [Prerequisites](#prerequisites)
+    - [Used components](#used-components)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Documentation](#documentation)
+  - [Contribution](#contribution)
+  - [Licence and Legal Information](#licence-and-legal-information)
