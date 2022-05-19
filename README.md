@@ -142,7 +142,7 @@ This document describes how to use the WinCC Unifed on Edge app. The application
 
 You can find information about the installation and tutorial in the following link:
 
-
+[Install and Tutorial](docs/installation_and_tutorial.md)
 
 You can find further documentation and help in the following links
 
