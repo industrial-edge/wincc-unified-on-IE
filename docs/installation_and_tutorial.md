@@ -1,6 +1,6 @@
 ## Installation
 
-Import both app files into your app catalog of your Industrial Edge Management and start thr installation:
+Import both app files into your app catalog of your Industrial Edge Management and start the installation:
 1.	Login on the IEM where you control your IED.
 2.	Go to the catalog.
 3.	Import the application.
