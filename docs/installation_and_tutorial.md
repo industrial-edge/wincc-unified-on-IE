@@ -47,7 +47,7 @@ Now, the device should appear created in the project:
 
 ![device3](graphics/device3.PNG)
 
-# Creating a screen
+## Creating a screen
 
 Once we have created a device, its properties are shown when it is accessed:
 
@@ -62,7 +62,7 @@ The screen created will appear in our Screens:
 ![createscreen3](graphics/createscreen3.PNG)
 
 
-# Screen items
+## Screen items
 
 Once the screen is created, items can be created by clicking on add screen items button:
 
@@ -80,20 +80,20 @@ Add all the items you need and do not forget to click on the save button. An ora
 
 ![screenitems4](graphics/screenitems4.PNG)
 
-# Connections
+## Connections
 
-# Tags
+## Tags
 
-# Connect tags to screen items
+## Connect tags to screen items
 
-# Alarms
+## Alarms
 
-# Logs
+## Logs
 
-# Trends
+## Trends
 
-# Load a project into runtime
+## Load a project into runtime
 
 ## Start a project in runtime
 
-# Working with the runtime
+## Working with the runtime
