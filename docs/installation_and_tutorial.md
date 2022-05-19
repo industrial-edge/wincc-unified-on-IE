@@ -64,3 +64,18 @@ The screen created will appear in our Screens.
 
 # Screen items
 
+Once the screen is created, items can be created by clicking on add screen items button:
+
+![screenitems1](graphics/screenitems1.PNG)
+
+A new bar will appear with all the options available:
+
+![screenitems2](graphics/screenitems2.PNG)
+
+Place the item in the screen area and when is created you will see in the right bar all the properties of the item:
+
+![screenitems3](graphics/screenitems3.PNG)
+
+Add all the items you need and do not forget to click on the save button. An orange reminder will appear until you save the progress:
+
+![screenitems4](graphics/screenitems4.PNG)
