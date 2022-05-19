@@ -42,3 +42,14 @@ On the left bar there will be available a tree with all the projects created. On
 
 Now, the device should appear created in the project:
 ![device3](graphics/device3.PNG)
+
+# Creating a screen
+
+Once we have created a device, its properties are shown when it is accessed.
+![createscreen1](graphics/createscreen1.PNG)
+
+Click on Screens to create our first one and click on add screen button to add the new one.
+![createscreen2](graphics/createscreen2.PNG)
+
+The screen created will appear in our Screens.
+![createscreen3](graphics/createscreen3.PNG)
