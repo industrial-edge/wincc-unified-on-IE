@@ -140,7 +140,7 @@ This document describes how to use the WinCC Unifed on Edge app. The application
 
 ## Installation
 
-Import both app files into your app catalog of your Industrial Edge Management:
+Import both app files into your app catalog of your Industrial Edge Management and start thr installation:
 1.	Login on the IEM where you control your IED.
 2.	Go to the catalog.
 3.	Import the application.
@@ -155,12 +155,12 @@ Import both app files into your app catalog of your Industrial Edge Management:
 7.  Select your IED.
 8.  Click on Install now.
 
-![installation3](docs/graphics/installation3.PNG)
-![installation4](docs/graphics/installation4.PNG)
-![installation5](docs/graphics/installation5.PNG)
+  ![installation3](docs/graphics/installation3.PNG)
+  ![installation4](docs/graphics/installation4.PNG)
+  ![installation5](docs/graphics/installation5.PNG)
 
-Access your Industrial Edge Device and you will see your apps installed:
+
 9.	Click on the app icon to start WinCC Unified Online Engineering.
 10.	Click on the app icon to start WinCC Unified Runtime.
 
-![installation6](docs/graphics/installation6.PNG)
+  ![installation6](docs/graphics/installation6.PNG)
