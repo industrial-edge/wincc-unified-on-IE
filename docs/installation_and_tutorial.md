@@ -23,6 +23,7 @@ Import both app files into your app catalog of your Industrial Edge Management a
 
   ![installation6](graphics/installation6.JPG)
 
+
 ## Creating a project
 
 Once you are in the WinCC Unified Online Engineering you can click on create a project to start a new engineering project:
@@ -32,6 +33,7 @@ Once you are in the WinCC Unified Online Engineering you can click on create a p
 Now you will see your created project where you can click on and start working on it:
 
 ![createproject2](graphics/createproject2.PNG)
+
 
 ## Creating a device
 
@@ -46,6 +48,7 @@ On the left bar there will be available a tree with all the projects created. On
 Now, the device should appear created in the project:
 
 ![device3](graphics/device3.PNG)
+
 
 ## Creating a screen
 
@@ -80,6 +83,7 @@ Add all the items you need and do not forget to click on the save button. An ora
 
 ![screenitems4](graphics/screenitems4.PNG)
 
+
 ## Connections
 
 To create a connection between the WinCC and a PLC go to connections:
@@ -101,6 +105,7 @@ Click on the three dots to start searching for the data on the PLC:
 When the search is done, the data will appear:
 
 ![connections5](graphics/connections5.PNG)
+
 
 ## Tags
 
@@ -134,6 +139,7 @@ Select Tags and then the tag that you want:
 Repeat the process for any screen item that you want to connect. In this case we are introducing an I/O field to see how the tag changes for the runtime part tutorial:
 
 ![tagstoscreen4](graphics/tagstoscreen4.PNG)
+
 
 ## Scripting
 
@@ -180,6 +186,7 @@ And on the bottom as same as before, the alarms are created:
 In this example, we are creting another screen with alarm control screen item and some different buttoms to pop up the alarms:
 
 ![alarms5](graphics/alarms5.PNG)
+
 
 ## Logs
 
