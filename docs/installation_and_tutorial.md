@@ -207,6 +207,7 @@ When the runtime is active and the alarms are popped out they will appear in the
 
 ![alarms6](graphics/alarms6.PNG)
 
+
 ## Loggs
 
 To create loggs, go again to the internal tags part. In this example we are creating two different loggs.
@@ -231,6 +232,8 @@ Introduce the process controll item to a screen:
 In the runtime the loggs will be shown:
 
 ![loggs6](graphics/logs6.PNG)
+
+
 ## Trends
 
 To add a trend go to the add screen items and in the advanced bar select trend control:
@@ -251,5 +254,18 @@ In the runtime the trend will be filled:
 
 
 ## Load a project into runtime
+
+To load a project go to the device and in the bottom you will see:
+
+![load1](graphics/load1.PNG)
+
+Click on download and when the procces is finished click on OK:
+
+![load2](graphics/load2.PNG)
+
+Then click on Start runtime and wait until the Runtime status is on running
+
+![load3](graphics/load3.PNG)
+
 
 ## Start the runtime
