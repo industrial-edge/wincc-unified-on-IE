@@ -263,9 +263,37 @@ Click on download and when the procces is finished click on OK:
 
 ![load2](graphics/load2.PNG)
 
-Then click on Start runtime and wait until the Runtime status is on running
+Then click on Start runtime and wait until the Runtime status is on running:
 
 ![load3](graphics/load3.PNG)
 
 
 ## Start the runtime
+
+To sart the runtime go to the Wincc Runtime app:
+
+![start1](graphics/start1.PNG)
+
+If the project downloaded is running you will see a green light that indicates that the runtime is ready:
+
+![start2](graphics/start2.PNG)
+
+Click on the WinCC Unified Runtime button:
+
+![start3](graphics/start3.PNG)
+
+And the Start Screen that is indicated in the project will appear:
+
+![start4](graphics/start4.PNG)
+
+To stop the runtime go back to your device and click on Stop runtime:
+
+![start5](graphics/start5.PNG)
+
+Wait until the runtime status is on not started:
+
+![start6](graphics/start6.PNG)
+
+And in the WinCC Runtime app a red light will be now on the project:
+
+![start7](graphics/start7.PNG)
