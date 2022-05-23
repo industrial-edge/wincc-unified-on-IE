@@ -1,7 +1,7 @@
 ## INDEX
 
 - [Installation](#installation)
-- [Creating a project](#creating a project)
+- [Creating a project](#creatingaproject)
 - [Creating a device](#creating a device)
 - [Creating a screen](#creating a screen)
 - [Connections](#connections)
