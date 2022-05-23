@@ -235,7 +235,7 @@ In the runtime the loggs will be shown:
 
 To add a trend go to the add screen items and in the advanced bar select trend control:
 
-![trends1](graphics/trends1.PNG)
+![trends1](graphics/trends1.png)
 
 In its properties to add different trends to appear in the item, go to Trends:
 
