@@ -1,3 +1,8 @@
+## INDEX
+
+- [Installation](#installation)
+
+
 ## Installation
 
 Import both app files into your app catalog of your Industrial Edge Management and start the installation:
