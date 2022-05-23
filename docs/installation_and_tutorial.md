@@ -158,8 +158,28 @@ Click on OK, and the script will be visible:
 ![script5](graphics/script5.PNG)
 
 
-
 ## Alarms
+
+The alarms are created in the internal tags part. We can create two different types: analogs and discrete alarms. For this example we are creting both.
+For the analog ones, an int tag is created:
+
+![alarms1](graphics/alarms1.PNG)
+
+On the bottom, in the analog alarms part we create all the alarms we need with its conditions:
+
+![alarms2](graphics/alarms2.PNG)
+
+For the discrete alarms, the creation is made in the same way, but the data type must be Word:
+
+![alarms3](graphics/alarms3.PNG)
+
+And on the bottom as same as before, the alarms are created:
+
+![alarms4](graphics/alarms4.PNG)
+
+In this example, we are creting another screen with alarm control screen item and some different buttoms to pop up the alarms:
+
+![alarms5](graphics/alarms5.PNG)
 
 ## Logs
 
