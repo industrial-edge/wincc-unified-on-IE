@@ -117,8 +117,25 @@ Also tags can be created manually on the interanl Tags part:
 ![tags3](graphics/tags3.PNG)
 
 
-
 ## Connect tags to screen items
+
+Once the tags are created, they can be connected to the screen items. Insert a screen item:
+
+![tagstoscreen1](graphics/tagstoscreen1.PNG)
+
+In properties go to process value dynamic:
+
+![tagstoscreen2](graphics/tagstoscreen2.PNG)
+
+Select Tags and then the tag that you want:
+
+![tagstoscreen3](graphics/tagstoscreen3.PNG)
+
+Repeat the process for any screen item that you want to connect. In this case we are introducing an I/O field to see how the tag changes for the runtime part tutorial:
+
+![tagstoscreen4](graphics/tagstoscreen4.PNG)
+
+## Scripting
 
 ## Alarms
 
