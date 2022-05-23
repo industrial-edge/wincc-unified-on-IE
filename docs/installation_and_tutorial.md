@@ -187,13 +187,36 @@ In this example, we are creting another screen with alarm control screen item an
 
 ![alarms5](graphics/alarms5.PNG)
 
+When the runtime is active and the alarms are popped out they will appear in the chart:
 
-## Logs
+![alarms6](graphics/alarms6.PNG)
 
+## Loggs
+
+To create loggs, go again to the internal tags part. In this example we are creating two different loggs.
+First one:
+
+![loggs1](graphics/loggs1.PNG)
+
+On the bottom the logging tag with its properties is modified:
+
+![loggs12](graphics/loggs2.PNG)
+
+The second one is created in the same way:
+
+![loggs3](graphics/loggs3.PNG)
+
+![loggs4](graphics/loggs4.PNG)
+
+Introduce the process controll item to a screen:
+
+![loggs5](graphics/loggs5.PNG)
+
+In the runtime the loggs will be shown:
+
+![loggs6](graphics/loggs6.PNG)
 ## Trends
 
 ## Load a project into runtime
-
-## Start a project in runtime
 
 ## Working with the runtime
