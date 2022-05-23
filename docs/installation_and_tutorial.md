@@ -196,25 +196,25 @@ When the runtime is active and the alarms are popped out they will appear in the
 To create loggs, go again to the internal tags part. In this example we are creating two different loggs.
 First one:
 
-![loggs1](graphics/loggs1.PNG)
+![loggs1](graphics/logs1.PNG)
 
 On the bottom the logging tag with its properties is modified:
 
-![loggs12](graphics/loggs2.PNG)
+![loggs12](graphics/logs2.PNG)
 
 The second one is created in the same way:
 
-![loggs3](graphics/loggs3.PNG)
+![loggs3](graphics/logs3.PNG)
 
-![loggs4](graphics/loggs4.PNG)
+![loggs4](graphics/logs4.PNG)
 
 Introduce the process controll item to a screen:
 
-![loggs5](graphics/loggs5.PNG)
+![loggs5](graphics/logs5.PNG)
 
 In the runtime the loggs will be shown:
 
-![loggs6](graphics/loggs6.PNG)
+![loggs6](graphics/logs6.PNG)
 ## Trends
 
 ## Load a project into runtime
