@@ -104,6 +104,20 @@ When the search is done, the data will appear:
 
 ## Tags
 
+There are different ways to create tags in our WinCC. When we make a connection to a Tia Portal project we can import the tags created in that project to our WinCC project just by clicking on the created checkbox:
+
+![tags1](graphics/tags1.PNG)
+
+The tags will appear in the Tags window:
+
+![tags2](graphics/tags2.PNG)
+
+Also tags can be created manually on the interanl Tags part:
+
+![tags3](graphics/tags3.PNG)
+
+
+
 ## Connect tags to screen items
 
 ## Alarms
