@@ -137,6 +137,28 @@ Repeat the process for any screen item that you want to connect. In this case we
 
 ## Scripting
 
+As same as working with Tia Portal in the WinCC part, scrpting is also allowed in the app. For this part we are creating another screen to create a simple script to switch between two screens:
+
+![script1](graphics/script1.PNG)
+
+Place a button on the first screen and go to the events tabs and click on add script:
+
+![script2](graphics/script2.PNG)
+
+An scrpiting window will be opened. To be more easily for the user a lot of code templates are created:
+
+![script3](graphics/script3.PNG)
+
+In this case, we can go to screen, change base screen. The templates ca be dragged:
+
+![script4](graphics/script4.PNG)
+
+Click on OK, and the script will be visible:
+
+![script5](graphics/script5.PNG)
+
+
+
 ## Alarms
 
 ## Logs
