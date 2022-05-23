@@ -233,6 +233,23 @@ In the runtime the loggs will be shown:
 ![loggs6](graphics/logs6.PNG)
 ## Trends
 
+To add a trend go to the add screen items and in the advanced bar select trend control:
+
+![trends1](graphics/trends1.PNG)
+
+In its properties to add different trends to appear in the item, go to Trends:
+
+![trends2](graphics/trends2.PNG)
+
+And select the tag you want to control:
+
+![trends3](graphics/trends3.PNG)
+
+In the runtime the trend will be filled:
+
+![trends4](graphics/trends4.PNG)
+
+
 ## Load a project into runtime
 
 ## Start the runtime
