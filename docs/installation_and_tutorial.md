@@ -1,7 +1,18 @@
 ## INDEX
 
 - [Installation](#installation)
-
+- [Creating a project](#creating a project)
+- [Creating a device](#creating a device)
+- [Creating a screen](#creating a screen)
+- [Connections](#connections)
+- [Tags](#Tags)
+- [Connect tags to screen items](#connect tags to screen items)
+- [Scripting](#scripting)
+- [Alarms](#alarms)
+- [Loggs](#loggs)
+- [Trends](#trends)
+- [Load a project into runtime](#Load a project into runtime)
+- [Start the runtime](#start the runtime)
 
 ## Installation
 
@@ -224,4 +235,4 @@ In the runtime the loggs will be shown:
 
 ## Load a project into runtime
 
-## Working with the runtime
+## Start the runtime
