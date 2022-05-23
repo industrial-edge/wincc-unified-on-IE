@@ -2,17 +2,17 @@
 
 - [Installation](#installation)
 - [Creating a project](#creatingaproject)
-- [Creating a device](#creating a device)
-- [Creating a screen](#creating a screen)
+- [Creating a device](#creatingadevice)
+- [Creating a screen](#creatingascreen)
 - [Connections](#connections)
 - [Tags](#Tags)
-- [Connect tags to screen items](#connect tags to screen items)
+- [Connect tags to screen items](#connecttagstoscreenitems)
 - [Scripting](#scripting)
 - [Alarms](#alarms)
 - [Loggs](#loggs)
 - [Trends](#trends)
-- [Load a project into runtime](#Load a project into runtime)
-- [Start the runtime](#start the runtime)
+- [Load a project into runtime](#Loadaprojectintoruntime)
+- [Start the runtime](#starttheruntime)
 
 ## Installation
 
