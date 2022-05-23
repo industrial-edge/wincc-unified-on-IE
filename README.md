@@ -151,3 +151,6 @@ You can find further documentation and help in the following links
 * [Industrial Edge landing page](https://new.siemens.com/global/en/products/automation/topic-areas/industrial-edge/simatic-edge.html)
 * [Industrial Edge GitHub page](https://github.com/industrial-edge)
 
+## License and Legal Information
+
+Please read the [Legal information](LICENSE.txt).
