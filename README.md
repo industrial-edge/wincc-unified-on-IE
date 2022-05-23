@@ -151,6 +151,13 @@ You can find further documentation and help in the following links
 * [Industrial Edge landing page](https://new.siemens.com/global/en/products/automation/topic-areas/industrial-edge/simatic-edge.html)
 * [Industrial Edge GitHub page](https://github.com/industrial-edge)
 
+## Contribution
+
+Thank you for your interest in contributing. Anybody is free to report bugs, unclear documentation, and other problems regarding this repository in the Issues section.
+Additionally everybody is free to propose any changes to this repository using Pull Requests.
+
+If you are interested in contributing via Pull Request, please check the [Contribution License Agreement](Siemens_CLA_1.1.pdf) and forward a signed copy to [industrialedge.industry@siemens.com](mailto:industrialedge.industry@siemens.com?subject=CLA%20Agreement%20Industrial-Edge).
+
 ## License and Legal Information
 
 Please read the [Legal information](LICENSE.txt).
