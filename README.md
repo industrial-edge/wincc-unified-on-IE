@@ -144,7 +144,7 @@ You can find information about the installation and tutorial in the following li
 
 [Installation and Tutorial](docs/installation_and_tutorial.md)
 
-You can find further documentation and help in the following links
+You can find further documentation and help in the following links:
 
 * [Industrial Edge Hub](https://iehub.eu1.edge.siemens.cloud/#/documentation)
 * [Industrial Edge Forum](https://www.siemens.com/industrial-edge-forum)
