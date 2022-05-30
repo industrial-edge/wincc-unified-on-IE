@@ -13,6 +13,7 @@
 - [Trends](#trends)
 - [Load a project into runtime](#Load-a-project-into-runtime)
 - [Start the runtime](#start-the-runtime)
+- [Export tags from TIA Portal and import them with WebES](#export-tags-from-tia-portal-and-import-them-with-webes)
 
 ## Installation
 
@@ -297,3 +298,8 @@ Wait until the runtime status is on not started:
 And in the WinCC Runtime app a red light will be now on the project:
 
 ![start7](graphics/start7.PNG)
+
+
+
+## Export tags from TIA Portal and import them with WebES
+
