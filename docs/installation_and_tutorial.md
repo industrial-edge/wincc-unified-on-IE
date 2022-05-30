@@ -317,4 +317,29 @@ To use the exporter a PLC with firmware version 2.9 is used:
 
 Go to the PLC properties > General > Protection & Security > Connection mechanisms and enable secure communication and choose a certificate:
 
-![import4](graphics/import4.PNG) ![import3](graphics/import3.PNG)
+![import4](graphics/import4.PNG)
+
+Right click on the PLC and click on Export to SIMATIC SCADA and enter the filename and define the path:
+
+![import5](graphics/import5.PNG)
+![import6](graphics/import6.PNG)
+
+Open the project in WinCC Unified Online Engineering and go to "Tags". Click on the three dots > "Import S7/S7+ connection":
+
+![import7](graphics/import7.PNG)
+
+Select the exported file and click on "OK":
+
+![import8](graphics/import8.PNG)
+
+The connection has been imported. You can see the tags imported and you can choose the desired PLC tags and PLC data types you want to use in the project by selecting "created":
+
+![import9](graphics/import9.PNG)
+
+If you go to "Tags" all the ones that were clicked are ready to be used in the project:
+
+![import10](graphics/import10.PNG)
+
+Also if you go to "connections" both interfaces have been imported and the certificate for secure communication has been imported as well:
+
+![import11](graphics/import11.PNG)
