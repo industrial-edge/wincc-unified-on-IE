@@ -149,14 +149,6 @@ Download and install the fitting version for your TIA Portal version:
 
 ![import2](graphics/import2.PNG)
 
-To use the exporter a PLC with firmware version 2.9 is used:
-
-![import3](graphics/import3.PNG)
-
-Go to the PLC properties > General > Protection & Security > Connection mechanisms and enable secure communication and choose a certificate:
-
-![import4](graphics/import4.PNG)
-
 Right click on the PLC and click on Export to SIMATIC SCADA and enter the filename and define the path:
 
 ![import5](graphics/import5.PNG)
