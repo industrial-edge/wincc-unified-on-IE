@@ -6,6 +6,7 @@
 - [Creating a screen](#creating-a-screen)
 - [Connections](#connections)
 - [Tags](#Tags)
+- [Export tags from TIA Portal and import them with WebES](#export-tags-from-tia-portal-and-import-them-with-webes)
 - [Connect tags to screen items](#connect-tags-to-screen-items)
 - [Scripting](#scripting)
 - [Alarms](#alarms)
@@ -13,7 +14,6 @@
 - [Trends](#trends)
 - [Load a project into runtime](#Load-a-project-into-runtime)
 - [Start the runtime](#start-the-runtime)
-- [Export tags from TIA Portal and import them with WebES](#export-tags-from-tia-portal-and-import-them-with-webes)
 
 ## Installation
 
@@ -137,6 +137,50 @@ The tags will appear in the Tags window:
 Also tags can be created manually on the interanl Tags part:
 
 ![tags3](graphics/tags3.PNG)
+
+
+## Export tags from TIA Portal and import them with WebES
+
+First of all, open our SIOS-Portal and search for the entry "109748955":
+
+![import1](graphics/import1.PNG)
+
+Download and install the fitting version for your TIA Portal version:
+
+![import2](graphics/import2.PNG)
+
+To use the exporter a PLC with firmware version 2.9 is used:
+
+![import3](graphics/import3.PNG)
+
+Go to the PLC properties > General > Protection & Security > Connection mechanisms and enable secure communication and choose a certificate:
+
+![import4](graphics/import4.PNG)
+
+Right click on the PLC and click on Export to SIMATIC SCADA and enter the filename and define the path:
+
+![import5](graphics/import5.PNG)
+![import6](graphics/import6.PNG)
+
+Open the project in WinCC Unified Online Engineering and go to "Tags". Click on the three dots > "Import S7/S7+ connection":
+
+![import7](graphics/import7.PNG)
+
+Select the exported file and click on "OK":
+
+![import8](graphics/import8.PNG)
+
+The connection has been imported. You can see the tags imported and you can choose the desired PLC tags and PLC data types you want to use in the project by selecting "created":
+
+![import9](graphics/import9.PNG)
+
+If you go to "Tags" all the ones that were clicked are ready to be used in the project:
+
+![import10](graphics/import10.PNG)
+
+Also if you go to "connections" both interfaces have been imported and the certificate for secure communication has been imported as well:
+
+![import11](graphics/import11.PNG)
 
 
 ## Connect tags to screen items
@@ -298,48 +342,3 @@ Wait until the runtime status is on not started:
 And in the WinCC Runtime app a red light will be now on the project:
 
 ![start7](graphics/start7.PNG)
-
-
-
-## Export tags from TIA Portal and import them with WebES
-
-First of all, open our SIOS-Portal and search for the entry "109748955":
-
-![import1](graphics/import1.PNG)
-
-Download and install the fitting version for your TIA Portal version:
-
-![import2](graphics/import2.PNG)
-
-To use the exporter a PLC with firmware version 2.9 is used:
-
-![import3](graphics/import3.PNG)
-
-Go to the PLC properties > General > Protection & Security > Connection mechanisms and enable secure communication and choose a certificate:
-
-![import4](graphics/import4.PNG)
-
-Right click on the PLC and click on Export to SIMATIC SCADA and enter the filename and define the path:
-
-![import5](graphics/import5.PNG)
-![import6](graphics/import6.PNG)
-
-Open the project in WinCC Unified Online Engineering and go to "Tags". Click on the three dots > "Import S7/S7+ connection":
-
-![import7](graphics/import7.PNG)
-
-Select the exported file and click on "OK":
-
-![import8](graphics/import8.PNG)
-
-The connection has been imported. You can see the tags imported and you can choose the desired PLC tags and PLC data types you want to use in the project by selecting "created":
-
-![import9](graphics/import9.PNG)
-
-If you go to "Tags" all the ones that were clicked are ready to be used in the project:
-
-![import10](graphics/import10.PNG)
-
-Also if you go to "connections" both interfaces have been imported and the certificate for secure communication has been imported as well:
-
-![import11](graphics/import11.PNG)
