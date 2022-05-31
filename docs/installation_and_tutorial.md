@@ -170,7 +170,7 @@ If you go to "Tags" all the ones that were clicked are ready to be used in the p
 
 ![import10](graphics/import10.PNG)
 
-Also if you go to "connections" both interfaces have been imported and the certificate for secure communication has been imported as well:
+Also if you go to "connections" both interfaces have been imported and if yopu have some certificates for secure communication, they are imported as well:
 
 ![import11](graphics/import11.PNG)
 
