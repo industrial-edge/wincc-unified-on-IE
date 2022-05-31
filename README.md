@@ -27,8 +27,8 @@ This document describes how to use the WinCC Unifed on Edge app. The application
 
 -	Access to an Industrial Edge Management System (IEM)
 -	Onboarded Industrial Edge Device on IEM
--	Installed System Configurators for Databus and S7 Connector
--	Installed System Apps Databus and S7 Connector
+-	Installed System Configurators for Databus
+-	Installed System Apps Databus
 -	Edge device is connected to PLC
 -	TIA Portal project loaded on PLC
 -	HTML-5 capable Internet browser
@@ -38,8 +38,6 @@ This document describes how to use the WinCC Unifed on Edge app. The application
 - Industrial Edge Management (IEM) V1.4.0-42
   - IE Databus V1.6.3
   - IE Databus Configurator V1.6.19
-  - SIMATIC S7 Connector V1.6.0-8
-  - SIMATIC S7 Connector Configurator V1.6.0-7
   - WinCC Unified Online Engineering V1.1.0
   - WinCC Unified Runtime V1.1.0-3
 -	Industrial Edge Device 1.5.0-21
