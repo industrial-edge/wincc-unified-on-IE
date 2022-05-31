@@ -103,7 +103,7 @@ Add all the items you need and do not forget to click on the save button. An ora
 
 ## Connections
 
-To create a connection between the WinCC and a PLC go to connections:
+To create a connection between the WinCC Unifed on Industrial Edge and a PLC go to connections:
 
 ![connections1](graphics/connections1.PNG)
 
@@ -126,7 +126,7 @@ When the search is done, the data will appear:
 
 ## Tags
 
-There are different ways to create tags in our WinCC. When we make a connection to a Tia Portal project we can import the tags created in that project to our WinCC project just by clicking on the created checkbox:
+There are different ways to create tags in our WinCC Unifed on Industrial Edge. When we make a connection to a Tia Portal project we can import the tags created in that project to our WinCC Unifed on IE project just by clicking on the created checkbox:
 
 ![tags1](graphics/tags1.PNG)
 
