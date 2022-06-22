@@ -1,4 +1,4 @@
-## INDEX
+## Installation and Tutorial
 
 - [Installation](#installation)
 - [Creating a project](#creating-a-project)
@@ -17,7 +17,7 @@
 
 ## Installation
 
-Import both app files into your app catalog of your Industrial Edge Management and start the installation:
+Download the app from the Siemens HUB and then import both app files into your app catalog of your Industrial Edge Management and start the installation:
 1.	Login on the IEM where you control your IED.
 2.	Go to the catalog.
 3.	Import the application.
@@ -35,6 +35,7 @@ Import both app files into your app catalog of your Industrial Edge Management a
   ![installation4](graphics/installation4.PNG)
   ![installation5](graphics/installation5.PNG)
 
+Login on the IED where you installed the apps and then:
 9.	Click on the app icon to start WinCC Unified Online Engineering.
 10.	Click on the app icon to start WinCC Unified Runtime.
 
@@ -73,7 +74,7 @@ Once we have created a device, its properties are shown when it is accessed:
 
 ![createscreen1](graphics/createscreen1.PNG)
 
-Click on Screens to create our first one and click on add screen button to add the new one:
+On the left side menu, click on 'Screens' to create our first one and click on add screen button to add the new one:
 
 ![createscreen2](graphics/createscreen2.PNG)
 
@@ -84,7 +85,7 @@ The screen created will appear in our Screens:
 
 ## Screen items
 
-Once the screen is created, items can be created by clicking on add screen items button:
+Once the screen is created and opened, items can be created by clicking on add screen items button:
 
 ![screenitems1](graphics/screenitems1.PNG)
 
@@ -107,15 +108,15 @@ To create a connection between the WinCC Unifed on Industrial Edge and a PLC go 
 
 ![connections1](graphics/connections1.PNG)
 
-Write a name for your connection, the connection type (how you are connected to the PLC, in this case via OPC-UA) and the adress of the connection:
+Write a name for your connection, slect the connection type (OPC-UA/S7 Classic/S7 Plus) and enter the adress of the PLC:
 
 ![connections2](graphics/connections2.PNG)
 
-Above Tags, you will see the new connection created:
+Underneath 'Tags' in the left side menu, you will see the new connection created:
 
 ![connections3](graphics/connections3.PNG)
 
-Click on the three dots to start searching for the data on the PLC:
+Click on the three dots and select 'Browse OPC UA server' to start searching for the data on the PLC:
 
 ![connections4](graphics/connections4.PNG)
 
@@ -130,7 +131,7 @@ There are different ways to create tags in our WinCC Unifed on Industrial Edge. 
 
 ![tags1](graphics/tags1.PNG)
 
-The tags will appear in the Tags window:
+The selected tags will appear in the tab 'Tags':
 
 ![tags2](graphics/tags2.PNG)
 
@@ -170,7 +171,7 @@ If you go to "Tags" all the ones that were clicked are ready to be used in the p
 
 ![import10](graphics/import10.PNG)
 
-Also if you go to "connections" both interfaces have been imported and if yopu have some certificates for secure communication, they are imported as well:
+Also if you go to "connections" both interfaces have been imported and if you have some certificates for secure communication, they are imported as well:
 
 ![import11](graphics/import11.PNG)
 
@@ -196,7 +197,7 @@ Repeat the process for any screen item that you want to connect. In this case we
 
 ## Scripting
 
-As same as working with Tia Portal in the WinCC part, scrpting is also allowed in the app. For this part we are creating another screen to create a simple script to switch between two screens:
+As same as working with Tia Portal in the WinCC part, scripting is also allowed in the app. For this part we are creating another screen to create a simple script to switch between two screens:
 
 ![script1](graphics/script1.PNG)
 
@@ -208,7 +209,7 @@ An scrpiting window will be opened. To be more easily for the user a lot of code
 
 ![script3](graphics/script3.PNG)
 
-In this case, we can go to screen, change base screen. The templates ca be dragged:
+In this case, we can go to screen, change base screen. The templates can be dragged:
 
 ![script4](graphics/script4.PNG)
 
@@ -219,7 +220,7 @@ Click on OK, and the script will be visible:
 
 ## Load a project into runtime
 
-To load a project go to the device and in the bottom you will see:
+To load a project, select 'MyDevice' on the left menu and scroll down to 'Runtime status':
 
 ![load1](graphics/load1.PNG)
 
@@ -234,7 +235,7 @@ Then click on Start runtime and wait until the Runtime status is on running:
 
 ## Alarms
 
-The alarms are created at the desired trigger tag. In this case at a internal tag. We can create two different types: analogs and discrete alarms. For this example we are creting both.
+The alarms are created at the desired trigger tag. In this case at a internal tag. We can create two different types: analog and discrete alarms. The alarm type depends on the selected tag data type. For this example we are creating both.
 For the analog ones, an int tag is created:
 
 ![alarms1](graphics/alarms1.PNG)
@@ -251,7 +252,7 @@ And on the bottom as same as before, the alarms are created:
 
 ![alarms4](graphics/alarms4.PNG)
 
-In this example, we are creting another screen with alarm control screen item and some different buttoms to pop up the alarms:
+In this example, we are creating another screen with alarm control screen item and some different buttons to pop up the alarms:
 
 ![alarms5](graphics/alarms5.PNG)
 
@@ -307,7 +308,7 @@ In the runtime the trend will be filled:
 
 ## Start the runtime
 
-To sart the runtime go to the Wincc Runtime app:
+To start the runtime go to the Wincc Runtime app:
 
 ![start1](graphics/start1.PNG)
 
