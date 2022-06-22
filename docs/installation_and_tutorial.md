@@ -9,10 +9,10 @@
 - [Export tags from TIA Portal and import them with WebES](#export-tags-from-tia-portal-and-import-them-with-webes)
 - [Connect tags to screen items](#connect-tags-to-screen-items)
 - [Scripting](#scripting)
+- [Load a project into runtime](#Load-a-project-into-runtime)
 - [Alarms](#alarms)
 - [Loggs](#loggs)
 - [Trends](#trends)
-- [Load a project into runtime](#Load-a-project-into-runtime)
 - [Start the runtime](#start-the-runtime)
 
 ## Installation
@@ -217,9 +217,24 @@ Click on OK, and the script will be visible:
 ![script5](graphics/script5.PNG)
 
 
+## Load a project into runtime
+
+To load a project go to the device and in the bottom you will see:
+
+![load1](graphics/load1.PNG)
+
+Click on download and when the procces is finished click on OK:
+
+![load2](graphics/load2.PNG)
+
+Then click on Start runtime and wait until the Runtime status is on running:
+
+![load3](graphics/load3.PNG)
+
+
 ## Alarms
 
-The alarms are created in the internal tags part. We can create two different types: analogs and discrete alarms. For this example we are creting both.
+The alarms are created at the desired trigger tag. In this case at a internal tag. We can create two different types: analogs and discrete alarms. For this example we are creting both.
 For the analog ones, an int tag is created:
 
 ![alarms1](graphics/alarms1.PNG)
@@ -288,21 +303,6 @@ And select the tag you want to control:
 In the runtime the trend will be filled:
 
 ![trends4](graphics/trends4.PNG)
-
-
-## Load a project into runtime
-
-To load a project go to the device and in the bottom you will see:
-
-![load1](graphics/load1.PNG)
-
-Click on download and when the procces is finished click on OK:
-
-![load2](graphics/load2.PNG)
-
-Then click on Start runtime and wait until the Runtime status is on running:
-
-![load3](graphics/load3.PNG)
 
 
 ## Start the runtime
