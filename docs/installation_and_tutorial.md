@@ -202,7 +202,7 @@ As same as working with Tia Portal in the WinCC part, scrpting is also allowed i
 
 Place a button on the first screen and go to the events tabs and click on add script:
 
-![script2](graphics/script2.PNG)
+![script2](graphics/script2_upd.png)
 
 An scrpiting window will be opened. To be more easily for the user a lot of code templates are created:
 
