@@ -16,6 +16,7 @@ This example shows how to use the Industrial Edge Apps "WinCC Unified Engineerin
 ## Description
 ### Overview
 This document describes how to use the WinCC Unified on Industrial Edge app. The application is used to generate the screens based on WinCC Unifed on IE and load them in the runtime to be able to execute them in our edge device. You will need the two apps:  "WinCC Unified Engineering" and "WinCC Unified Runtime".
+
 ![introimage](docs/graphics/introimage2.png)
 
 ### General Task
