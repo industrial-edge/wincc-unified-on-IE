@@ -141,7 +141,7 @@ Also tags can be created manually on the interanl Tags part:
 
 ## Export tags from TIA Portal and import them with WebES
 
-First of all, open our SIOS-Portal and search for the entry "109748955":
+First of all, open our SIOS-Portal and search for the entry "109748955" or click on this [link](https://support.industry.siemens.com/cs/document/109748955/simatic-scada-export-for-tia-portal?dti=0&lc=en-US) :
 
 ![import1](graphics/import1.PNG)
 
