@@ -35,9 +35,9 @@ Download the app from the Siemens HUB and then import both app files into your a
   ![installation4](graphics/installation4.PNG)
   ![installation5](graphics/installation5.PNG)
 
-Login on the IED where you installed the apps and then:
-9.	Click on the app icon to start WinCC Unified Online Engineering.
-10.	Click on the app icon to start WinCC Unified Runtime.
+
+9.	Login on the IED where you installed the apps and then: Click on the app icon to start WinCC Unified Online Engineering.
+10.	Login on the IED where you installed the apps and then: Click on the app icon to start WinCC Unified Runtime.
 
   ![installation6](graphics/installation6.JPG)
 
