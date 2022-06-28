@@ -237,6 +237,8 @@ Then click on Start runtime and wait until the Runtime status is on running:
 
 To load the a project in rnutime on other Edge Device, you just need to configure its IP adress on the device configuration:
 
+![remote2](graphics/remotedown2.PNG)
+
 ![remote1](graphics/remotedown1.PNG)
 
 ## Alarms
