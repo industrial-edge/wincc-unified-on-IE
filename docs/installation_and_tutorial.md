@@ -20,6 +20,7 @@
 - [Loggs](#loggs)
 - [Trends](#trends)
 - [Start the runtime](#start-the-runtime)
+- [Trace Settings](#trace-settings)
 
 ## Installation
 
@@ -396,3 +397,23 @@ Wait until the runtime status is on not started:
 And in the WinCC Runtime app a red light will be now on the project:
 
 ![start7](graphics/start7.PNG)
+
+## Trace Settings
+
+To download or forward traces from the WinCC Unified Online Engineering app go to the settings and enable the following settings:
+
+![trace1](trace1.PNG)
+
+Also you can download each trace separately .csv file going to the app's more info site:
+
+![trace2](trace2.PNG)
+
+You can also activate the trace forwarder and receive the traces with Trace Viewer foe analyzing the app:
+
+- Trace Viewer is installed by WinCC Unified (Tia Portal)
+- Activate the 'Receiver' mode via the following command on remote host: C:\ProgramFiles\Siemens\Automation\WinCCUnified\bin\RTILtraceTool.exe -mode receiver -tcp -host <IP of Edgebox> -port 35505
+ 
+![trace3](trace3.PNG)
+
+
+
