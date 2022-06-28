@@ -257,6 +257,7 @@ And using the 'ctrl + i' shortcut the info about the function pops out:
 
 [script10](graphics/script10.PNG)
 
+
 ## Load a project into runtime
 
 To load a project, select 'MyDevice' on the left menu and scroll down to 'Runtime status':
