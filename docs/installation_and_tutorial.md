@@ -6,6 +6,7 @@
 - [Creating a screen](#creating-a-screen)
 - [Screen Items](#screen-items)
 - [Connections](#connections)
+  - [OPC UA Server](#opc-ua-server)
 - [Tags](#Tags)
 - [Export tags from TIA Portal and import them with WebES](#export-tags-from-tia-portal-and-import-them-with-webes)
 - [Connect tags to screen items](#connect-tags-to-screen-items)
@@ -130,6 +131,12 @@ Click on the three dots and select 'Browse OPC UA server' to start searching for
 When the search is done, the data will appear:
 
 ![connections5](graphics/connections5.PNG)
+
+### OPC UA Server
+
+To operate as an OPC UA server just go to the device 'runtime settings' and click on the opc ua server checkbox. The OPC UA Server can be accesed via Default port: 34002.
+
+![connections6](graphics/connections6.PNG)
 
 
 ## Tags
