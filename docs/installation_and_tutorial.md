@@ -4,6 +4,7 @@
 - [Creating a project](#creating-a-project)
 - [Creating a device](#creating-a-device)
 - [Creating a screen](#creating-a-screen)
+- [Screen Items](#screen-items)
 - [Connections](#connections)
 - [Tags](#Tags)
 - [Export tags from TIA Portal and import them with WebES](#export-tags-from-tia-portal-and-import-them-with-webes)
