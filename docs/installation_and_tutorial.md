@@ -241,6 +241,16 @@ To load the a project in rnutime on other Edge Device, you just need to configur
 
 ![remote1](graphics/remotedown1.PNG)
 
+### Offline Download
+
+You can create an offline runtime project in WinCC Unified Online Engineering by clicking on the download offline project button:
+
+![offdwon1](graphics/offdown1.PNG)
+
+Then, in WinCC Unified Runtime on IE you can upload the file that was downloaded by clicking on the upload button:
+
+![offdwon2](graphics/offdown2.PNG)
+
 ## Alarms
 
 The alarms are created at the desired trigger tag. In this case at a internal tag. We can create two different types: analog and discrete alarms. The alarm type depends on the selected tag data type. For this example we are creating both.
