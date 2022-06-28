@@ -244,7 +244,7 @@ To create a global module for your scripts go to the 'Scripts' part on the devic
 
 ![script7](graphics/script7.PNG)
 
-Then, on the scriptiong part of an item you can import all your global and predefined scripts to use them:
+Then, on the scripting part of an item you can import all your global and predefined scripts to use them:
 
 ![script6](graphics/script6.PNG)
 
@@ -278,7 +278,7 @@ Then click on Start runtime and wait until the Runtime status is on running:
 
 ### Remote Download
 
-To load the a project in rnutime on other Edge Device, you just need to configure its IP adress on the device configuration:
+To load the project in runtime on other Edge Device, you just need to configure its IP adress on the device configuration:
 
 ![remote2](graphics/remotedown2.PNG)
 
