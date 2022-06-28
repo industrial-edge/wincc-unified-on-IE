@@ -11,6 +11,7 @@
 - [Export tags from TIA Portal and import them with WebES](#export-tags-from-tia-portal-and-import-them-with-webes)
 - [Connect tags to screen items](#connect-tags-to-screen-items)
 - [Scripting](#scripting)
+  - [Global Scripts](#global-scripts)
 - [Load a project into runtime](#Load-a-project-into-runtime)
   - [Remote Download](#remote-download)
   - [Offline Download](#offline-download)
@@ -231,6 +232,15 @@ Click on OK, and the script will be visible:
 
 ![script5](graphics/script5.PNG)
 
+### Global scripts
+
+To create a global module for your scripts go to the 'Scripts' part on the device and create the global module with all the functions needed:
+
+![script7](graphics/script7.PNG)
+
+Then, on the scriptiong part of an item you can import all your global and predefined scripts to use them:
+
+![script6](graphics/script6.PNG)
 
 ## Load a project into runtime
 
