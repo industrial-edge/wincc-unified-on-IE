@@ -12,7 +12,7 @@
 - [Connect tags to screen items](#connect-tags-to-screen-items)
 - [Scripting](#scripting)
   - [Global Scripts](#global-scripts)
-  - [Intellisense & Autocompletion](#intellisense-&-autocompletion)
+  - [Intellisense & Autocompletion](#intellisense-and-autocompletion)
 - [Load a project into runtime](#Load-a-project-into-runtime)
   - [Remote Download](#remote-download)
   - [Offline Download](#offline-download)
@@ -243,7 +243,7 @@ Then, on the scriptiong part of an item you can import all your global and prede
 
 ![script6](graphics/script6.PNG)
 
-### Intellisense & Autocompletion
+### Intellisense and Autocompletion
 
 You can select system functions and enums via intellisense or autocompletion just by clicking 'ctrl + space' shortcut on the keyboard:
 
