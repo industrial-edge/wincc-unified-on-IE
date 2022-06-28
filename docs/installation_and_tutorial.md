@@ -58,6 +58,10 @@ Now you will see your created project where you can click on and start working o
 
 ![createproject2](graphics/createproject2.PNG)
 
+You can work with more browser sessions parallel on the same project. An indicator will appear next to project's name to show that the project is already opened in another browser session:
+
+![createproject3](graphics/createproject3.PNG)
+
 
 ## Creating a device
 
