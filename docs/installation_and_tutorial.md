@@ -10,7 +10,7 @@
 - [Connect tags to screen items](#connect-tags-to-screen-items)
 - [Scripting](#scripting)
 - [Load a project into runtime](#Load-a-project-into-runtime)
-  - [Remote Download]
+  - [Remote Download](#remote-download)
 - [Alarms](#alarms)
 - [Loggs](#loggs)
 - [Trends](#trends)
@@ -232,6 +232,8 @@ Click on download and when the procces is finished click on OK:
 Then click on Start runtime and wait until the Runtime status is on running:
 
 ![load3](graphics/load3.PNG)
+
+### Remote Download
 
 
 ## Alarms
