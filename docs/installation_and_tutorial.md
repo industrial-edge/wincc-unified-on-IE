@@ -246,11 +246,11 @@ To load the a project in rnutime on other Edge Device, you just need to configur
 
 You can create an offline runtime project in WinCC Unified Online Engineering by clicking on the download offline project button:
 
-![offdwon1](graphics/offdown1.PNG)
+![offdown1](graphics/offdwon1.PNG)
 
 Then, in WinCC Unified Runtime on IE you can upload the file that was downloaded by clicking on the upload button:
 
-![offdwon2](graphics/offdown2.PNG)
+![offdown2](graphics/offdwon2.PNG)
 
 ## Alarms
 
