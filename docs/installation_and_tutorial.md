@@ -12,7 +12,7 @@
 - [Connect tags to screen items](#connect-tags-to-screen-items)
 - [Scripting](#scripting)
   - [Global Scripts](#global-scripts)
-  - [Intellisense & Autocompletion](#intellisense-and-autocompletion)
+  - [Shortcuts](#shortcuts)
 - [Load a project into runtime](#Load-a-project-into-runtime)
   - [Remote Download](#remote-download)
   - [Offline Download](#offline-download)
@@ -243,11 +243,19 @@ Then, on the scriptiong part of an item you can import all your global and prede
 
 ![script6](graphics/script6.PNG)
 
-### Intellisense and Autocompletion
+### Shortcuts
 
 You can select system functions and enums via intellisense or autocompletion just by clicking 'ctrl + space' shortcut on the keyboard:
 
 ![script8](graphics/script8.PNG)
+
+By using the 'alt + .' shortcut you can jump to the definition of a function:
+
+[script9](graphics/script9.PNG)
+
+And using the 'ctrl + i' shortcut the info about the function pops out:
+
+[script10](graphics/script10.PNG)
 
 ## Load a project into runtime
 
