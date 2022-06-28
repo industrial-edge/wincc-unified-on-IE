@@ -99,6 +99,10 @@ Place the item in the screen area and when is created you will see in the right 
 
 ![screenitems3](graphics/screenitems3.PNG)
 
+On the properties bar you will see the 'most important proporties' section. It depends on the screen item and are displayed in separate section.
+
+![screenitems5](graphics/screenitems5.PNG)
+
 Add all the items you need and do not forget to click on the save button. An orange reminder will appear until you save the progress:
 
 ![screenitems4](graphics/screenitems4.PNG)
