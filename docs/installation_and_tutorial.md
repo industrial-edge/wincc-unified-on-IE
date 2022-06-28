@@ -256,11 +256,10 @@ You can select system functions and enums via intellisense or autocompletion jus
 
 By using the 'alt + .' shortcut you can jump to the definition of a function:
 
-[script9](graphics/script9.PNG)
+
 
 And using the 'ctrl + i' shortcut the info about the function pops out:
 
-[script10](graphics/script10.PNG)
 
 
 ## Load a project into runtime
