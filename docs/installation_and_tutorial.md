@@ -173,7 +173,7 @@ In properties go to process value 'Dynamic':
 
 Select 'Tag...' and then choose a tag that you want to connect:
 
-![tagstoscreen3](graphics/tagstoscreen3.PNG)
+![tagstoscreen3](graphics/tagstoscreen3.png)
 
 Repeat the process for any screen item that you want to connect. In this case we are introducing an I/O field to see how the tag changes for the runtime part tutorial:
 
@@ -235,7 +235,7 @@ To operate as an OPC UA server go to the 'Runtime settings' in the left side men
 
 To load a project, select your device on the left side menu and scroll down to 'Runtime status':
 
-![load1](graphics/load1.PNG)
+![load1](graphics/load1.png)
 
 Click on 'Download' and when the procces is finished click on 'OK':
 
@@ -255,30 +255,31 @@ To load the project in runtime on other Edge Device, you just need to configure 
 
 ### Offline Download
 
-You can create an offline runtime project in WinCC Unified Online Engineering by clicking on the download offline project button:
+You can create an offline runtime project in WinCC Unified Online Engineering by clicking on the 'Download' button in the section 'Offline download':
 
 ![offdown1](graphics/offdwon1.PNG)
 
-Then, in WinCC Unified Runtime on IE you can upload the file that was downloaded by clicking on the upload button:
+Then, in WinCC Unified Runtime on IE you can upload the file that was downloaded by clicking on the 'Upload' button:
 
 ![offdown2](graphics/offdwon2.PNG)
 
 ## Alarms
 
-The alarms are created at the desired trigger tag. In this case at a internal tag. We can create two different types: analog and discrete alarms. The alarm type depends on the selected tag data type. For this example we are creating both.
-For the analog ones, an int tag is created:
+The alarms are created at the desired trigger tag - in this case at an internal tag. We can create two different types: analog and discrete alarms. The alarm type depends on the selected tag data type. For this example we are creating both.
+
+For the analog alarms, an 'Int' tag is created:
 
 ![alarms1](graphics/alarms1.PNG)
 
-On the bottom, in the analog alarms part we create all the alarms we need with its conditions:
+On the bottom menu, tab 'Analog alarms', we create all the alarms we need with it's conditions:
 
 ![alarms2](graphics/alarms2.PNG)
 
-For the discrete alarms, the creation is made in the same way, but the data type must be Word:
+For the discrete alarms, the creation is made in the same way, but the data type must be 'Word':
 
 ![alarms3](graphics/alarms3.PNG)
 
-And on the bottom as same as before, the alarms are created:
+On the bottom menu, tab 'Analog alarms', the alarms are created:
 
 ![alarms4](graphics/alarms4.PNG)
 
@@ -292,16 +293,17 @@ When the runtime is active and the alarms are popped out they will appear in the
 
 ## Loggs
 
-To create loggs, go again to the internal tags part. In this example we are creating two different loggs.
-First one:
+The loggs can be created for each tag - in this case at an internal tag. We can choose two different logging modes: 'Cyclic' and 'On change'.
+
+Create a logging with 'Cyclic' mode:
 
 ![loggs1](graphics/logs1.PNG)
 
-On the bottom the logging tag with its properties is modified:
+On the bottom menu, tab 'Logging tags', the logging is created:
 
 ![loggs12](graphics/logs2.PNG)
 
-The second one is created in the same way:
+Create a logging with 'On change' mode:
 
 ![loggs3](graphics/logs3.PNG)
 
@@ -311,7 +313,7 @@ Introduce the process controll item to a screen:
 
 ![loggs5](graphics/logs5.PNG)
 
-In the runtime the loggs will be shown:
+Finally the loggs are shown in the runtime:
 
 ![loggs6](graphics/logs6.PNG)
 
