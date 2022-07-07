@@ -11,11 +11,11 @@ This example shows how to use the Industrial Edge Apps "WinCC Unified Engineerin
     - [Used components](#used-components)
   - [Documentation](#documentation)
   - [Contribution](#contribution)
-  - [Licence and Legal Information](#licence-and-legal-information)
+  - [License and Legal Information](#license-and-legal-information)
 
 ## Description
 ### Overview
-This document describes how to use the WinCC Unified on Industrial Edge app. The application is used to generate the screens based on WinCC Unifed on IE and load them in the runtime to be able to execute them in our edge device. You will need the two apps:  "WinCC Unified Engineering" and "WinCC Unified Runtime".
+This document describes how to use the WinCC Unified on Industrial Edge apps. The application is used to generate screens based on WinCC Unified and load them in the corresponding runtime to be able to execute the screens on the Edge Device. You will need these two apps:  "WinCC Unified Engineering" and "WinCC Unified Runtime".
 
 ![introimage](docs/graphics/introimage2.png)
 
@@ -26,24 +26,24 @@ This example shows how to install and configure the "WinCC Unified Engineering" 
 
 ### Prerequisites
 
--	Access to an Industrial Edge Management System (IEM).
--	Onboarded Industrial Edge Device on IEM.
--	Installed System Configurator for Databus.
--	Installed System App Databus.
--	Edge device is connected to PLC.
--	TIA Portal project loaded on PLC.
--	HTML-5 capable Internet browser.
+-	Access to an Industrial Edge Management System (IEM)
+-	Onboarded Industrial Edge Device on IEM
+-	Installed System Configurator for Databus
+-	Installed System App Databus
+-	Edge device is connected to PLC
+-	TIA Portal project loaded on PLC
+-	HTML-5 capable Internet browser
 
 ### Used components
 
-- Industrial Edge Management (IEM) V1.4.0-42.
-  - IE Databus V1.6.3.
-  - IE Databus Configurator V1.6.19.
-  - WinCC Unified Online Engineering V1.1.0.
-  - WinCC Unified Runtime V1.1.0-3.
--	Industrial Edge Device 1.5.0-21.
--	Tia Portal V17.
--	S7-PLCSIM Advanced V4.0.
+- Industrial Edge Management (IEM) V1.4.0-42
+  - IE Databus V1.6.3
+  - IE Databus Configurator V1.6.19
+  - WinCC Unified Online Engineering V1.1.0
+  - WinCC Unified Runtime V1.1.0-3
+-	Industrial Edge Device 1.5.0-21
+-	Tia Portal V17
+-	S7-PLCSIM Advanced V4.0
 
 ## Documentation
 
