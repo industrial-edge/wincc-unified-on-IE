@@ -1,4 +1,4 @@
-## Installation and Tutorial
+# Installation and Tutorial
 
 - [Installation](#installation)
 - [Creating a project](#creating-a-project)
@@ -6,14 +6,14 @@
 - [Creating a screen](#creating-a-screen)
 - [Screen Items](#screen-items)
 - [Connections](#connections)
-  - [OPC UA Server](#opc-ua-server)
-- [Tags](#Tags)
-- [Export tags from TIA Portal and import them with WebES](#export-tags-from-tia-portal-and-import-them-with-webes)
+- [Tags](#tags)
+- [OPC UA Server](#opc-ua-server)
+- [Import tags from TIA Portal](#import-tags-from-tia-portal)
 - [Connect tags to screen items](#connect-tags-to-screen-items)
 - [Scripting](#scripting)
   - [Global Scripts](#global-scripts)
   - [Shortcuts](#shortcuts)
-- [Load a project into runtime](#Load-a-project-into-runtime)
+- [Load a project into runtime](#load-a-project-into-runtime)
   - [Remote Download](#remote-download)
   - [Offline Download](#offline-download)
 - [Alarms](#alarms)
@@ -24,34 +24,19 @@
 
 ## Installation
 
-Download the app from the Siemens HUB and then import both app files into your app catalog of your Industrial Edge Management and start the installation:
-1.	Login on the IEM where you control your IED.
-2.	Go to the catalog.
-3.	Import the application.
-4.	Browse the app files and import them.
+Download the apps "WinCC Unified Online Engineering" and "WinCC Unified Runtime" from the Industrial Edge HUB into your Industrial Edge Management. The applications should now be available in the IEM catalog.
 
-  ![installation1](graphics/installation1.PNG)
-  ![installation2](graphics/installation2.PNG)
-
-5.  Click on the app icon.
-6.  Install the app.
-7.  Select your IED.
-8.  Click on Install now.
-
-  ![installation3](graphics/installation3.PNG)
-  ![installation4](graphics/installation4.PNG)
-  ![installation5](graphics/installation5.PNG)
-
-
-9.	Login on the IED where you installed the apps and then: Click on the app icon to start WinCC Unified Online Engineering.
-10.	Login on the IED where you installed the apps and then: Click on the app icon to start WinCC Unified Runtime.
-
-  ![installation6](graphics/installation6.JPG)
-
+1. Login on the IEM where you control your IED
+2. Go to the catalog
+3. Open the app "WinCC Unified Online Engineering" and install it on your IED
+4. Open the app "WinCC Unified Runtime" and install it on your IED
+5. Login to the IED where you installed the apps
+6. Click on the app icon of "WinCC Unified Online Engineering" to open this app
+7. Click on the app icon of "WinCC Unified Runtime" to open this app
 
 ## Creating a project
 
-Once you are in the WinCC Unified Online Engineering you can click on create a project to start a new engineering project:
+Once you are in the WinCC Unified Online Engineering you can click on 'Create project' to start a new engineering project:
 
 ![createproject1](graphics/createproject1.PNG)
 
@@ -63,14 +48,13 @@ You can work with more browser sessions parallel on the same project. An indicat
 
 ![createproject3](graphics/createproject3.PNG)
 
-
 ## Creating a device
 
 Clicking on a created project will lead you to the following screen:
 
 ![device1](graphics/device1.PNG)
 
-On the left bar there will be available a tree with all the projects created. On the right bar we can start to deploy and create our device. Click on the add device button to create a new one:
+On the left bar there will be available a tree with all the projects created. On the right bar we can start to deploy and create our device. Click on the 'Add device' button to create a new one:
 
 ![device2](graphics/device2.PNG)
 
@@ -78,37 +62,35 @@ Now, the device should appear created in the project:
 
 ![device3](graphics/device3.PNG)
 
-
 ## Creating a screen
 
 Once we have created a device, its properties are shown when it is accessed:
 
 ![createscreen1](graphics/createscreen1.PNG)
 
-On the left side menu, click on 'Screens' to create our first one and click on add screen button to add the new one:
+In the left side menu, click on 'Screens' and then click on 'Add screen' button to add a new one:
 
 ![createscreen2](graphics/createscreen2.PNG)
 
-The screen created will appear in our Screens:
+Now the created screen will appear under 'Screens':
 
 ![createscreen3](graphics/createscreen3.PNG)
 
-
 ## Screen items
 
-Once the screen is created and opened, items can be created by clicking on add screen items button:
+Once the screen is created and opened, items can be created by clicking on 'Add screen items' button:
 
 ![screenitems1](graphics/screenitems1.PNG)
 
-A new bar will appear with all the options available:
+A bar will appear with all the options available:
 
 ![screenitems2](graphics/screenitems2.PNG)
 
-Place the item in the screen area and when is created you will see in the right bar all the properties of the item:
+Place the item in the screen area and when it is created you will see in the right bar all the properties of the item:
 
 ![screenitems3](graphics/screenitems3.PNG)
 
-On the properties bar you will see the 'most important proporties' section. It depends on the screen item and are displayed in separate section.
+On the properties bar you will see the 'most important proporties' section. The content depends on the screen item and is displayed in a separate section.
 
 ![screenitems5](graphics/screenitems5.PNG)
 
@@ -116,20 +98,17 @@ Add all the items you need and do not forget to click on the save button. An ora
 
 ![screenitems4](graphics/screenitems4.PNG)
 
-
 ## Connections
 
-To create a connection between the WinCC Unifed on Industrial Edge and a PLC go to connections:
+To create a connection between the WinCC Unifed on Industrial Edge and a PLC go to 'Connections':
 
 ![connections1](graphics/connections1.PNG)
 
-Write a name for your connection, slect the connection type (OPC-UA/S7 Classic/S7 Plus) and enter the adress of the PLC:
+Write a name for your connection, select the connection type (OPC-UA/S7 Classic/S7 Plus) and enter the address of the PLC:
 
 ![connections2](graphics/connections2.PNG)
 
-Underneath 'Tags' in the left side menu, you will see the new connection created:
-
-![connections3](graphics/connections3.PNG)
+Underneath 'Tags' in the left side menu, you will see the new connection created.
 
 Click on the three dots and select 'Browse OPC UA server' to start searching for the data on the PLC:
 
@@ -139,16 +118,9 @@ When the search is done, the data will appear:
 
 ![connections5](graphics/connections5.PNG)
 
-### OPC UA Server
-
-To operate as an OPC UA server just go to the device 'runtime settings' and click on the opc ua server checkbox. The OPC UA Server can be accesed via Default port: 34002.
-
-![connections6](graphics/connections6.PNG)
-
-
 ## Tags
 
-There are different ways to create tags in our WinCC Unifed on Industrial Edge. When we make a connection to a Tia Portal project we can import the tags created in that project to our WinCC Unifed on IE project just by clicking on the created checkbox:
+There are different ways to create tags in our WinCC Unifed on Industrial Edge. When we make a connection to a Tia Portal project we can import the tags created in that project to our WinCC Unifed on IE project just by clicking on the 'Created' checkbox:
 
 ![tags1](graphics/tags1.PNG)
 
@@ -156,20 +128,21 @@ The selected tags will appear in the tab 'Tags':
 
 ![tags2](graphics/tags2.PNG)
 
-Also tags can be created manually on the interanl Tags part:
+Also internal tags cn be created under 'Internal tags' in the left side menu:
 
 ![tags3](graphics/tags3.PNG)
 
+## OPC UA Server
 
-## Export tags from TIA Portal and import them with WebES
+To operate as an OPC UA server go to the 'Runtime settings' in the left side menu and click on the opc ua server checkbox. The OPC UA Server can be accesed via Default port: 34002.
 
-First of all, open our SIOS-Portal and search for the entry "109748955" or click on this [link](https://support.industry.siemens.com/cs/document/109748955/simatic-scada-export-for-tia-portal?dti=0&lc=en-US) :
+![connections6](graphics/connections6.PNG)
 
-![import1](graphics/import1.PNG)
+## Import tags from TIA Portal
 
-Download and install the fitting version for your TIA Portal version:
+The TIA Portal extension **'SIMATIC SCADA Export'** provides a mechanism to export the PLC configuration data (variables and alarms). The exported PLC data can be then imported as tags into the WinCC Unified Online Engineering.
 
-![import2](graphics/import2.PNG)
+To download the SIMATIC SCADA Export, open our SIOS-Portal and search for the entry "109748955" or click on this [link](https://support.industry.siemens.com/cs/document/109748955/simatic-scada-export-for-tia-portal?dti=0&lc=en-US). Download and install the fitting version for your TIA Portal version.
 
 Right click on the PLC and click on Export to SIMATIC SCADA and enter the filename and define the path:
 
@@ -196,7 +169,6 @@ Also if you go to "connections" both interfaces have been imported and if you ha
 
 ![import11](graphics/import11.PNG)
 
-
 ## Connect tags to screen items
 
 Once the tags are created, they can be connected to the screen items. Insert a screen item:
@@ -214,7 +186,6 @@ Select Tags and then the tag that you want:
 Repeat the process for any screen item that you want to connect. In this case we are introducing an I/O field to see how the tag changes for the runtime part tutorial:
 
 ![tagstoscreen4](graphics/tagstoscreen4.PNG)
-
 
 ## Scripting
 
@@ -321,7 +292,6 @@ When the runtime is active and the alarms are popped out they will appear in the
 
 ![alarms6](graphics/alarms6.PNG)
 
-
 ## Loggs
 
 To create loggs, go again to the internal tags part. In this example we are creating two different loggs.
@@ -347,7 +317,6 @@ In the runtime the loggs will be shown:
 
 ![loggs6](graphics/logs6.PNG)
 
-
 ## Trends
 
 To add a trend go to the add screen items and in the advanced bar select trend control:
@@ -365,7 +334,6 @@ And select the tag you want to control:
 In the runtime the trend will be filled:
 
 ![trends4](graphics/trends4.PNG)
-
 
 ## Start the runtime
 
@@ -410,9 +378,10 @@ Also you can download each trace separately .csv file going to the app's more in
 You can also activate the trace forwarder and receive the traces with Trace Viewer foe analyzing the app:
 
 - Trace Viewer is installed by WinCC Unified (Tia Portal)
-- Activate the 'Receiver' mode via the following command on remote host: C:\ProgramFiles\Siemens\Automation\WinCCUnified\bin\RTILtraceTool.exe -mode receiver -tcp -host <IP of Edgebox> -port 35505
- 
+- Activate the 'Receiver' mode via the following command on remote host:
+
+`
+C:\ProgramFiles\Siemens\Automation\WinCCUnified\bin\RTILtraceTool.exe -mode receiver -tcp -host <IP of Edgebox> -port 35505
+`
+
 ![trace3](graphics/trace3.PNG)
-
-
-
