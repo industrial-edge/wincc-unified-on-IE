@@ -7,12 +7,14 @@
 - [Screen Items](#screen-items)
 - [Connections](#connections)
 - [Tags](#tags)
-- [OPC UA Server](#opc-ua-server)
-- [Import tags from TIA Portal](#import-tags-from-tia-portal)
+  - [Create tags out of connection](#create-tags-out-of-connection)
+  - [Create internal tags](#create-internal-tags)
+  - [Import tags from TIA Portal](#import-tags-from-tia-portal)
 - [Connect tags to screen items](#connect-tags-to-screen-items)
 - [Scripting](#scripting)
   - [Global Scripts](#global-scripts)
   - [Shortcuts](#shortcuts)
+- [OPC UA Server](#opc-ua-server)
 - [Load a project into runtime](#load-a-project-into-runtime)
   - [Remote Download](#remote-download)
   - [Offline Download](#offline-download)
@@ -120,25 +122,21 @@ When the search is done, the data will appear:
 
 ## Tags
 
-There are different ways to create tags in our WinCC Unifed on Industrial Edge. When we make a connection to a Tia Portal project we can import the tags created in that project to our WinCC Unifed on IE project just by clicking on the 'Created' checkbox:
+There are different ways to create tags in our WinCC Unifed on Industrial Edge.
+
+### Create tags out of connection
+
+When we establish a connection to a PLC, we can use these tags within our WinCC Unifed on IE project just by clicking on the 'Created' checkbox:
 
 ![tags1](graphics/tags1.PNG)
 
-The selected tags will appear in the tab 'Tags':
+### Create internal tags
 
-![tags2](graphics/tags2.PNG)
-
-Also internal tags cn be created under 'Internal tags' in the left side menu:
+Also internal tags can be manually created under 'Internal tags' in the left side menu:
 
 ![tags3](graphics/tags3.PNG)
 
-## OPC UA Server
-
-To operate as an OPC UA server go to the 'Runtime settings' in the left side menu and click on the opc ua server checkbox. The OPC UA Server can be accesed via Default port: 34002.
-
-![connections6](graphics/connections6.PNG)
-
-## Import tags from TIA Portal
+### Import tags from TIA Portal
 
 The TIA Portal extension **'SIMATIC SCADA Export'** provides a mechanism to export the PLC configuration data (variables and alarms). The exported PLC data can be then imported as tags into the WinCC Unified Online Engineering.
 
@@ -149,23 +147,17 @@ Right click on the PLC and click on Export to SIMATIC SCADA and enter the filena
 ![import5](graphics/import5.PNG)
 ![import6](graphics/import6.PNG)
 
-Open the project in WinCC Unified Online Engineering and go to "Tags". Click on the three dots > "Import S7/S7+ connection":
+Open the project in WinCC Unified Online Engineering and go to 'Tags' on the left side menu. Click on the three dots > "Import S7/S7+ connection". Select the exported file and click on 'OK'.
 
-![import7](graphics/import7.PNG)
-
-Select the exported file and click on "OK":
-
-![import8](graphics/import8.PNG)
-
-The connection has been imported. You can see the tags imported and you can choose the desired PLC tags and PLC data types you want to use in the project by selecting "created":
+The connection has been imported. You can see the tags imported and you can choose the desired PLC tags and PLC data types you want to use in the project by selecting 'created':
 
 ![import9](graphics/import9.PNG)
 
-If you go to "Tags" all the ones that were clicked are ready to be used in the project:
+If you go to 'Tags', all the ones that were selected are ready to be used in the project:
 
 ![import10](graphics/import10.PNG)
 
-Also if you go to "connections" both interfaces have been imported and if you have some certificates for secure communication, they are imported as well:
+Also if you go to 'Connections', both interfaces have been imported and if you have some certificates for secure communication, they are imported as well:
 
 ![import11](graphics/import11.PNG)
 
@@ -175,11 +167,11 @@ Once the tags are created, they can be connected to the screen items. Insert a s
 
 ![tagstoscreen1](graphics/tagstoscreen1.PNG)
 
-In properties go to process value dynamic:
+In properties go to process value 'Dynamic':
 
 ![tagstoscreen2](graphics/tagstoscreen2.PNG)
 
-Select Tags and then the tag that you want:
+Select 'Tag...' and then choose a tag that you want to connect:
 
 ![tagstoscreen3](graphics/tagstoscreen3.PNG)
 
@@ -193,25 +185,25 @@ As same as working with Tia Portal in the WinCC part, scripting is also allowed 
 
 ![script1](graphics/script1.PNG)
 
-Place a button on the first screen and go to the events tabs and click on add script:
+Place a button on the first screen, go to the 'Events' tabs in the right side menu and click on 'Add script':
 
 ![script2](graphics/script2_upd.png)
 
-An scrpiting window will be opened. To be more easily for the user a lot of code templates are created:
+A scripting window opens. On the left side menu several predefined code templates are provided:
 
 ![script3](graphics/script3.PNG)
 
-In this case, we can go to screen, change base screen. The templates can be dragged:
+In this case, we can open the 'Screen' dropdown on the left side and drag the template 'Change base screen' into the script. Don't forget to rename the screen name inside the code:
 
 ![script4](graphics/script4.PNG)
 
-Click on OK, and the script will be visible:
+Click on OK and the script will be applied for the button:
 
 ![script5](graphics/script5.PNG)
 
 ### Global scripts
 
-To create a global module for your scripts go to the 'Scripts' part on the device and create the global module with all the functions needed:
+To create a global module for your scripts go to 'Scripts' in the left side menu and create a global module with all the functions needed:
 
 ![script7](graphics/script7.PNG)
 
@@ -221,29 +213,35 @@ Then, on the scripting part of an item you can import all your global and predef
 
 ### Shortcuts
 
-You can select system functions and enums via intellisense or autocompletion just by clicking 'ctrl + space' shortcut on the keyboard:
+You can select system functions and enums via intellisense or autocompletion just by clicking 'ctrl' + 'space' shortcut on the keyboard:
 
 ![script8](graphics/script8.PNG)
 
-By using the 'alt + .' shortcut you can jump to the definition of a function:
+By using the 'alt' + '.' shortcut you can jump to the definition of a function:
 
 ![script9](graphics/script9.PNG)
 
-And using the 'ctrl + i' shortcut the info about the function pops out:
+And using the 'ctrl' + 'i' shortcut the info about the function pops out:
 
 ![script10](graphics/script10.PNG)
 
+## OPC UA Server
+
+To operate as an OPC UA server go to the 'Runtime settings' in the left side menu and click on the opc ua server checkbox. The OPC UA Server can be accesed via Default port: 34002.
+
+![connections6](graphics/connections6.PNG)
+
 ## Load a project into runtime
 
-To load a project, select 'MyDevice' on the left menu and scroll down to 'Runtime status':
+To load a project, select your device on the left side menu and scroll down to 'Runtime status':
 
 ![load1](graphics/load1.PNG)
 
-Click on download and when the procces is finished click on OK:
+Click on 'Download' and when the procces is finished click on 'OK':
 
 ![load2](graphics/load2.PNG)
 
-Then click on Start runtime and wait until the Runtime status is on running:
+Then click on 'Start runtime' and wait until the runtime status is on running:
 
 ![load3](graphics/load3.PNG)
 
