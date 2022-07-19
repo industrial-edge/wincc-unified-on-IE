@@ -19,7 +19,7 @@
   - [Remote Download](#remote-download)
   - [Offline Download](#offline-download)
 - [Alarms](#alarms)
-- [Loggs](#loggs)
+- [Logs](#logs)
 - [Trends](#trends)
 - [Start the runtime](#start-the-runtime)
 - [Trace Settings](#trace-settings)
@@ -291,31 +291,31 @@ When the runtime is active and the alarms are popped out they will appear in the
 
 ![alarms6](graphics/alarms6.png)
 
-## Loggs
+## Logs
 
-The loggs can be created for each tag - in this case at an internal tag. We can choose two different logging modes: 'Cyclic' and 'On change'.
+The logs can be created for each tag - in this case at an internal tag. We can choose two different logging modes: 'Cyclic' and 'On change'.
 
 Create a logging with 'Cyclic' mode:
 
-![loggs1](graphics/logs1.png)
+![logs1](graphics/logs1.png)
 
 On the bottom menu, tab 'Logging tags', the logging is created:
 
-![loggs12](graphics/logs2.png)
+![logs12](graphics/logs2.png)
 
 Create a logging with 'On change' mode:
 
-![loggs3](graphics/logs3.png)
+![logs3](graphics/logs3.png)
 
-![loggs4](graphics/logs4.png)
+![logs4](graphics/logs4.png)
 
 Introduce the process controll item to a screen:
 
-![loggs5](graphics/logs5.png)
+![logs5](graphics/logs5.png)
 
-Finally the loggs are shown in the runtime:
+Finally the logs are shown in the runtime:
 
-![loggs6](graphics/logs6.png)
+![logs6](graphics/logs6.png)
 
 ## Trends
 
