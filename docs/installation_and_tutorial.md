@@ -175,7 +175,7 @@ Select 'Tag...' and then choose a tag that you want to connect:
 
 ![tagstoscreen3](graphics/tagstoscreen3.png)
 
-Repeat the process for any screen item that you want to connect. The easiest way to add tags to the objects is by Drag & Drop from the tab "Tags" on the right hand side:
+Repeat the process for any screen item that you want to connect. You can easily Drag & Drop a tag into your screen to create automatically an IO-field with connected HMI tag:
 
 ![tagstoscreen4](graphics/tagstoscreen4-1.PNG)
 
