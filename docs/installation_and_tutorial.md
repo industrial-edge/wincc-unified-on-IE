@@ -1,4 +1,4 @@
-## Installation and Tutorial
+# Installation and Tutorial
 
 - [Installation](#installation)
 - [Creating a project](#creating-a-project)
@@ -6,347 +6,316 @@
 - [Creating a screen](#creating-a-screen)
 - [Screen Items](#screen-items)
 - [Connections](#connections)
-  - [OPC UA Server](#opc-ua-server)
-- [Tags](#Tags)
-- [Export tags from TIA Portal and import them with WebES](#export-tags-from-tia-portal-and-import-them-with-webes)
+- [Tags](#tags)
+  - [Create tags out of connection](#create-tags-out-of-connection)
+  - [Create internal tags](#create-internal-tags)
+  - [Import tags from TIA Portal](#import-tags-from-tia-portal)
 - [Connect tags to screen items](#connect-tags-to-screen-items)
 - [Scripting](#scripting)
   - [Global Scripts](#global-scripts)
   - [Shortcuts](#shortcuts)
-- [Load a project into runtime](#Load-a-project-into-runtime)
+- [OPC UA Server](#opc-ua-server)
+- [Load a project into runtime](#load-a-project-into-runtime)
   - [Remote Download](#remote-download)
   - [Offline Download](#offline-download)
 - [Alarms](#alarms)
-- [Loggs](#loggs)
+- [Logs](#logs)
 - [Trends](#trends)
 - [Start the runtime](#start-the-runtime)
 - [Trace Settings](#trace-settings)
 
 ## Installation
 
-Download the app from the Siemens HUB and then import both app files into your app catalog of your Industrial Edge Management and start the installation:
-1.	Login on the IEM where you control your IED.
-2.	Go to the catalog.
-3.	Import the application.
-4.	Browse the app files and import them.
+Download the apps "WinCC Unified Online Engineering" and "WinCC Unified Runtime" from the Industrial Edge HUB into your Industrial Edge Management. The applications should now be available in the IEM catalog.
 
-  ![installation1](graphics/installation1.PNG)
-  ![installation2](graphics/installation2.PNG)
-
-5.  Click on the app icon.
-6.  Install the app.
-7.  Select your IED.
-8.  Click on Install now.
-
-  ![installation3](graphics/installation3.PNG)
-  ![installation4](graphics/installation4.PNG)
-  ![installation5](graphics/installation5.PNG)
-
-
-9.	Login on the IED where you installed the apps and then: Click on the app icon to start WinCC Unified Online Engineering.
-10.	Login on the IED where you installed the apps and then: Click on the app icon to start WinCC Unified Runtime.
-
-  ![installation6](graphics/installation6.JPG)
-
+1. Login on the IEM where you control your IED
+2. Go to the catalog
+3. Open the app "WinCC Unified Online Engineering" and install it on your IED
+4. Open the app "WinCC Unified Runtime" and install it on your IED
+5. Login to the IED where you installed the apps
+6. Click on the app icon of "WinCC Unified Online Engineering" to open this app
+7. Click on the app icon of "WinCC Unified Runtime" to open this app
 
 ## Creating a project
 
-Once you are in the WinCC Unified Online Engineering you can click on create a project to start a new engineering project:
+Once you are in the WinCC Unified Online Engineering you can click on 'Create project' to start a new engineering project:
 
-![createproject1](graphics/createproject1.PNG)
+![createproject1](graphics/createproject1.png)
 
 Now you will see your created project where you can click on and start working on it:
 
-![createproject2](graphics/createproject2.PNG)
+![createproject2](graphics/createproject2.png)
 
 You can work with more browser sessions parallel on the same project. An indicator will appear next to project's name to show that the project is already opened in another browser session:
 
-![createproject3](graphics/createproject3.PNG)
-
+![createproject3](graphics/createproject3.png)
 
 ## Creating a device
 
 Clicking on a created project will lead you to the following screen:
 
-![device1](graphics/device1.PNG)
+![device1](graphics/device1.png)
 
-On the left bar there will be available a tree with all the projects created. On the right bar we can start to deploy and create our device. Click on the add device button to create a new one:
+On the left bar there will be available a tree with all the projects created. On the right bar we can start to deploy and create our device. Click on the 'Add device' button to create a new one:
 
-![device2](graphics/device2.PNG)
+![device2](graphics/device2.png)
 
 Now, the device should appear created in the project:
 
-![device3](graphics/device3.PNG)
-
+![device3](graphics/device3.png)
 
 ## Creating a screen
 
 Once we have created a device, its properties are shown when it is accessed:
 
-![createscreen1](graphics/createscreen1.PNG)
+![createscreen1](graphics/createscreen1.png)
 
-On the left side menu, click on 'Screens' to create our first one and click on add screen button to add the new one:
+In the left side menu, click on 'Screens' and then click on 'Add screen' button to add a new one:
 
-![createscreen2](graphics/createscreen2.PNG)
+![createscreen2](graphics/createscreen2.png)
 
-The screen created will appear in our Screens:
+Now the created screen will appear under 'Screens':
 
-![createscreen3](graphics/createscreen3.PNG)
-
+![createscreen3](graphics/createscreen3.png)
 
 ## Screen items
 
-Once the screen is created and opened, items can be created by clicking on add screen items button:
+Once the screen is created and opened, items can be created by clicking on 'Add screen items' button:
 
-![screenitems1](graphics/screenitems1.PNG)
+![screenitems1](graphics/screenitems1.png)
 
-A new bar will appear with all the options available:
+A bar will appear with all the options available:
 
-![screenitems2](graphics/screenitems2.PNG)
+![screenitems2](graphics/screenitems2.png)
 
-Place the item in the screen area and when is created you will see in the right bar all the properties of the item:
+Place the item in the screen area and when it is created you will see in the right bar all the properties of the item:
 
-![screenitems3](graphics/screenitems3.PNG)
+![screenitems3](graphics/screenitems3.png)
 
-On the properties bar you will see the 'most important proporties' section. It depends on the screen item and are displayed in separate section.
+On the properties bar you will see the 'most important proporties' section. The content depends on the screen item and is displayed in a separate section.
 
-![screenitems5](graphics/screenitems5.PNG)
+![screenitems5](graphics/screenitems5.png)
 
 Add all the items you need and do not forget to click on the save button. An orange reminder will appear until you save the progress:
 
-![screenitems4](graphics/screenitems4.PNG)
-
+![screenitems4](graphics/screenitems4.png)
 
 ## Connections
 
-To create a connection between the WinCC Unifed on Industrial Edge and a PLC go to connections:
+To create a connection between the WinCC Unifed on Industrial Edge and a PLC go to 'Connections':
 
-![connections1](graphics/connections1.PNG)
+![connections1](graphics/connections1.png)
 
-Write a name for your connection, slect the connection type (OPC-UA/S7 Classic/S7 Plus) and enter the adress of the PLC:
+Write a name for your connection, select the connection type (OPC-UA/S7 Classic/S7 Plus) and enter the address of the PLC:
 
-![connections2](graphics/connections2.PNG)
+![connections2](graphics/connections2.png)
 
-Underneath 'Tags' in the left side menu, you will see the new connection created:
-
-![connections3](graphics/connections3.PNG)
+Underneath 'Tags' in the left side menu, you will see the new connection created.
 
 Click on the three dots and select 'Browse OPC UA server' to start searching for the data on the PLC:
 
-![connections4](graphics/connections4.PNG)
+![connections4](graphics/connections4.png)
 
 When the search is done, the data will appear:
 
-![connections5](graphics/connections5.PNG)
-
-### OPC UA Server
-
-To operate as an OPC UA server just go to the device 'runtime settings' and click on the opc ua server checkbox. The OPC UA Server can be accesed via Default port: 34002.
-
-![connections6](graphics/connections6.PNG)
-
+![connections5](graphics/connections5.png)
 
 ## Tags
 
-There are different ways to create tags in our WinCC Unifed on Industrial Edge. When we make a connection to a Tia Portal project we can import the tags created in that project to our WinCC Unifed on IE project just by clicking on the created checkbox:
+There are different ways to create tags in our WinCC Unifed on Industrial Edge.
 
-![tags1](graphics/tags1.PNG)
+### Create tags out of connection
 
-The selected tags will appear in the tab 'Tags':
+When we establish a connection to a PLC, we can use these tags within our WinCC Unifed on IE project just by clicking on the 'Created' checkbox:
 
-![tags2](graphics/tags2.PNG)
+![tags1](graphics/tags1.png)
 
-Also tags can be created manually on the interanl Tags part:
+### Create internal tags
 
-![tags3](graphics/tags3.PNG)
+Also internal tags can be manually created under 'Internal tags' in the left side menu:
 
+![tags3](graphics/tags3.png)
 
-## Export tags from TIA Portal and import them with WebES
+### Import tags from TIA Portal
 
-First of all, open our SIOS-Portal and search for the entry "109748955" or click on this [link](https://support.industry.siemens.com/cs/document/109748955/simatic-scada-export-for-tia-portal?dti=0&lc=en-US) :
+The TIA Portal extension **'SIMATIC SCADA Export'** provides a mechanism to export the PLC configuration data (variables and alarms). The exported PLC data can be then imported as tags into the WinCC Unified Online Engineering.
 
-![import1](graphics/import1.PNG)
-
-Download and install the fitting version for your TIA Portal version:
-
-![import2](graphics/import2.PNG)
+To download the SIMATIC SCADA Export, open our SIOS-Portal and search for the entry "109748955" or click on this [link](https://support.industry.siemens.com/cs/document/109748955/simatic-scada-export-for-tia-portal?dti=0&lc=en-US). Download and install the fitting version for your TIA Portal version.
 
 Right click on the PLC and click on Export to SIMATIC SCADA and enter the filename and define the path:
 
-![import5](graphics/import5.PNG)
-![import6](graphics/import6.PNG)
+![import5](graphics/import5.png)
+![import6](graphics/import6.png)
 
-Open the project in WinCC Unified Online Engineering and go to "Tags". Click on the three dots > "Import S7/S7+ connection":
+Open the project in WinCC Unified Online Engineering and go to 'Tags' on the left side menu. Click on the three dots > "Import S7/S7+ connection". Select the exported file and click on 'OK'.
 
-![import7](graphics/import7.PNG)
+The connection has been imported. You can see the tags imported and you can choose the desired PLC tags and PLC data types you want to use in the project by selecting 'created':
 
-Select the exported file and click on "OK":
+![import9](graphics/import9.png)
 
-![import8](graphics/import8.PNG)
+If you go to 'Tags', all the ones that were selected are ready to be used in the project:
 
-The connection has been imported. You can see the tags imported and you can choose the desired PLC tags and PLC data types you want to use in the project by selecting "created":
+![import10](graphics/import10.png)
 
-![import9](graphics/import9.PNG)
+Also if you go to 'Connections', both interfaces have been imported and if you have some certificates for secure communication, they are imported as well:
 
-If you go to "Tags" all the ones that were clicked are ready to be used in the project:
-
-![import10](graphics/import10.PNG)
-
-Also if you go to "connections" both interfaces have been imported and if you have some certificates for secure communication, they are imported as well:
-
-![import11](graphics/import11.PNG)
-
+![import11](graphics/import11.png)
 
 ## Connect tags to screen items
 
 Once the tags are created, they can be connected to the screen items. Insert a screen item:
 
-![tagstoscreen1](graphics/tagstoscreen1.PNG)
+![tagstoscreen1](graphics/tagstoscreen1.png)
 
-In properties go to process value dynamic:
+In properties go to process value 'Dynamic':
 
-![tagstoscreen2](graphics/tagstoscreen2.PNG)
+![tagstoscreen2](graphics/tagstoscreen2.png)
 
-Select Tags and then the tag that you want:
+Select 'Tag...' and then choose a tag that you want to connect:
 
-![tagstoscreen3](graphics/tagstoscreen3.PNG)
+![tagstoscreen3](graphics/tagstoscreen3.png)
 
 Repeat the process for any screen item that you want to connect. In this case we are introducing an I/O field to see how the tag changes for the runtime part tutorial:
 
-![tagstoscreen4](graphics/tagstoscreen4.PNG)
-
+![tagstoscreen4](graphics/tagstoscreen4.png)
 
 ## Scripting
 
 As same as working with Tia Portal in the WinCC part, scripting is also allowed in the app. For this part we are creating another screen to create a simple script to switch between two screens:
 
-![script1](graphics/script1.PNG)
+![script1](graphics/script1.png)
 
-Place a button on the first screen and go to the events tabs and click on add script:
+Place a button on the first screen, go to the 'Events' tabs in the right side menu and click on 'Add script':
 
 ![script2](graphics/script2_upd.png)
 
-An scrpiting window will be opened. To be more easily for the user a lot of code templates are created:
+A scripting window opens. On the left side menu several predefined code templates are provided:
 
-![script3](graphics/script3.PNG)
+![script3](graphics/script3.png)
 
-In this case, we can go to screen, change base screen. The templates can be dragged:
+In this case, we can open the 'Screen' dropdown on the left side and drag the template 'Change base screen' into the script. Don't forget to rename the screen name inside the code:
 
-![script4](graphics/script4.PNG)
+![script4](graphics/script4.png)
 
-Click on OK, and the script will be visible:
+Click on OK and the script will be applied for the button:
 
-![script5](graphics/script5.PNG)
+![script5](graphics/script5.png)
 
 ### Global scripts
 
-To create a global module for your scripts go to the 'Scripts' part on the device and create the global module with all the functions needed:
+To create a global module for your scripts go to 'Scripts' in the left side menu and create a global module with all the functions needed:
 
-![script7](graphics/script7.PNG)
+![script7](graphics/script7.png)
 
 Then, on the scripting part of an item you can import all your global and predefined scripts to use them:
 
-![script6](graphics/script6.PNG)
+![script6](graphics/script6.png)
 
 ### Shortcuts
 
-You can select system functions and enums via intellisense or autocompletion just by clicking 'ctrl + space' shortcut on the keyboard:
+You can select system functions and enums via intellisense or autocompletion just by clicking 'ctrl' + 'space' shortcut on the keyboard:
 
-![script8](graphics/script8.PNG)
+![script8](graphics/script8.png)
 
-By using the 'alt + .' shortcut you can jump to the definition of a function:
+By using the 'alt' + '.' shortcut you can jump to the definition of a function:
 
-![script9](graphics/script9.PNG)
+![script9](graphics/script9.png)
 
-And using the 'ctrl + i' shortcut the info about the function pops out:
+And using the 'ctrl' + 'i' shortcut the info about the function pops out:
 
-![script10](graphics/script10.PNG)
+![script10](graphics/script10.png)
+
+## OPC UA Server
+
+To operate as an OPC UA server go to the 'Runtime settings' in the left side menu and click on the opc ua server checkbox. The OPC UA Server can be accesed via Default port: 34002.
+
+![connections6](graphics/connections6.png)
 
 ## Load a project into runtime
 
-To load a project, select 'MyDevice' on the left menu and scroll down to 'Runtime status':
+To load a project, select your device on the left side menu and scroll down to 'Runtime status':
 
-![load1](graphics/load1.PNG)
+![load1](graphics/load1.png)
 
-Click on download and when the procces is finished click on OK:
+Click on 'Download' and when the procces is finished click on 'OK':
 
-![load2](graphics/load2.PNG)
+![load2](graphics/load2.png)
 
-Then click on Start runtime and wait until the Runtime status is on running:
+Then click on 'Start runtime' and wait until the runtime status is on running:
 
-![load3](graphics/load3.PNG)
+![load3](graphics/load3.png)
 
 ### Remote Download
 
 To load the project in runtime on other Edge Device, you just need to configure its IP adress on the device configuration:
 
-![remote2](graphics/remotedown2.PNG)
+![remote2](graphics/remotedown2.png)
 
-![remote1](graphics/remotedown1.PNG)
+![remote1](graphics/remotedown1.png)
 
 ### Offline Download
 
-You can create an offline runtime project in WinCC Unified Online Engineering by clicking on the download offline project button:
+You can create an offline runtime project in WinCC Unified Online Engineering by clicking on the 'Download' button in the section 'Offline download':
 
-![offdown1](graphics/offdwon1.PNG)
+![offdown1](graphics/offdwon1.png)
 
-Then, in WinCC Unified Runtime on IE you can upload the file that was downloaded by clicking on the upload button:
+Then, in WinCC Unified Runtime on IE you can upload the file that was downloaded by clicking on the 'Upload' button:
 
-![offdown2](graphics/offdwon2.PNG)
+![offdown2](graphics/offdwon2.png)
 
 ## Alarms
 
-The alarms are created at the desired trigger tag. In this case at a internal tag. We can create two different types: analog and discrete alarms. The alarm type depends on the selected tag data type. For this example we are creating both.
-For the analog ones, an int tag is created:
+The alarms are created at the desired trigger tag - in this case at an internal tag. We can create two different types: analog and discrete alarms. The alarm type depends on the selected tag data type. For this example we are creating both.
 
-![alarms1](graphics/alarms1.PNG)
+For the analog alarms, an 'Int' tag is created:
 
-On the bottom, in the analog alarms part we create all the alarms we need with its conditions:
+![alarms1](graphics/alarms1.png)
 
-![alarms2](graphics/alarms2.PNG)
+On the bottom menu, tab 'Analog alarms', we create all the alarms we need with it's conditions:
 
-For the discrete alarms, the creation is made in the same way, but the data type must be Word:
+![alarms2](graphics/alarms2.png)
 
-![alarms3](graphics/alarms3.PNG)
+For the discrete alarms, the creation is made in the same way, but the data type must be 'Word':
 
-And on the bottom as same as before, the alarms are created:
+![alarms3](graphics/alarms3.png)
 
-![alarms4](graphics/alarms4.PNG)
+On the bottom menu, tab 'Analog alarms', the alarms are created:
+
+![alarms4](graphics/alarms4.png)
 
 In this example, we are creating another screen with alarm control screen item and some different buttons to pop up the alarms:
 
-![alarms5](graphics/alarms5.PNG)
+![alarms5](graphics/alarms5.png)
 
 When the runtime is active and the alarms are popped out they will appear in the chart:
 
-![alarms6](graphics/alarms6.PNG)
+![alarms6](graphics/alarms6.png)
 
+## Logs
 
-## Loggs
+The logs can be created for each tag - in this case at an internal tag. We can choose two different logging modes: 'Cyclic' and 'On change'.
 
-To create loggs, go again to the internal tags part. In this example we are creating two different loggs.
-First one:
+Create a logging with 'Cyclic' mode:
 
-![loggs1](graphics/logs1.PNG)
+![logs1](graphics/logs1.png)
 
-On the bottom the logging tag with its properties is modified:
+On the bottom menu, tab 'Logging tags', the logging is created:
 
-![loggs12](graphics/logs2.PNG)
+![logs12](graphics/logs2.png)
 
-The second one is created in the same way:
+Create a logging with 'On change' mode:
 
-![loggs3](graphics/logs3.PNG)
+![logs3](graphics/logs3.png)
 
-![loggs4](graphics/logs4.PNG)
+![logs4](graphics/logs4.png)
 
 Introduce the process controll item to a screen:
 
-![loggs5](graphics/logs5.PNG)
+![logs5](graphics/logs5.png)
 
-In the runtime the loggs will be shown:
+Finally the logs are shown in the runtime:
 
-![loggs6](graphics/logs6.PNG)
-
+![logs6](graphics/logs6.png)
 
 ## Trends
 
@@ -356,63 +325,63 @@ To add a trend go to the add screen items and in the advanced bar select trend c
 
 In its properties to add different trends to appear in the item, go to Trends:
 
-![trends2](graphics/trends2.PNG)
+![trends2](graphics/trends2.png)
 
 And select the tag you want to control:
 
-![trends3](graphics/trends3.PNG)
+![trends3](graphics/trends3.png)
 
 In the runtime the trend will be filled:
 
-![trends4](graphics/trends4.PNG)
-
+![trends4](graphics/trends4.png)
 
 ## Start the runtime
 
 To start the runtime go to the Wincc Runtime app:
 
-![start1](graphics/start1.PNG)
+![start1](graphics/start1.png)
 
 If the project downloaded is running you will see a green light that indicates that the runtime is ready:
 
-![start2](graphics/start2.PNG)
+![start2](graphics/start2.png)
 
 Click on the WinCC Unified Runtime button:
 
-![start3](graphics/start3.PNG)
+![start3](graphics/start3.png)
 
 And the Start Screen that is indicated in the project will appear:
 
-![start4](graphics/start4.PNG)
+![start4](graphics/start4.png)
 
 To stop the runtime go back to your device and click on Stop runtime:
 
-![start5](graphics/start5.PNG)
+![start5](graphics/start5.png)
 
 Wait until the runtime status is on not started:
 
-![start6](graphics/start6.PNG)
+![start6](graphics/start6.png)
 
 And in the WinCC Runtime app a red light will be now on the project:
 
-![start7](graphics/start7.PNG)
+![start7](graphics/start7.png)
 
 ## Trace Settings
 
 To download or forward traces from the WinCC Unified Online Engineering app go to the settings and enable the following settings:
 
-![trace1](graphics/trace1.PNG)
+![trace1](graphics/trace1.png)
 
 Also you can download each trace separately .csv file going to the app's more info site:
 
-![trace2](graphics/trace2.PNG)
+![trace2](graphics/trace2.png)
 
 You can also activate the trace forwarder and receive the traces with Trace Viewer foe analyzing the app:
 
 - Trace Viewer is installed by WinCC Unified (Tia Portal)
-- Activate the 'Receiver' mode via the following command on remote host: C:\ProgramFiles\Siemens\Automation\WinCCUnified\bin\RTILtraceTool.exe -mode receiver -tcp -host <IP of Edgebox> -port 35505
- 
-![trace3](graphics/trace3.PNG)
+- Activate the 'Receiver' mode via the following command on remote host:
 
+`
+C:\ProgramFiles\Siemens\Automation\WinCCUnified\bin\RTILtraceTool.exe -mode receiver -tcp -host <IP of Edgebox> -port 35505
+`
 
-
+![trace3](graphics/trace3.png)
