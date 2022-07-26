@@ -167,9 +167,9 @@ Once the tags are created, they can be connected to the screen items. Insert a s
 
 ![tagstoscreen1](graphics/tagstoscreen1.png)
 
-In properties go to process value 'Dynamic':
+In properties go to three dots of the dynamization process and select "tags":
 
-![tagstoscreen2](graphics/tagstoscreen2.png)
+![tagstoscreen2](graphics/tagstoscreen2-1.PNG)
 
 Select 'Tag...' and then choose a tag that you want to connect:
 
