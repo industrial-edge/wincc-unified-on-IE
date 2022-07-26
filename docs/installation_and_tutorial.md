@@ -175,9 +175,9 @@ Select 'Tag...' and then choose a tag that you want to connect:
 
 ![tagstoscreen3](graphics/tagstoscreen3.png)
 
-Repeat the process for any screen item that you want to connect. In this case we are introducing an I/O field to see how the tag changes for the runtime part tutorial:
+Repeat the process for any screen item that you want to connect. The easiest way to add tags to the objects is by Drag & Drop from the tab "Tags" on the right hand side:
 
-![tagstoscreen4](graphics/tagstoscreen4.png)
+![tagstoscreen4](graphics/tagstoscreen4-1.PNG)
 
 ## Scripting
 
