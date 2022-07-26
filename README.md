@@ -28,8 +28,6 @@ This example shows how to install and configure the "WinCC Unified Engineering" 
 
 -	Access to an Industrial Edge Management System (IEM)
 -	Onboarded Industrial Edge Device on IEM
--	Installed System Configurator for Databus
--	Installed System App Databus
 -	Edge device is connected to PLC
 -	TIA Portal project loaded on PLC
 -	HTML-5 capable Internet browser
@@ -37,8 +35,6 @@ This example shows how to install and configure the "WinCC Unified Engineering" 
 ### Used components
 
 - Industrial Edge Management (IEM) V1.4.0-42
-  - IE Databus V1.6.3
-  - IE Databus Configurator V1.6.19
   - WinCC Unified Online Engineering V1.1.0
   - WinCC Unified Runtime V1.1.0-3
 -	Industrial Edge Device 1.5.0-21
