@@ -23,6 +23,7 @@
 - [Trends](#trends)
 - [Start the runtime](#start-the-runtime)
 - [Trace Settings](#trace-settings)
+- [Browse IE Databus from WinCC Unified Online Engineering](#browse-ie-databus-from-wincc-unified-online-engineering)
 
 ## Installation
 
@@ -385,3 +386,26 @@ C:\ProgramFiles\Siemens\Automation\WinCCUnified\bin\RTILtraceTool.exe -mode rece
 `
 
 ![trace3](graphics/trace3.png)
+
+## Browse IE Databus from WinCC Unified Online Engineering
+
+Go to connections, add a new connection and select the connection type 'IE Databus'. Adapt the metadata topic if it is required for your IE connector:
+
+![iedatabus1](graphics/iedatabus1.PNG)
+
+Add your databus credentials that are the same as the ones defined in the IEM Databus Configurator:
+
+![iedatabus2](graphics/iedatabus2.PNG)
+
+Browse the databus to have all the published tags that are configured in the metadata topic. Check the 'created' checkbox to import the tags needed:
+
+![iedatabus3](graphics/iedatabus3.PNG)
+![iedatabus4](graphics/iedatabus4.PNG)
+
+Then, in the WinCC Unified Runtime, click on 'Settings' and add the databus credentials:
+
+![iedatabus5](graphics/iedatabus5.PNG)
+
+Go to configuration and in the 'Tags' part select the ones that are needed to be published and suscribed. Also, enable the services for 'Tag Publishing' and 'Tag Suscribe':
+
+![iedatabus6](graphics/iedatabus6.PNG)
