@@ -83,15 +83,15 @@ Now the created screen will appear under 'Screens':
 
 Once the screen is created and opened, items can be created by clicking on 'Add screen items' button:
 
-![screenitems1](graphics/screenitems1_new.jpg)
+![screenitems1](graphics/screenitmes1_new.jpg)
 
 A bar will appear with all the options available:
 
-![screenitems2](graphics/screenitems2_new.jpg)
+![screenitems2](graphics/screenitmes2_new.jpg)
 
 Place the item in the screen area and when it is created you will see in the right bar all the properties of the item:
 
-![screenitems3](graphics/screenitems3_new.jpg)
+![screenitems3](graphics/screenitmes3_new.jpg)
 
 On the properties bar you will see the 'most important proporties' section. The content depends on the screen item and is displayed in a separate section.
 
