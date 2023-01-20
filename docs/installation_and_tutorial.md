@@ -77,7 +77,7 @@ In the left side menu, click on 'Screens' and then click on 'Add screen' button 
 
 Now the created screen will appear under 'Screens':
 
-![createscreen3](graphics/createscreen3.png)
+![createscreen3](graphics/createscreen3_new.jpg)
 
 ## Screen items
 
@@ -97,9 +97,8 @@ On the properties bar you will see the 'most important proporties' section. The 
 
 ![screenitems5](graphics/screenitems5.png)
 
-Add all the items you need and do not forget to click on the save button. An orange reminder will appear until you save the progress:
+Add all the items you need. The autosaver will save any changes that are made.
 
-![screenitems4](graphics/screenitems4.png)
 
 ## Connections
 
