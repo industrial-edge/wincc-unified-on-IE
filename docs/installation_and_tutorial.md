@@ -6,7 +6,7 @@
 - [Creating a screen](#creating-a-screen)
 - [Screen Items](#screen-items)
 - [Connections](#connections)
-- [Browse IE Databus from WinCC Unified Online Engineering](#browse-ie-databus-from-wincc-unified-online-engineering)
+  - [Browse IE Databus from WinCC Unified Online Engineering](#browse-ie-databus-from-wincc-unified-online-engineering)
 - [Tags](#tags)
   - [Create tags out of connection](#create-tags-out-of-connection)
   - [Create internal tags](#create-internal-tags)
