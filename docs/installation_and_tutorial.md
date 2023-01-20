@@ -121,7 +121,7 @@ When the search is done, the data will appear:
 
 ![connections5](graphics/connections5.png)
 
-## Browse IE Databus from WinCC Unified Online Engineering
+### Browse IE Databus from WinCC Unified Online Engineering
 
 Go to connections, add a new connection and select the connection type 'IE Databus'. Adapt the metadata topic if it is required for your IE connector:
 
