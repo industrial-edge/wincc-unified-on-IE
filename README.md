@@ -35,8 +35,8 @@ This example shows how to install and configure the "WinCC Unified Engineering" 
 ### Used components
 
 - Industrial Edge Management (IEM) V1.4.0-42
-  - WinCC Unified Online Engineering V1.1.0
-  - WinCC Unified Runtime V1.1.0-3
+  - WinCC Unified Online Engineering V1.4.0
+  - WinCC Unified Runtime V1.4.0-1
 -	Industrial Edge Device 1.5.0-21
 -	Tia Portal V17
 -	S7-PLCSIM Advanced V4.0

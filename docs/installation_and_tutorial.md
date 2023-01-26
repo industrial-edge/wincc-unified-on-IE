@@ -6,6 +6,7 @@
 - [Creating a screen](#creating-a-screen)
 - [Screen Items](#screen-items)
 - [Connections](#connections)
+  - [Browse IE Databus from WinCC Unified Online Engineering](#browse-ie-databus-from-wincc-unified-online-engineering)
 - [Tags](#tags)
   - [Create tags out of connection](#create-tags-out-of-connection)
   - [Create internal tags](#create-internal-tags)
@@ -23,7 +24,6 @@
 - [Trends](#trends)
 - [Start the runtime](#start-the-runtime)
 - [Trace Settings](#trace-settings)
-- [Browse IE Databus from WinCC Unified Online Engineering](#browse-ie-databus-from-wincc-unified-online-engineering)
 
 ## Installation
 
@@ -77,29 +77,28 @@ In the left side menu, click on 'Screens' and then click on 'Add screen' button 
 
 Now the created screen will appear under 'Screens':
 
-![createscreen3](graphics/createscreen3.png)
+![createscreen3](graphics/createscreen3_new.jpg)
 
 ## Screen items
 
 Once the screen is created and opened, items can be created by clicking on 'Add screen items' button:
 
-![screenitems1](graphics/screenitems1.png)
+![screenitems1](graphics/screenitmes1_new.jpg)
 
 A bar will appear with all the options available:
 
-![screenitems2](graphics/screenitems2.png)
+![screenitems2](graphics/screenitmes2_new.jpg)
 
 Place the item in the screen area and when it is created you will see in the right bar all the properties of the item:
 
-![screenitems3](graphics/screenitems3.png)
+![screenitems3](graphics/screenitmes3_new.jpg)
 
 On the properties bar you will see the 'most important proporties' section. The content depends on the screen item and is displayed in a separate section.
 
 ![screenitems5](graphics/screenitems5.png)
 
-Add all the items you need and do not forget to click on the save button. An orange reminder will appear until you save the progress:
+Add all the items you need. The autosaver will save any changes that are made.
 
-![screenitems4](graphics/screenitems4.png)
 
 ## Connections
 
@@ -120,6 +119,30 @@ Click on the three dots and select 'Browse OPC UA server' to start searching for
 When the search is done, the data will appear:
 
 ![connections5](graphics/connections5.png)
+
+### Browse IE Databus from WinCC Unified Online Engineering
+
+Go to connections, add a new connection and select the connection type 'IE Databus'. Adapt the metadata topic if it is required for your IE connector:
+
+![iedatabus1](graphics/iedatabus1.PNG)
+
+Add your databus credentials that are the same as the ones defined in the IEM Databus Configurator:
+
+![iedatabus2](graphics/iedatabus2.PNG)
+
+Browse the databus to have all the published tags that are configured in the metadata topic. Check the 'created' checkbox to import the tags needed:
+
+![iedatabus3](graphics/iedatabus3.PNG)
+![iedatabus4](graphics/iedatabus4.PNG)
+
+Then, in the WinCC Unified Runtime, click on 'Settings' and add the databus credentials:
+
+![iedatabus5](graphics/iedatabus5.PNG)
+
+Go to configuration and in the 'Tags' part select the ones that are needed to be published and suscribed. Also, enable the services for 'Tag Publishing' and 'Tag Suscribe':
+
+![iedatabus6](graphics/iedatabus6.PNG)
+
 
 ## Tags
 
@@ -166,7 +189,7 @@ Also if you go to 'Connections', both interfaces have been imported and if you h
 
 Once the tags are created, they can be connected to the screen items. Insert a screen item:
 
-![tagstoscreen1](graphics/tagstoscreen1.png)
+![tagstoscreen1](graphics/tagstoscreen1_new.jpg)
 
 In properties go to three dots of the dynamization rectangle and select "Tags":
 
@@ -178,7 +201,7 @@ Select 'Tag...' and then choose a tag that you want to connect:
 
 Repeat the process for any screen item that you want to connect. You can easily Drag & Drop a tag into your screen to create automatically an IO-field with connected HMI tag:
 
-![tagstoscreen4](graphics/tagstoscreen4-1.PNG)
+![tagstoscreen4](graphics/tagstoscreen4-1_new.jpg)
 
 ## Scripting
 
@@ -188,7 +211,7 @@ As same as working with Tia Portal in the WinCC part, scripting is also allowed 
 
 Place a button on the first screen, go to the 'Events' tabs in the right side menu and click on 'Add script':
 
-![script2](graphics/script2_upd.png)
+![script2](graphics/script2_upd_new.jpg)
 
 A scripting window opens. On the left side menu several predefined code templates are provided:
 
@@ -286,7 +309,7 @@ On the bottom menu, tab 'Analog alarms', the alarms are created:
 
 In this example, we are creating another screen with alarm control screen item and some different buttons to pop up the alarms:
 
-![alarms5](graphics/alarms5.png)
+![alarms5](graphics/alarms5_new.jpg)
 
 When the runtime is active and the alarms are popped out they will appear in the chart:
 
@@ -322,7 +345,7 @@ Finally the logs are shown in the runtime:
 
 To add a trend go to the add screen items and in the advanced bar select trend control:
 
-![trends1](graphics/trends1.png)
+![trends1](graphics/trends1_new.jpg)
 
 In its properties to add different trends to appear in the item, go to Trends:
 
@@ -386,26 +409,3 @@ C:\ProgramFiles\Siemens\Automation\WinCCUnified\bin\RTILtraceTool.exe -mode rece
 `
 
 ![trace3](graphics/trace3.png)
-
-## Browse IE Databus from WinCC Unified Online Engineering
-
-Go to connections, add a new connection and select the connection type 'IE Databus'. Adapt the metadata topic if it is required for your IE connector:
-
-![iedatabus1](graphics/iedatabus1.PNG)
-
-Add your databus credentials that are the same as the ones defined in the IEM Databus Configurator:
-
-![iedatabus2](graphics/iedatabus2.PNG)
-
-Browse the databus to have all the published tags that are configured in the metadata topic. Check the 'created' checkbox to import the tags needed:
-
-![iedatabus3](graphics/iedatabus3.PNG)
-![iedatabus4](graphics/iedatabus4.PNG)
-
-Then, in the WinCC Unified Runtime, click on 'Settings' and add the databus credentials:
-
-![iedatabus5](graphics/iedatabus5.PNG)
-
-Go to configuration and in the 'Tags' part select the ones that are needed to be published and suscribed. Also, enable the services for 'Tag Publishing' and 'Tag Suscribe':
-
-![iedatabus6](graphics/iedatabus6.PNG)
