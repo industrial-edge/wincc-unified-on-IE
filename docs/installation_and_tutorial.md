@@ -27,43 +27,45 @@
 
 ## Installation
 
-Download the apps "WinCC Unified Online Engineering" and "WinCC Unified Runtime" from the Industrial Edge HUB into your Industrial Edge Management. The applications should now be available in the IEM catalog.
+Download the app and "WinCC Unified Runtime" from the Industrial Edge HUB into your Industrial Edge Management. The application should now be available in the IEM catalog.
 
 1. Login on the IEM where you control your IED
 2. Go to the catalog
-3. Open the app "WinCC Unified Online Engineering" and install it on your IED
-4. Open the app "WinCC Unified Runtime" and install it on your IED
-5. Login to the IED where you installed the apps
-6. Click on the app icon of "WinCC Unified Online Engineering" to open this app
-7. Click on the app icon of "WinCC Unified Runtime" to open this app
+3. Open the app "WinCC Unified Runtime" and install it on your IED
+4. Login to the IED where you installed the apps
+5. Click on the app icon of "WinCC Unified Runtime" to open this app
+
+Download the Hardware Support Package from [SIOS](https://support.industry.siemens.com/cs/document/10996394?dti=-1&lc=en-WW) and install the HSP following the next steps:
+
+1. Open TIA Portal in your Engineering station.
+2. Go to **Options** -> **Support packages**.
+
+![SupportPackages](graphics/supportpackages.png)
+
+3. Select **Add from file system** and click install.
+
+![addInfo](graphics/addInfo.png)
+
+4. Restart TIA Portal after the installation.
 
 ## Creating a project
 
-Once you are in the WinCC Unified Online Engineering you can click on 'Create project' to start a new engineering project:
+Once you are in the TIA Portal you can click on **Project** -> **New** to start a new engineering project:
 
 ![createproject1](graphics/createproject1.png)
 
-Now you will see your created project where you can click on and start working on it:
+Now you will a popup asking for the Project Name and folder where you want to store your created project where you can click **Create** and start working on it:
 
 ![createproject2](graphics/createproject2.png)
 
-You can work with more browser sessions parallel on the same project. An indicator will appear next to project's name to show that the project is already opened in another browser session:
-
-![createproject3](graphics/createproject3.png)
-
 ## Creating a device
 
-Clicking on a created project will lead you to the following screen:
+Clicking on a created project will lead you to the following screen. On the left bar there will be available a tree with all the devices created. Click on the **Add new device** button to create a new one.
+
+Unified Runtime for Industrial Edge can be found in TIA – Hardware catalog under SIMATIC HMI applications
+
 
 ![device1](graphics/device1.png)
-
-On the left bar there will be available a tree with all the projects created. On the right bar we can start to deploy and create our device. Click on the 'Add device' button to create a new one:
-
-![device2](graphics/device2.png)
-
-Now, the device should appear created in the project:
-
-![device3](graphics/device3.png)
 
 ## Creating a screen
 
@@ -71,69 +73,37 @@ Once we have created a device, its properties are shown when it is accessed:
 
 ![createscreen1](graphics/createscreen1.png)
 
-In the left side menu, click on 'Screens' and then click on 'Add screen' button to add a new one:
+In the left side menu, click on **Screens** and then click on **Add new screen** button to add a new one:
 
 ![createscreen2](graphics/createscreen2.png)
 
-Now the created screen will appear under 'Screens':
+Now the created screen will appear under **Screens** and, since it is the first screen created, the screen will be set as the **Start Screen**:
 
-![createscreen3](graphics/createscreen3_new.jpg)
+![createscreen3](graphics/createscreen3.png)
 
 ## Screen items
 
-Once the screen is created and opened, items can be created by clicking on 'Add screen items' button:
+Once the screen is created and opened, items can be created by drag and drop from the toolbox:
 
 ![screenitems1](graphics/screenitmes1_new.jpg)
 
-A bar will appear with all the options available:
-
-![screenitems2](graphics/screenitmes2_new.jpg)
-
-Place the item in the screen area and when it is created you will see in the right bar all the properties of the item:
+Place the item in the screen area and when it is created you will see all the properties of the item:
 
 ![screenitems3](graphics/screenitmes3_new.jpg)
 
-On the properties bar you will see the 'most important proporties' section. The content depends on the screen item and is displayed in a separate section.
-
-![screenitems5](graphics/screenitems5.png)
-
-Add all the items you need. The autosaver will save any changes that are made.
-
-
 ## Connections
 
-To create a connection between the WinCC Unifed on Industrial Edge and a PLC go to 'Connections':
+To create a connection between the WinCC Unifed on Industrial Edge and a PLC go to You first need to add an Ethernet communication module:
 
 ![connections1](graphics/connections1.png)
 
-Write a name for your connection, select the connection type (OPC-UA/S7 Classic/S7 Plus) and enter the address of the PLC:
+Connect the ports from the PLC to the added communication module in the **Network** view and in the **Connection** view:
 
 ![connections2](graphics/connections2.png)
 
-Underneath 'Tags' in the left side menu, you will see the new connection created.
-
-Click on the three dots and select 'Browse OPC UA server' to start searching for the data on the PLC:
-
-![connections4](graphics/connections4.png)
-
-When the search is done, the data will appear:
-
-![connections5](graphics/connections5.png)
-
 ### Browse IE Databus from WinCC Unified Online Engineering
 
-Go to connections, add a new connection and select the connection type 'IE Databus'. Adapt the metadata topic if it is required for your IE connector:
-
-![iedatabus1](graphics/iedatabus1.PNG)
-
-Add your databus credentials that are the same as the ones defined in the IEM Databus Configurator:
-
-![iedatabus2](graphics/iedatabus2.PNG)
-
-Browse the databus to have all the published tags that are configured in the metadata topic. Check the 'created' checkbox to import the tags needed:
-
-![iedatabus3](graphics/iedatabus3.PNG)
-![iedatabus4](graphics/iedatabus4.PNG)
+It is needed to configure a connection from TIA Portal and Industrial Edge, to do so, you can refer to the following [documentation](https://github.com/industrial-edge/opc-ua-application-getting-started/blob/main/docs/Installation.md#configuration) that explains how to set up the connection.
 
 Then, in the WinCC Unified Runtime, click on 'Settings' and add the databus credentials:
 

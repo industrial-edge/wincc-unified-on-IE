@@ -15,12 +15,12 @@ This example shows how to use the Industrial Edge Apps "WinCC Unified Engineerin
 
 ## Description
 ### Overview
-This document describes how to use the WinCC Unified on Industrial Edge apps. The application is used to generate screens based on WinCC Unified and load them in the corresponding runtime to be able to execute the screens on the Edge Device. You will need these two apps:  "WinCC Unified Engineering" and "WinCC Unified Runtime".
+This document describes how to use the WinCC Unified on Industrial Edge apps. The application is used to generate screens based on WinCC Unified and load them in the corresponding runtime to be able to execute the screens on the Edge Device. You will need "WinCC Unified Runtime" Edge app and TIA Portal for the Engineering.
 
 ![introimage](docs/graphics/introimage2.png)
 
 ### General Task
-This example shows how to install and configure the "WinCC Unified Engineering" and "WinCC Unified Runtime" applications and how to use the basic functionalities offered by the apps. See the [documentation](#documentation) part for more information.
+This example shows how to install and configure the "WinCC Unified Runtime" application and how to use the basic functionalities offered by the app. See the [documentation](#documentation) part for more information.
 
 ## Requirements
 
@@ -35,10 +35,10 @@ This example shows how to install and configure the "WinCC Unified Engineering" 
 ### Used components
 
 - Industrial Edge Management (IEM) V1.4.0-42
-  - WinCC Unified Online Engineering V1.4.0
   - WinCC Unified Runtime V1.4.0-1
 -	Industrial Edge Device 1.5.0-21
--	Tia Portal V17
+-	Tia Portal V19 Update 1 or higher
+- Hardware Support Package
 -	S7-PLCSIM Advanced V4.0
 
 ## Documentation
