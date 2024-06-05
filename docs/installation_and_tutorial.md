@@ -120,40 +120,15 @@ There are different ways to create tags in our WinCC Unifed on Industrial Edge.
 
 ### Create tags out of connection
 
-When we establish a connection to a PLC, we can use these tags within our WinCC Unifed on IE project just by clicking on the 'Created' checkbox:
-
-![tags1](graphics/tags1.png)
-
-### Create internal tags
-
-Also internal tags can be manually created under 'Internal tags' in the left side menu:
+When we establish a connection to a PLC, we can drag and drop a tag from the PLC to the HMI Tags:
 
 ![tags3](graphics/tags3.png)
 
-### Import tags from TIA Portal
+### Create internal tags
 
-The TIA Portal extension **'SIMATIC SCADA Export'** provides a mechanism to export the PLC configuration data (variables and alarms). The exported PLC data can be then imported as tags into the WinCC Unified Online Engineering.
+Also internal tags can be manually created under **Connection** and set to **Internal Tag**:
 
-To download the SIMATIC SCADA Export, open our SIOS-Portal and search for the entry "109748955" or click on this [link](https://support.industry.siemens.com/cs/document/109748955/simatic-scada-export-for-tia-portal?dti=0&lc=en-US). Download and install the fitting version for your TIA Portal version.
-
-Right click on the PLC and click on Export to SIMATIC SCADA and enter the filename and define the path:
-
-![import5](graphics/import5.png)
-![import6](graphics/import6.png)
-
-Open the project in WinCC Unified Online Engineering and go to 'Tags' on the left side menu. Click on the three dots > "Import S7/S7+ connection". Select the exported file and click on 'OK'.
-
-The connection has been imported. You can see the tags imported and you can choose the desired PLC tags and PLC data types you want to use in the project by selecting 'created':
-
-![import9](graphics/import9.png)
-
-If you go to 'Tags', all the ones that were selected are ready to be used in the project:
-
-![import10](graphics/import10.png)
-
-Also if you go to 'Connections', both interfaces have been imported and if you have some certificates for secure communication, they are imported as well:
-
-![import11](graphics/import11.png)
+![tags1](graphics/tags1.png)
 
 ## Connect tags to screen items
 
@@ -161,9 +136,9 @@ Once the tags are created, they can be connected to the screen items. Insert a s
 
 ![tagstoscreen1](graphics/tagstoscreen1_new.jpg)
 
-In properties go to three dots of the dynamization rectangle and select "Tags":
+In properties go to three dots of the dynamization rectangle and select **Tag**:
 
-![tagstoscreen2](graphics/tagstoscreen2-1.PNG)
+![tagstoscreen2](graphics/tagstoscreen2-1.jpg)
 
 Select 'Tag...' and then choose a tag that you want to connect:
 
@@ -171,23 +146,21 @@ Select 'Tag...' and then choose a tag that you want to connect:
 
 Repeat the process for any screen item that you want to connect. You can easily Drag & Drop a tag into your screen to create automatically an IO-field with connected HMI tag:
 
-![tagstoscreen4](graphics/tagstoscreen4-1_new.jpg)
+![tagstoscreen4](graphics/tagstoscreen4.jpg)
 
 ## Scripting
 
-As same as working with Tia Portal in the WinCC part, scripting is also allowed in the app. For this part we are creating another screen to create a simple script to switch between two screens:
+For this part we are creating another screen to create a simple script to switch between two screens:
 
-![script1](graphics/script1.png)
+Place a button on the first screen, go to the 'Events' tabs, select the Event you want and click on **Convert to JavaScript**:
 
-Place a button on the first screen, go to the 'Events' tabs in the right side menu and click on 'Add script':
+![script2](graphics/script2.jpg)
 
-![script2](graphics/script2_upd_new.jpg)
-
-A scripting window opens. On the left side menu several predefined code templates are provided:
+A scripting window opens.
 
 ![script3](graphics/script3.png)
 
-In this case, we can open the 'Screen' dropdown on the left side and drag the template 'Change base screen' into the script. Don't forget to rename the screen name inside the code:
+In this case, we can use some snippets making right click and a dropdown is opened, and search for the template 'Change base screen'. Don't forget to rename the screen name inside the code:
 
 ![script4](graphics/script4.png)
 
@@ -207,15 +180,12 @@ Then, on the scripting part of an item you can import all your global and predef
 
 ### Shortcuts
 
-You can select system functions and enums via intellisense or autocompletion just by clicking 'ctrl' + 'space' shortcut on the keyboard:
+You can select system functions and enums via intellisense or autocompletion just by clicking **'Ctrl' + 'Space'** shortcut on the keyboard:
 
 ![script8](graphics/script8.png)
 
-By using the 'alt' + '.' shortcut you can jump to the definition of a function:
 
-![script9](graphics/script9.png)
-
-And using the 'ctrl' + 'i' shortcut the info about the function pops out:
+By using the **'Ctrl' + 'j'** shortcut you can get the options when searching for a tag, screen... when placing the cursor between the double quotation marks:
 
 ![script10](graphics/script10.png)
 
@@ -227,21 +197,7 @@ To operate as an OPC UA server go to the 'Runtime settings' in the left side men
 
 ## Load a project into runtime
 
-To load a project, select your device on the left side menu and scroll down to 'Runtime status':
-
-![load1](graphics/load1.png)
-
-Click on 'Download' and when the procces is finished click on 'OK':
-
-![load2](graphics/load2.png)
-
-Then click on 'Start runtime' and wait until the runtime status is on running:
-
-![load3](graphics/load3.png)
-
-### Remote Download
-
-To load the project in runtime on other Edge Device, you just need to configure its IP adress on the device configuration:
+To load the project in runtime on the Edge Device, you just need to configure its IP adress on the device configuration:
 
 ![remote2](graphics/remotedown2.png)
 
@@ -249,13 +205,13 @@ To load the project in runtime on other Edge Device, you just need to configure 
 
 ### Offline Download
 
-You can create an offline runtime project in WinCC Unified Online Engineering by clicking on the 'Download' button in the section 'Offline download':
+You can create an offline runtime project in TIA Portal by drag and drop to the card reader:
 
-![offdown1](graphics/offdwon1.png)
+![offdown1](graphics/offdown1.png)
 
 Then, in WinCC Unified Runtime on IE you can upload the file that was downloaded by clicking on the 'Upload' button:
 
-![offdown2](graphics/offdwon2.png)
+![offdown2](graphics/offdown2.png)
 
 ## Alarms
 
@@ -269,17 +225,13 @@ On the bottom menu, tab 'Analog alarms', we create all the alarms we need with i
 
 ![alarms2](graphics/alarms2.png)
 
-For the discrete alarms, the creation is made in the same way, but the data type must be 'Word':
+For the discrete alarms, the creation is made in the same way, but the data type must be 'Word'. On the bottom menu, tab 'Analog alarms', the alarms are created:
 
-![alarms3](graphics/alarms3.png)
-
-On the bottom menu, tab 'Analog alarms', the alarms are created:
-
-![alarms4](graphics/alarms4.png)
+![alarms4](graphics/alarms3.png)
 
 In this example, we are creating another screen with alarm control screen item and some different buttons to pop up the alarms:
 
-![alarms5](graphics/alarms5_new.jpg)
+![alarms5](graphics/alarms5_new.png)
 
 When the runtime is active and the alarms are popped out they will appear in the chart:
 
@@ -289,19 +241,13 @@ When the runtime is active and the alarms are popped out they will appear in the
 
 The logs can be created for each tag - in this case at an internal tag. We can choose two different logging modes: 'Cyclic' and 'On change'.
 
-Create a logging with 'Cyclic' mode:
+Create a logging with 'Cyclic' mode. On the bottom menu, tab 'Logging tags', the logging is created. 
 
 ![logs1](graphics/logs1.png)
 
-On the bottom menu, tab 'Logging tags', the logging is created:
-
-![logs12](graphics/logs2.png)
-
 Create a logging with 'On change' mode:
 
-![logs3](graphics/logs3.png)
-
-![logs4](graphics/logs4.png)
+![logs3](graphics/logs2.png)
 
 Introduce the process controll item to a screen:
 
