@@ -259,17 +259,13 @@ Finally the logs are shown in the runtime:
 
 ## Trends
 
-To add a trend go to the add screen items and in the advanced bar select trend control:
+To add a trend go to the Toolbox, select trend control and drag and drop into the screen:
 
-![trends1](graphics/trends1_new.jpg)
+![trends1](graphics/trends1.png)
 
-In its properties to add different trends to appear in the item, go to Trends:
+In its properties to add different trends to appear in the item, go to Trends and select the tag/logging tag you want to control::
 
 ![trends2](graphics/trends2.png)
-
-And select the tag you want to control:
-
-![trends3](graphics/trends3.png)
 
 In the runtime the trend will be filled:
 
@@ -293,27 +289,19 @@ And the Start Screen that is indicated in the project will appear:
 
 ![start4](graphics/start4.png)
 
-To stop the runtime go back to your device and click on Stop runtime:
+To stop the runtime, select **Stop Project** in the WinCC Unified Web Runtime Manager:
 
 ![start5](graphics/start5.png)
 
-Wait until the runtime status is on not started:
-
-![start6](graphics/start6.png)
-
-And in the WinCC Runtime app a red light will be now on the project:
+Wait until the runtime status is on not started, and in the WinCC Runtime app a red light will be now on the project:
 
 ![start7](graphics/start7.png)
 
 ## Trace Settings
 
-To download or forward traces from the WinCC Unified Online Engineering app go to the settings and enable the following settings:
+To enable Logging Service from the WinCC Unified Runtime app go to the configuration and enable the following settings. Also you can download each trace separately .csv file clicking in the **Download Logs** at the top right corner:
 
 ![trace1](graphics/trace1.png)
-
-Also you can download each trace separately .csv file going to the app's more info site:
-
-![trace2](graphics/trace2.png)
 
 You can also activate the trace forwarder and receive the traces with Trace Viewer foe analyzing the app:
 
