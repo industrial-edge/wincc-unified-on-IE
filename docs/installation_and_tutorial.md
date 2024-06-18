@@ -17,10 +17,12 @@
 - [OPC UA Server](#opc-ua-server)
 - [Load a project into runtime](#load-a-project-into-runtime)
   - [Offline Download](#offline-download)
+  - [Offline Download via IEM](#offline-download-via-industrial-edge-management)
 - [Alarms](#alarms)
 - [Logs](#logs)
 - [Trends](#trends)
-- [Start the runtime](#start-the-runtime)
+- [TIA Portal guidelines](#tia-portal-guidelines)
+- [How to use WinCC Unified Runtime Manager](#how-to-use-wincc-unified-runtime-manager)
 - [Trace Settings](#trace-settings)
 
 ## Installation
@@ -98,19 +100,6 @@ To create a connection between the WinCC Unifed on Industrial Edge and a PLC go 
 Connect the ports from the PLC to the added communication module in the **Network** view and in the **Connection** view:
 
 ![connections2](graphics/connections2.png)
-
-### Browse IE Databus from WinCC Unified Online Engineering
-
-It is needed to configure a connection from TIA Portal and Industrial Edge, to do so, you can refer to the following [documentation](https://github.com/industrial-edge/opc-ua-application-getting-started/blob/main/docs/Installation.md#configuration) that explains how to set up the connection.
-
-Then, in the WinCC Unified Runtime, click on 'Settings' and add the databus credentials:
-
-![iedatabus5](graphics/iedatabus5.PNG)
-
-Go to configuration and in the 'Tags' part select the ones that are needed to be published and suscribed. Also, enable the services for 'Tag Publishing' and 'Tag Suscribe':
-
-![iedatabus6](graphics/iedatabus6.PNG)
-
 
 ## Tags
 
@@ -211,6 +200,16 @@ Then, in WinCC Unified Runtime on IE you can upload the file that was downloaded
 
 ![offdown2](graphics/offdown2.png)
 
+### Offline download via Industrial Edge Management
+
+An offline download to the IE Device is also possible via the IEM. Open the IEM, go to **My Installed Apps** and select **WinCC Unified Runtime**
+
+![iemdownload](graphics/iem_download.png)
+
+Once the app's tab is open, click on the **Update configuration** button. Then, add the file in the **+** button within **offline_download**. After the file is loaded, click on **Update Now**
+
+![iemdownload3](graphics/iem_download3.png)
+
 ## Alarms
 
 The alarms are created at the desired trigger tag - in this case at an internal tag. We can create two different types: analog and discrete alarms. The alarm type depends on the selected tag data type. For this example we are creating both.
@@ -269,15 +268,30 @@ In the runtime the trend will be filled:
 
 ![trends4](graphics/trends4.png)
 
-## Start the runtime
+## TIA Portal guidelines
+
+In case you need more information related to the engineering of the project in TIA Portal, you can refer to the following [documentation](https://cache.industry.siemens.com/dl/dl-media/433/109782433/att_1265883/v1/109782433_SIMATIC-WinCC-Unified-Tutorial-Center_140324_web/start.htm#!/en).
+
+## How to use WinCC Unified Runtime Manager
 
 To start the runtime go to the Wincc Runtime app:
 
 ![start1](graphics/start1.png)
 
+You will see a login page, where you can login with the credentials downloaded within the project. At least one user with administration rights is required to access the Web Runtime Manager.
+<br>Note: Default user: **uoeuser**, Default password: **User@uoe**
+
+![login](graphics/login.png)
+
+If you want to add a user to change the access rights or any other reason, you can do it in the TIA Project:
+
+![addUser](graphics/addUser.png)
+
 If the project downloaded is running you will see a green light that indicates that the runtime is ready:
 
 ![start2](graphics/start2.png)
+
+### Start the runtime
 
 Click on the WinCC Unified Runtime button:
 
@@ -287,6 +301,8 @@ And the Start Screen that is indicated in the project will appear:
 
 ![start4](graphics/start4.png)
 
+### Stop the runtime
+
 To stop the runtime, select **Stop Project** in the WinCC Unified Web Runtime Manager:
 
 ![start5](graphics/start5.png)
@@ -294,6 +310,30 @@ To stop the runtime, select **Stop Project** in the WinCC Unified Web Runtime Ma
 Wait until the runtime status is on not started, and in the WinCC Runtime app a red light will be now on the project:
 
 ![start7](graphics/start7.png)
+
+### Secure download
+
+To prevent unauthorized runtime access, activate the secure download option in the TIA Project as well as the WinCC Unified Runtime Manager.
+
+TIA Portal:
+
+![secureDown1](graphics/secureDown.png)
+
+WinCC Unified Runtime Manager:
+
+![secureDown2](graphics/secureDown2.png)
+
+### AutoScale
+
+Enabling AutoScale option adapts screen automatically on window size of client / web browser. Screens designed on a certain device with is displayed on another device with different window size maintaining consistency.
+
+![autoScale](graphics/autoScale.png)
+
+### Media files
+
+Upload media files via the Web Runtime Manager to your Unified application and display them via Web Control or Media Control.
+
+![mediaFiles](graphics/mediaFiles.png)
 
 ## Trace Settings
 
