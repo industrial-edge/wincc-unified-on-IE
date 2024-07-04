@@ -31,7 +31,7 @@
 
 ## Installation
 
-Download the app and "WinCC Unified Runtime" from the Industrial Edge HUB into your Industrial Edge Management. The application should now be available in the IEM catalog.
+Download the app "WinCC Unified Runtime for Industrial Edge" from the Industrial Edge HUB into your Industrial Edge Management. The application should now be available in the IEM catalog.
 
 1. Login on the IEM where you control your IED
 2. Go to the catalog
@@ -66,7 +66,7 @@ Now you will a popup asking for the Project Name and folder where you want to st
 
 Clicking on a created project will lead you to the following screen. On the left bar there will be available a tree with all the devices created. Click on the **Add new device** button to create a new one.
 
-Unified Runtime for Industrial Edge can be found in TIA – Hardware catalog under SIMATIC HMI applications
+WinCC Unified Runtime for Industrial Edge can be found in TIA – Hardware catalog under SIMATIC HMI applications
 
 
 ![device1](graphics/device1.png)
@@ -97,7 +97,7 @@ Place the item in the screen area and when it is created you will see all the pr
 
 ## Connections
 
-To create a connection between the WinCC Unifed on Industrial Edge and a PLC go to You first need to add an Ethernet communication module:
+To create a connection between the Industrial Edge device and a PLC, an Ethernet communication module is required to be added to the device:
 
 ![connections1](graphics/connections1.png)
 
@@ -107,7 +107,7 @@ Connect the ports from the PLC to the added communication module in the **Networ
 
 ## Tags
 
-There are different ways to create tags in our WinCC Unifed on Industrial Edge.
+There are different ways to create tags in our WinCC Unifed project for Industrial Edge.
 
 ### Create tags out of connection
 
@@ -117,7 +117,7 @@ When we establish a connection to a PLC, we can drag and drop a tag from the PLC
 
 ### Create internal tags
 
-Also internal tags can be manually created under **Connection** and set to **Internal Tag**:
+Also internal tags can be manually created in a HMI Tag Table and connection type must be set to **Internal Tag**:
 
 ![tags1](graphics/tags1.png)
 
@@ -169,20 +169,10 @@ Then, on the scripting part of an item you can import all your global and predef
 
 ![script6](graphics/script6.png)
 
-### Shortcuts
-
-You can select system functions and enums via intellisense or autocompletion just by clicking **'Ctrl' + 'Space'** shortcut on the keyboard:
-
-![script8](graphics/script8.png)
-
-
-By using the **'Ctrl' + 'j'** shortcut you can get the options when searching for a tag, screen... when placing the cursor between the double quotation marks:
-
-![script10](graphics/script10.png)
 
 ## OPC UA Server
 
-To operate as an OPC UA server go to the 'Runtime settings' in the left side menu and click on the opc ua server checkbox. The OPC UA Server can be accesed via Default port: 34002.
+To operate as an OPC UA server go to the 'Runtime settings' in the left side menu and click on the opc ua server checkbox. If you check below, you can see the port which will be used to access the OPC UA Server, this needs to be changed to the port 34002.
 
 ![connections6](graphics/connections6.png)
 
@@ -196,7 +186,7 @@ To load the project in runtime on the Edge Device, you just need to configure it
 
 ### Offline Download
 
-You can create an offline runtime project in TIA Portal by drag and drop to the card reader:
+In case there is no online connection established to the IED, you have the chance to create an offline runtime project in TIA Portal by drag and drop to the card reader:
 
 ![offdown1](graphics/offdown1.png)
 
@@ -230,11 +220,11 @@ For the discrete alarms, the creation is made in the same way, but the data type
 
 ![alarms4](graphics/alarms3.png)
 
-In this example, we are creating another screen with alarm control screen item and some different buttons to pop up the alarms:
+In this example, we are creating another screen with alarm control screen item and some different buttons to trigger different alarms:
 
 ![alarms5](graphics/alarms5_new.png)
 
-When the runtime is active and the alarms are popped out they will appear in the chart:
+When the runtime is active and the alarms are raised, they will appear in the alarm control:
 
 ![alarms6](graphics/alarms6.png)
 
@@ -249,10 +239,6 @@ Create a logging with 'Cyclic' mode. On the bottom menu, tab 'Logging tags', the
 Create a logging with 'On change' mode:
 
 ![logs3](graphics/logs2.png)
-
-Introduce the process controll item to a screen:
-
-![logs5](graphics/logs5.png)
 
 Finally the logs are shown in the runtime:
 
@@ -274,7 +260,7 @@ In the runtime the trend will be filled:
 
 ## TIA Portal guidelines
 
-In case you need more information related to the engineering of the project in TIA Portal, you can refer to the following [documentation](https://cache.industry.siemens.com/dl/dl-media/433/109782433/att_1265883/v1/109782433_SIMATIC-WinCC-Unified-Tutorial-Center_140324_web/start.htm#!/en).
+In case you need more information related to the engineering of the project in TIA Portal, you can refer to the following [documentation](https://cache.industry.siemens.com/dl/dl-media/433/109782433/att_1265883/v1/109782433_SIMATIC-WinCC-Unified-Tutorial-Center_140324_web/start.htm#!/en). In addition, there is an available guideline for efficient engineering in [SIOS](https://support.industry.siemens.com/cs/document/109827603/engineering-guideline-for-wincc-unified?dti=0&lc=en-US).
 
 ## How to use WinCC Unified Runtime Manager
 
@@ -283,7 +269,7 @@ To start the runtime go to the Wincc Runtime app:
 ![start1](graphics/start1.png)
 
 You will see a login page, where you can login with the credentials downloaded within the project. At least one user with administration rights is required to access the Web Runtime Manager.
-<br>Note: Default user: **uoeuser**, Default password: **User@uoe**
+<br>Note: Default user: **uoeuser**, Default password: **User@uoe**. Please, keep in mind that this credentials will be overwritten once a TIA Portal project is downloaded with UMC-users.
 
 ![login](graphics/login.png)
 
@@ -321,11 +307,11 @@ To prevent unauthorized runtime access, activate the secure download option in t
 
 TIA Portal:
 
-![secureDown1](graphics/secureDown.png)
+![secureDown2](graphics/secureDown2.png)
 
 WinCC Unified Runtime Manager:
 
-![secureDown2](graphics/secureDown2.png)
+![secureDown1](graphics/secureDown.png)
 
 ### AutoScale
 
@@ -351,7 +337,7 @@ You can also activate the trace forwarder and receive the traces with Trace View
 - Activate the 'Receiver' mode via the following command on remote host:
 
 `
-C:\ProgramFiles\Siemens\Automation\WinCCUnified\bin\RTILtraceTool.exe -mode receiver -tcp -host <IP of Edgebox> -port 35505
+C:\ProgramFiles\Siemens\Automation\WinCCUnified\bin\RTILtraceTool.exe -mode receiver -tcp -host <IP of Edgebox> -port 35000
 `
 
 ![trace3](graphics/trace3.png)
