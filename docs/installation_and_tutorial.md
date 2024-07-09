@@ -107,7 +107,7 @@ Connect the ports from the PLC to the added communication module in the **Networ
 
 ## Tags
 
-There are different ways to create tags in our WinCC Unifed project for Industrial Edge.
+There are different ways to create tags in our WinCC Unified project for Industrial Edge.
 
 ### Create tags out of connection
 
@@ -138,37 +138,6 @@ Select 'Tag...' and then choose a tag that you want to connect:
 Repeat the process for any screen item that you want to connect. You can easily Drag & Drop a tag into your screen to create automatically an IO-field with connected HMI tag:
 
 ![tagstoscreen4](graphics/tagstoscreen4.jpg)
-
-## Scripting
-
-For this part we are creating another screen to create a simple script to switch between two screens:
-
-Place a button on the first screen, go to the 'Events' tabs, select the Event you want and click on **Convert to JavaScript**:
-
-![script2](graphics/script2.jpg)
-
-A scripting window opens.
-
-![script3](graphics/script3.png)
-
-In this case, we can use some snippets making right click and a dropdown is opened, and search for the template 'Change base screen'. Don't forget to rename the screen name inside the code:
-
-![script4](graphics/script4.png)
-
-Click on OK and the script will be applied for the button:
-
-![script5](graphics/script5.png)
-
-### Global scripts
-
-To create a global module for your scripts go to 'Scripts' in the left side menu and create a global module with all the functions needed:
-
-![script7](graphics/script7.png)
-
-Then, on the scripting part of an item you can import all your global and predefined scripts to use them:
-
-![script6](graphics/script6.png)
-
 
 ## OPC UA Server
 
@@ -289,7 +258,7 @@ Click on the WinCC Unified Runtime button:
 
 And the Start Screen that is indicated in the project will appear:
 
-![start4](graphics/start4.png)
+![start4](graphics/start4.jpg)
 
 ### Stop the runtime
 
@@ -341,3 +310,5 @@ C:\ProgramFiles\Siemens\Automation\WinCCUnified\bin\RTILtraceTool.exe -mode rece
 `
 
 ![trace3](graphics/trace3.png)
+
+![trace4](graphics/trace4.png)
