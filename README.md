@@ -1,6 +1,6 @@
 # WinCC Unified for Industrial Edge application example
 
-This example shows how to use the Industrial Edge Apps "WinCC Unified Engineering" and "WinCC Unified Runtime".
+This example shows how to use the Industrial Edge App "WinCC Unified Runtime".
 
 - [WinCC Unified for Industrial Edge application example](#wincc-unified-for-industrial-edge-application-example)
   - [Description](#description)
