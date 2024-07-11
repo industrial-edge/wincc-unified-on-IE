@@ -39,7 +39,7 @@ Download the app "WinCC Unified Runtime for Industrial Edge" from the Industrial
 4. Login to the IED where you installed the apps
 5. Click on the app icon of "WinCC Unified Runtime" to open this app
 
-Download the Hardware Support Package from [SIOS](https://support.industry.siemens.com/cs/document/10996394?dti=-1&lc=en-WW) and install the HSP following the next steps:
+Download the Hardware Support Package from [SIOS](https://support.industry.siemens.com/cs/document/10996394?dti=-1&lc=en-WW)* and install the HSP following the next steps:
 
 1. Open TIA Portal in your Engineering station.
 2. Go to **Options** -> **Support packages**.
@@ -51,6 +51,8 @@ Download the Hardware Support Package from [SIOS](https://support.industry.sieme
 ![addInfo](graphics/addInfo.png)
 
 4. Restart TIA Portal after the installation.
+
+*Note that the HSP is only available via intranet-view due to Limited Sales Release
 
 ## Creating a project
 
