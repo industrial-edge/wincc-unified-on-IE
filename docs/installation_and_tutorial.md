@@ -39,7 +39,7 @@ Download the app "WinCC Unified Runtime for Industrial Edge" from the Industrial
 4. Login to the IED where you installed the apps
 5. Click on the app icon of "WinCC Unified Runtime" to open this app
 
-Download the Hardware Support Package from [SIOS](https://support.industry.siemens.com/cs/document/10996394?dti=-1&lc=en-WW)* and install the HSP following the next steps:
+Download the Hardware Support Package from [SIOS](https://support.industry.siemens.com/cs/document/109963394?dti=-1&lc=en-WW)* and install the HSP following the next steps:
 
 1. Open TIA Portal in your Engineering station.
 2. Go to **Options** -> **Support packages**.
@@ -231,7 +231,7 @@ In the runtime the trend will be filled:
 
 ## TIA Portal guidelines
 
-In case you need more information related to the engineering of the project in TIA Portal, you can refer to the following [documentation](https://cache.industry.siemens.com/dl/dl-media/433/109782433/att_1265883/v1/109782433_SIMATIC-WinCC-Unified-Tutorial-Center_140324_web/start.htm#!/en). In addition, there is an available guideline for efficient engineering in [SIOS](https://support.industry.siemens.com/cs/document/109827603/engineering-guideline-for-wincc-unified?dti=0&lc=en-US).
+In case you need more information related to the engineering of the project in TIA Portal, you can refer to the following [documentation](https://support.industry.siemens.com/cs/document/109782433/simatic-wincc-unified-tutorial-center-(videos)?dti=0&lc=en-WW). In addition, there is an available guideline for efficient engineering in [SIOS](https://support.industry.siemens.com/cs/document/109827603/engineering-guideline-for-wincc-unified?dti=0&lc=en-US).
 
 ## How to use WinCC Unified Runtime Manager
 
