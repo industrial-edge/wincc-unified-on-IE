@@ -171,7 +171,7 @@ An offline download to the IE Device is also possible via the IEM. Open the IEM,
 
 ![iemdownload](graphics/iem_download.png)
 
-Once the app's tab is open, click on the **Update configuration** button. Then, add the file in the **+** button within **offline_download**. After the file is loaded, click on **Update Now**
+Once the app's tab is open, click on the **Update configuration** button. Then, add the file in the **+** button within **autoDownload**. After the file is loaded, click on **Update Now**
 
 ![iemdownload3](graphics/iem_download3.png)
 
