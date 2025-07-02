@@ -39,21 +39,6 @@ Download the app "WinCC Unified Runtime for Industrial Edge" from the Industrial
 4. Login to the IED where you installed the apps
 5. Click on the app icon of "WinCC Unified Runtime" to open this app
 
-Download the Hardware Support Package from [SIOS](https://support.industry.siemens.com/cs/document/109963394?dti=-1&lc=en-WW)* and install the HSP following the next steps:
-
-1. Open TIA Portal in your Engineering station.
-2. Go to **Options** -> **Support packages**.
-
-![SupportPackages](graphics/supportpackages.png)
-
-3. Select **Add from file system** and click install.
-
-![addInfo](graphics/addInfo.png)
-
-4. Restart TIA Portal after the installation.
-
-*Note that the HSP is only available via intranet-view due to Limited Sales Release
-
 ## Creating a project
 
 Once you are in the TIA Portal you can click on **Project** -> **New** to start a new engineering project:
@@ -68,10 +53,41 @@ Now you will a popup asking for the Project Name and folder where you want to st
 
 Clicking on a created project will lead you to the following screen. On the left bar there will be available a tree with all the devices created. Click on the **Add new device** button to create a new one.
 
-WinCC Unified Runtime for Industrial Edge can be found in TIA – Hardware catalog under SIMATIC HMI applications
-
+Use WinCC Unified PC Runtime version V19 Upd2 or newer from the hardware catalo
 
 ![device1](graphics/device1.png)
+
+### Post-configuration checks
+
+After adding the WinCC Unified PC Runtime device, verify and adjust the following settings to work around unsupported Industrial Edge features:
+
+- **Runtime Collaboration**  
+  Do *not* activate Runtime Collaboration.
+
+  ![Runtime Collaboration disabled](graphics/runtime_collaboration.png)
+
+- **Database Type**  
+  Set to **SQLite** (Microsoft SQL is not supported).   
+  
+  ![Database Type: SQLite](graphics/database_type.png)
+
+- **GMP / Audit Option**  
+  Disable the Audit feature (WinCC Unified “Audit” is not supported). 
+
+  ![GMP / Audit option disabled](graphics/gmp_audit.png)
+
+- **User Management**  
+  Switch to Local user management only (central user management is not supported). 
+
+- **Redundancy**  
+  Do *not* enable Redundancy (unsupported).
+
+  ![Redundancy disabled](graphics/redundancy.png)
+
+- **Reporting**  
+  Do *not* enable Reporting (unsupported).
+
+  ![Reporting disabled](graphics/reporting.png)
 
 ## Creating a screen
 
