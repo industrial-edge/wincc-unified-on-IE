@@ -77,7 +77,9 @@ After adding the WinCC Unified PC Runtime device, verify and adjust the followin
   ![GMP / Audit option disabled](graphics/gmp_audit.png)
 
 - **User Management**  
-  Switch to Local user management only (central user management is not supported). 
+  Switch to Local user management only (central user management is not supported).
+  
+  ![Local user management only](graphics/user_management.png)
 
 - **Redundancy**  
   Do *not* enable Redundancy (unsupported).
