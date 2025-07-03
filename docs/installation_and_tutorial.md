@@ -53,13 +53,13 @@ Now you will a popup asking for the Project Name and folder where you want to st
 
 Clicking on a created project will lead you to the following screen. On the left bar there will be available a tree with all the devices created. Click on the **Add new device** button to create a new one.
 
-Use WinCC Unified PC Runtime version V19 Upd2 or newer from the hardware catalog
+Use WinCC Unified PC Runtime version V20 Upd2 or newer from the hardware catalog
 
 ![device1](graphics/device1.png)
 
 ### Post-configuration checks
 
-After adding the WinCC Unified PC Runtime device, verify and adjust the following settings to work around unsupported Industrial Edge features:
+After adding the WinCC Unified PC Runtime device, verify and adjust the following settings to avoid using features that are not supported yet on Industrial Edge:
 
 - **Runtime Collaboration**  
   Do *not* activate Runtime Collaboration.
@@ -75,11 +75,6 @@ After adding the WinCC Unified PC Runtime device, verify and adjust the followin
   Disable the Audit feature (WinCC Unified “Audit” is not supported). 
 
   ![GMP / Audit option disabled](graphics/gmp_audit.png)
-
-- **User Management**  
-  Switch to Local user management only (central user management is not supported).
-  
-  ![Local user management only](graphics/user_management.png)
 
 - **Redundancy**  
   Do *not* enable Redundancy (unsupported).
