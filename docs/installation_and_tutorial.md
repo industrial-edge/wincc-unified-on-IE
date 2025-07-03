@@ -53,7 +53,7 @@ Now you will a popup asking for the Project Name and folder where you want to st
 
 Clicking on a created project will lead you to the following screen. On the left bar there will be available a tree with all the devices created. Click on the **Add new device** button to create a new one.
 
-Use WinCC Unified PC Runtime version V20 Upd2 or newer from the hardware catalog
+Use WinCC Unified PC Runtime version V20 Upd2 or lower from the hardware catalog
 
 ![device1](graphics/device1.png)
 
