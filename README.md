@@ -2,6 +2,8 @@
 
 This example shows how to use the Industrial Edge App "WinCC Unified Runtime".
 
+**🚨 This Example is currently out of date and in the process of being updated. It _only_ works for TIA V19 Update 1.**
+
 - [WinCC Unified for Industrial Edge application example](#wincc-unified-for-industrial-edge-application-example)
   - [Description](#description)
     - [Overview](#overview)
