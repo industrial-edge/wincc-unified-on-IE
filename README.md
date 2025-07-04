@@ -34,12 +34,11 @@ This example shows how to install and configure the "WinCC Unified Runtime" appl
 
 ### Used components
 
-- Industrial Edge Management (IEM) V1.4.0-42
-  - WinCC Unified Runtime V3.0.0-101
--	Industrial Edge Virtual Device 1.16 
--	Tia Portal V19 Update 1 or higher
-- Hardware Support Package
--	S7-PLCSIM Advanced V4.0
+- Industrial Edge Management (IEM) V2.4
+  - WinCC Unified Runtime V4.0
+-	Industrial Edge Virtual Device V1.22.3 or newer 
+-	TIA Portal V20 Update 3 or higher
+-	S7-PLCSIM Advanced V6.0
 
 ## Documentation
 
