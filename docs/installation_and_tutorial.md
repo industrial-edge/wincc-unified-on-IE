@@ -53,13 +53,13 @@ Now you will a popup asking for the Project Name and folder where you want to st
 
 Clicking on a created project will lead you to the following screen. On the left bar there will be available a tree with all the devices created. Click on the **Add new device** button to create a new one.
 
-Use WinCC Unified PC Runtime version V20 Upd2 or lower from the hardware catalog
+Use WinCC Unified PC Runtime version V21 or lower from the hardware catalog
 
 ![device1](graphics/device1.png)
 
 ### Post-configuration checks
 
-After adding the WinCC Unified PC Runtime device, verify and adjust the following settings to avoid using features that are not supported yet on Industrial Edge:
+After adding the WinCC Unified EDGE RT device, verify and adjust the following settings to avoid using features that are not supported yet on Industrial Edge:
 
 - **Runtime Collaboration**  
   Do *not* activate Runtime Collaboration.
@@ -104,7 +104,7 @@ Now the created screen will appear under **Screens** and, since it is the first 
 
 Once the screen is created and opened, items can be created by drag and drop from the toolbox:
 
-![screenitems1](graphics/screenitmes1_new.jpg)
+![screenitems1](graphics/screenitmes1_new.png)
 
 Place the item in the screen area and when it is created you will see all the properties of the item:
 
