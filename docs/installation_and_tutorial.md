@@ -127,7 +127,7 @@ Repeat the process for any screen item that you want to connect. You can easily 
 
 ## OPC UA Server
 
-To operate as an OPC UA server go to the 'Runtime settings' in the left side menu and click on the opc ua server checkbox. If you check below, you can see the port which will be used to access the OPC UA Server, this needs to be changed to the port 34002.
+To operate as an OPC UA server, go to 'Runtime settings' in the left-side menu and enable the OPC UA server checkbox. The default port is 34002 in WinCC Unified Edge RT.
 
 ![connections6](graphics/connections6.png)
 
