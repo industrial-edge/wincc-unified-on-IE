@@ -53,38 +53,9 @@ Now you will a popup asking for the Project Name and folder where you want to st
 
 Clicking on a created project will lead you to the following screen. On the left bar there will be available a tree with all the devices created. Click on the **Add new device** button to create a new one.
 
-Use WinCC Unified PC Runtime version V20 Upd2 or lower from the hardware catalog
+Use WinCC Unified Edge Runtime version V21 or lower from the hardware catalog
 
 ![device1](graphics/device1.png)
-
-### Post-configuration checks
-
-After adding the WinCC Unified PC Runtime device, verify and adjust the following settings to avoid using features that are not supported yet on Industrial Edge:
-
-- **Runtime Collaboration**  
-  Do *not* activate Runtime Collaboration.
-
-  ![Runtime Collaboration disabled](graphics/runtime_collaboration.png)
-
-- **Database Type**  
-  Set to **SQLite** (Microsoft SQL is not supported).   
-  
-  ![Database Type: SQLite](graphics/database_type.png)
-
-- **GMP / Audit Option**  
-  Disable the Audit feature (WinCC Unified “Audit” is not supported). 
-
-  ![GMP / Audit option disabled](graphics/gmp_audit.png)
-
-- **Redundancy**  
-  Do *not* enable Redundancy (unsupported).
-
-  ![Redundancy disabled](graphics/redundancy.png)
-
-- **Reporting**  
-  Do *not* enable Reporting (unsupported).
-
-  ![Reporting disabled](graphics/reporting.png)
 
 ## Creating a screen
 
@@ -104,7 +75,7 @@ Now the created screen will appear under **Screens** and, since it is the first 
 
 Once the screen is created and opened, items can be created by drag and drop from the toolbox:
 
-![screenitems1](graphics/screenitmes1_new.jpg)
+![screenitems1](graphics/screenitmes1_new.png)
 
 Place the item in the screen area and when it is created you will see all the properties of the item:
 
@@ -156,7 +127,7 @@ Repeat the process for any screen item that you want to connect. You can easily 
 
 ## OPC UA Server
 
-To operate as an OPC UA server go to the 'Runtime settings' in the left side menu and click on the opc ua server checkbox. If you check below, you can see the port which will be used to access the OPC UA Server, this needs to be changed to the port 34002.
+To operate as an OPC UA server, go to 'Runtime settings' in the left-side menu and enable the OPC UA server checkbox. The default port is 34002 in WinCC Unified Edge RT.
 
 ![connections6](graphics/connections6.png)
 
