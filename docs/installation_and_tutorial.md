@@ -27,7 +27,7 @@
   - [Secure download](#secure-download)
   - [Auto Scale](#autoscale)
   - [Media files](#media-files)
-- [Migration workflow from V5.0 to V21 Upd 2](#migration-workflow-from-v50-to-v21-upd-2)
+- [Migration workflow from V5.0.0 to V21 Upd 2](#migration-workflow-from-v500-to-v21-upd-2)
 - [Trace Settings](#trace-settings)
 
 ## Installation
