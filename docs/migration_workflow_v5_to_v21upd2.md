@@ -24,25 +24,22 @@ The following sections describe the recommended migration workflow step by step.
 
 Open the existing **WinCC Unified Runtime for Industrial Edge V5.0.0** app on the Industrial Edge Device.
 
-In the WinCC Unified Web Runtime Manager, open the configuration settings from the left-side navigation bar.
+In the **WinCC Unified Web Runtime Manager**, open the configuration settings from the left-side navigation bar. In the configuration menu, scroll down until **Export and Import Data** is visible and select it.
 
-![Open configuration settings](graphics/migration_backup_1_open_settings.png)
+![Open Export and Import Data settings](graphics/migration/migration_backup_1_export_import_settings.png)
 
-In the configuration menu, scroll down and select **Export and Import Data**.
+In the **Export and Import Data** view, make sure that the **Export Data** tab is selected. This tab allows you to export the current app configuration as a compressed **.tar.gz** archive file for backup or migration purposes.
 
-![Select Export and Import Data](graphics/migration_backup_2_export_import_menu.png)
+Click **Start Backup** to create the backup.
 
-The **Export Data** page is used to create a backup of the current app configuration.  
-This export is created as a compressed **.tar.gz** archive file and can be used for backup or migration purposes.
+![Start backup from Export Data tab](graphics/migration/migration_backup_2_start_backup.png)
 
-![Export Data page](graphics/migration_backup_3_export_data_page.png)
+After clicking **Start Backup**, the export process starts. Wait until the export process has finished.
 
-Click **Start Backup** to begin the export process.
+![Backup export in progress](graphics/migration/migration_backup_3_export_in_progress.png)
 
-![Start backup](graphics/migration_backup_4_start_backup.png)
+When the export has been completed successfully, a success message is displayed.
 
-Wait until the export process has finished successfully. A success message is shown after the backup has been completed.
+![Backup completed successfully](graphics/migration/migration_backup_4_backup_success.png)
 
-![Backup completed successfully](graphics/migration_backup_5_backup_success.png)
-
-Before continuing with the migration, make sure that the backup was created successfully.
+Make sure that the backup has been created successfully before proceeding with the next migration steps.
