@@ -42,4 +42,4 @@ When the export has been completed successfully, a success message is displayed.
 
 ![Backup completed successfully](graphics/migration/migration_backup_4_backup_success.png)
 
-Make sure that the backup has been created successfully before proceeding with the next migration steps.
+After the export has completed, verify that the backup archive file is available and stored in a safe location before proceeding with the next migration steps.
