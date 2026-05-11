@@ -27,6 +27,7 @@
   - [Secure download](#secure-download)
   - [Auto Scale](#autoscale)
   - [Media files](#media-files)
+- [Migration workflow from V5.0 to V21 Upd 2](#migration-workflow-from-v50-to-v21-upd-2)
 - [Trace Settings](#trace-settings)
 
 ## Installation
@@ -279,6 +280,12 @@ Enabling AutoScale option adapts screen automatically on window size of client /
 Upload media files via the Web Runtime Manager to your Unified application and display them via Web Control or Media Control.
 
 ![mediaFiles](graphics/mediaFiles.png)
+
+## Migration workflow from V5.0.0 to V21 Upd 2
+
+For the migration workflow from WinCC Unified Runtime for Industrial Edge V5.0.0 to V21 Upd 2, see:
+
+[Migration workflow from V5.0.0 to V21 Upd 2](migration_workflow_v5_to_v21upd2.md)
 
 ## Trace Settings
 
