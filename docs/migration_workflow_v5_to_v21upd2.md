@@ -2,12 +2,14 @@
 
 This document describes the recommended workflow to migrate an existing **WinCC Unified Runtime for Industrial Edge** installation from app version **V5.0.0** to **V21 Upd 2**.
 
+The backup and import steps are performed in the WinCC Unified Web Runtime Manager, while the uninstall and installation steps are performed from the Industrial Edge Device.
+
 The basic workflow is:
 
 1. Create a backup in the existing V5.0.0 app and store the backup file safely.
 2. Uninstall the existing V5.0.0 app.
 3. Install the new V21 Upd 2 app.
-4. Import the backup in the new V21 Upd 2 app.
+4. Import the backup into the new V21 Upd 2 app.
 5. Start and validate the restored runtime project.
 
 > **Important:**  
@@ -29,7 +31,7 @@ Click **Start Backup** to create the backup.
 
 ![Start backup from Export Data tab](graphics/migration/migration_backup_2_start_backup.png)
 
-After clicking **Start Backup**, the export process starts. Wait until the export process has finished.
+After clicking **Start Backup**, the export process starts. Wait until the process has finished.
 
 ![Backup export in progress](graphics/migration/migration_backup_3_export_in_progress.png)
 
