@@ -2,25 +2,20 @@
 
 This document describes the recommended workflow to migrate an existing **WinCC Unified Runtime for Industrial Edge** installation from app version **V5.0.0** to **V21 Upd 2**.
 
-The migration is performed directly in the **WinCC Unified Runtime for Industrial Edge** app by using the backup and restore functionality.
-
 The basic workflow is:
 
-1. Create a backup in the existing V5.0.0 app.
-2. Download and safely store the backup file.
-3. Uninstall the existing V5.0.0 app.
-4. Install the new V21 Upd 2 app.
-5. Restore the backup in the new V21 Upd 2 app.
-6. Start and validate the restored runtime project.
+1. Create a backup in the existing V5.0.0 app and store the backup file safely.
+2. Uninstall the existing V5.0.0 app.
+3. Install the new V21 Upd 2 app.
+4. Import the backup in the new V21 Upd 2 app.
+5. Start and validate the restored runtime project.
 
 > **Important:**  
 > Do not uninstall the existing V5.0.0 app before the backup has been successfully created, downloaded and stored in a safe location.
 
 ## Migration procedure
 
-The following sections describe the recommended migration workflow step by step.
-
-### Step 1: Create a backup in the V5.0.0 app
+### Step 1: Create and store a backup in the V5.0.0 app
 
 Open the existing **WinCC Unified Runtime for Industrial Edge V5.0.0** app on the Industrial Edge Device.
 
@@ -42,4 +37,24 @@ When the export has been completed successfully, a success message is displayed.
 
 ![Backup completed successfully](graphics/migration/migration_backup_4_backup_success.png)
 
-After the export has completed, verify that the backup archive file is available and stored in a safe location before proceeding with the next migration steps.
+Before proceeding, verify that the backup archive file is available and stored in a safe location.
+
+### Step 2: Uninstall the existing V5.0.0 app
+
+Once the backup file has been checked, go to the **Apps** screen of the Industrial Edge Device and locate the existing **WinCC Unified Runtime** app.
+
+Open the app options menu and select **Uninstall**.
+
+![Open uninstall option](graphics/migration/migration_uninstall_1_open_uninstall_menu.png)
+
+A confirmation dialog is displayed. Confirm the action by clicking **Uninstall**.
+
+![Confirm uninstall](graphics/migration/migration_uninstall_2_confirm_uninstall.png)
+
+The uninstall process starts. Wait until the process has finished.
+
+When the app has been uninstalled successfully, an **Application Uninstalled** event is displayed in the **Recent Events** area of the Industrial Edge Device.
+
+![Application uninstalled event](graphics/migration/migration_uninstall_3_uninstall_completed.png)
+
+The V5.0.0 app has now been removed and the V21 Upd 2 app can be installed.
