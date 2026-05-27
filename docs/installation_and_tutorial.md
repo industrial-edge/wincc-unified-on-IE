@@ -100,31 +100,31 @@ There are different ways to create tags in our WinCC Unified project for Industr
 
 When we establish a connection to a PLC, we can drag and drop a tag from the PLC to the HMI Tags:
 
-![tags3](graphics/tags3.png)
+![tags3](graphics/tags/tags3.png)
 
 ### Create internal tags
 
 Also internal tags can be manually created in a HMI Tag Table and connection type must be set to **Internal Tag**:
 
-![tags1](graphics/tags1.png)
+![tags1](graphics/tags/tags1.png)
 
 ## Connect tags to screen items
 
 Once the tags are created, they can be connected to the screen items. Insert a screen item:
 
-![tagstoscreen1](graphics/tagstoscreen1_new.jpg)
+![tagstoscreen1](graphics/tags/tagstoscreen1_new.jpg)
 
 In properties go to three dots of the dynamization rectangle and select **Tag**:
 
-![tagstoscreen2](graphics/tagstoscreen2-1.jpg)
+![tagstoscreen2](graphics/tags/tagstoscreen2-1.jpg)
 
 Select 'Tag...' and then choose a tag that you want to connect:
 
-![tagstoscreen3](graphics/tagstoscreen3.png)
+![tagstoscreen3](graphics/tags/tagstoscreen3.png)
 
 Repeat the process for any screen item that you want to connect. You can easily Drag & Drop a tag into your screen to create automatically an IO-field with connected HMI tag:
 
-![tagstoscreen4](graphics/tagstoscreen4.jpg)
+![tagstoscreen4](graphics/tags/tagstoscreen4.jpg)
 
 ## OPC UA Server
 
