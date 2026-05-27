@@ -291,7 +291,7 @@ For the migration workflow from WinCC Unified Runtime for Industrial Edge V5.0.0
 
 To enable Logging Service from the WinCC Unified Runtime app go to the configuration and enable the following settings. Also you can download each trace separately .csv file clicking in the **Download Logs** at the top right corner:
 
-![trace1](graphics/trace1.png)
+![trace1](graphics/trace/trace1.png)
 
 You can also activate the trace forwarder and receive the traces with Trace Viewer foe analyzing the app:
 
@@ -302,6 +302,6 @@ You can also activate the trace forwarder and receive the traces with Trace View
 C:\ProgramFiles\Siemens\Automation\WinCCUnified\bin\RTILtraceTool.exe -mode receiver -tcp -host <IP of Edgebox> -port 35000
 `
 
-![trace3](graphics/trace3.png)
+![trace3](graphics/trace/trace3.png)
 
-![trace4](graphics/trace4.png)
+![trace4](graphics/trace/trace4.png)
