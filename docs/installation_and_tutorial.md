@@ -222,40 +222,40 @@ In case you need more information related to the engineering of the project in T
 
 To start the runtime go to the Wincc Runtime app:
 
-![start1](graphics/start1.png)
+![start1](graphics/runtime_manager/start1.png)
 
 You will see a login page, where you can login with the credentials downloaded within the project. At least one user with administration rights is required to access the Web Runtime Manager.
 <br>Note: Default user: **uoeuser**, Default password: **User@uoe**. Please, keep in mind that this credentials will be overwritten once a TIA Portal project is downloaded with UMC-users.
 
-![login](graphics/login.png)
+![login](graphics/runtime_manager/login.png)
 
 If you want to add a user to change the access rights or any other reason, you can do it in the TIA Project:
 
-![addUser](graphics/addUser.png)
+![addUser](graphics/runtime_manager/addUser.png)
 
 If the project downloaded is running you will see a green light that indicates that the runtime is ready:
 
-![start2](graphics/start2.png)
+![start2](graphics/runtime_manager/start2.png)
 
 ### Start the runtime
 
 Click on the WinCC Unified Runtime button:
 
-![start3](graphics/start3.png)
+![start3](graphics/runtime_manager/start3.png)
 
 And the Start Screen that is indicated in the project will appear:
 
-![start4](graphics/start4.jpg)
+![start4](graphics/runtime_manager/start4.jpg)
 
 ### Stop the runtime
 
 To stop the runtime, select **Stop Project** in the WinCC Unified Web Runtime Manager:
 
-![start5](graphics/start5.png)
+![start5](graphics/runtime_manager/start5.png)
 
 Wait until the runtime status is on not started, and in the WinCC Runtime app a red light will be now on the project:
 
-![start7](graphics/start7.png)
+![start7](graphics/runtime_manager/start7.png)
 
 ### Secure download
 
@@ -263,23 +263,23 @@ To prevent unauthorized runtime access, activate the secure download option in t
 
 TIA Portal:
 
-![secureDown2](graphics/secureDown2.png)
+![secureDown2](graphics/runtime_manager/secureDown2.png)
 
 WinCC Unified Runtime Manager:
 
-![secureDown1](graphics/secureDown.png)
+![secureDown1](graphics/runtime_manager/secureDown.png)
 
 ### AutoScale
 
 Enabling AutoScale option adapts screen automatically on window size of client / web browser. Screens designed on a certain device with is displayed on another device with different window size maintaining consistency.
 
-![autoScale](graphics/autoScale.png)
+![autoScale](graphics/runtime_manager/autoScale.png)
 
 ### Media files
 
 Upload media files via the Web Runtime Manager to your Unified application and display them via Web Control or Media Control.
 
-![mediaFiles](graphics/mediaFiles.png)
+![mediaFiles](graphics/runtime_manager/mediaFiles.png)
 
 ## Migration workflow from V5.0.0 to V21 Upd 2
 
