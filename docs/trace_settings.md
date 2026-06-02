@@ -39,3 +39,11 @@ Click **Save** to apply the settings.
 After the logging settings have been enabled, reproduce the behavior or issue that should be analyzed.
 
 It is recommended to note the approximate timestamp when the issue occurs. This helps to find the relevant entries in the exported log files.
+
+### Step 4: Download the logs
+
+After the issue has been reproduced, click **Download Logs** in the upper-right corner of the **Logs and Traces** page.
+
+![Download logs](graphics/trace/trace_settings_4_download_logs.gif)
+
+The log files are then downloaded. Store the downloaded files in a safe location.
