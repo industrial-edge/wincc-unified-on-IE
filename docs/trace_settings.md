@@ -201,10 +201,14 @@ To filter the traces by host, proceed as follows:
 To export the trace data, proceed as follows:
 
 1. Keep the **Host** filter active if only the WinCC Unified Runtime for Industrial Edge traces are required.
-2. Use the export or save function in Trace Viewer.
-3. Select the target folder.
-4. Save the exported trace file.
-5. Store the exported trace data in a safe location.
+2. Open the **File** menu in Trace Viewer.
+3. Select **Save as CSV**.
+4. Select the target folder.
+5. Save the exported trace file.
+6. Store the exported trace data in a safe location.
+
+![Export trace data from Trace Viewer](graphics/trace/trace_settings_9_export_trace_data.png)
+
 
 ### Step 7: Prepare the diagnostic package
 
