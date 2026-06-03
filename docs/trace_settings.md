@@ -163,9 +163,9 @@ Keep the command prompt open while collecting traces.
 
 After the connection with a peer has been established, open **RTILtraceViewer.exe** to view the forwarded traces.
 
-Check that traces are displayed in Trace Viewer.
+Check that trace entries are displayed in Trace Viewer.
 
-In the **Host** column, the forwarded traces should appear with the host name **unified-runtime-service**.
+The received traces can be identified by checking the **Host** column. For WinCC Unified Runtime for Industrial Edge, the host is shown as **unified-runtime-service**.
 
 ![Forwarded traces in Trace Viewer](graphics/trace/trace_settings_7_trace_viewer_received_traces.png)
 
