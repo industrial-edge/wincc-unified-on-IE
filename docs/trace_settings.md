@@ -138,7 +138,12 @@ After saving the settings, the WinCC Unified Runtime is prepared to forward trac
 
 ### Step 3: Start Trace Viewer in receiver mode
 
-On the engineering or service PC, open a command prompt.
+On the engineering or service PC, open the command prompt as administrator.
+
+To do this on Windows, open the Start menu, search for **Command Prompt**, right-click it and select **Run as administrator**.
+
+> **Note:**
+> Administrator rights may be required to start the receiver mode and open the required TCP port.
 
 Start Trace Viewer in receiver mode by using the following command:
 
