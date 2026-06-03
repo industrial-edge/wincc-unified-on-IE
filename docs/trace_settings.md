@@ -165,14 +165,18 @@ After the connection with a peer has been established, open **RTILtraceViewer.ex
 
 Check that traces are displayed in Trace Viewer.
 
+In the **Host** column, the forwarded traces should appear with the host name **unified-runtime-service**.
+
+![Forwarded traces in Trace Viewer](graphics/trace/trace_settings_7_trace_viewer_received_traces.png)
+
 If no traces are received, verify the following points:
 
-* Trace Viewer receiver mode is running.
-* The configured Industrial Edge Device IP address is correct.
-* The configured port is correct.
-* The Industrial Edge Device and the engineering or service PC can reach each other in the network.
-* **Forward Trace** is enabled in the WinCC Unified Web Runtime Manager.
-* The WinCC Unified application is running on the Industrial Edge Device.
+- Trace Viewer receiver mode is running.
+- The configured Industrial Edge Device IP address is correct.
+- The configured port is correct.
+- The Industrial Edge Device and the engineering or service PC can reach each other in the network.
+- **Forward Trace** is enabled in the WinCC Unified Web Runtime Manager.
+- The WinCC Unified application is running on the Industrial Edge Device.
 
 ### Step 5: Reproduce the behavior or issue
 
