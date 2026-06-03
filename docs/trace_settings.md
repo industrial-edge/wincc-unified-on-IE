@@ -155,6 +155,8 @@ Replace `<IED_IP_address>` with the IP address of the Industrial Edge Device.
 
 If the Trace Viewer executable is installed in a different directory, adapt the path accordingly.
 
+![Start Trace Viewer in receiver mode](graphics/trace/trace_settings_6_start_trace_viewer_receiver.gif)
+
 Keep the command prompt open while collecting traces.
 
 ### Step 4: Open the forwarded traces in Trace Viewer
