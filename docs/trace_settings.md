@@ -70,7 +70,7 @@ The available severity levels are:
 
 * Fatal
 * Error
-* Warn
+* Warning
 * Info
 * Verbose
 
