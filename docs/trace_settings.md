@@ -2,7 +2,7 @@
 
 This document describes how to collect diagnostic information from the **WinCC Unified Runtime for Industrial Edge** app.
 
-Logs and traces are recorded from the application activity on the Industrial Edge Device and can be configured from **Configuration > Logs and Traces**.
+Logs and traces record the application activity on the Industrial Edge Device and can be configured from **Configuration > Logs and Traces**..
 
 The **Logs and Traces** settings include the following components:
 
@@ -10,7 +10,7 @@ The **Logs and Traces** settings include the following components:
 * **Trace Logging**: Detailed trace recording. Trace data is stored as `.csv` files and can be used for further analysis.
 * **Trace Forwarding**: Live trace forwarding to Trace Viewer.
 
-Trace and log data can be collected in two different ways:
+Log and trace data can be collected in two ways:
 
 1. Export logs and trace files directly from the WinCC Unified Web Runtime Manager.
 2. Forward live traces to Trace Viewer and export them from there.
@@ -128,8 +128,6 @@ In the **Logs and Traces** view, select the **Trace Forwarding** tab.
 
 Enable **Forward Trace**.
 
-Configure the trace forwarding settings according to the Trace Viewer receiver configuration.
-
 Click **Save** to apply the settings.
 
 ![Enable Trace Forwarding](graphics/trace/trace_settings_5_trace_forwarding_enabled.gif)
@@ -200,7 +198,7 @@ To filter the traces by host, proceed as follows:
 
 To export the trace data, proceed as follows:
 
-1. Keep the **Host** filter active if only the WinCC Unified Runtime for Industrial Edge traces are required.
+1. Keep the **Host** filter active to export only the WinCC Unified Runtime for Industrial Edge traces.
 2. Open the **File** menu in Trace Viewer.
 3. Select **Save as CSV**.
 4. Select the target folder.
