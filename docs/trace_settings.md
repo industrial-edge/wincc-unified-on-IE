@@ -184,11 +184,27 @@ After trace forwarding has been enabled and traces are received in Trace Viewer,
 
 It is recommended to note the approximate timestamp when the issue occurs. This helps to find the relevant entries in the collected trace data.
 
-### Step 6: Export the trace data from Trace Viewer
+### Step 6: Filter and export the trace data from Trace Viewer
 
-After the relevant behavior or issue has been reproduced, save or export the received traces from Trace Viewer.
+After the relevant behavior or issue has been reproduced, the received traces can be filtered and exported from Trace Viewer.
 
-Store the exported trace data in a safe location.
+To filter the traces by host, proceed as follows:
+
+1. In Trace Viewer, open the filter options.
+2. Select the **Host** column as filter criterion.
+3. Enter **unified-runtime-service** as the filter value.
+4. Apply the filter.
+5. Check that the displayed trace entries show **unified-runtime-service** in the **Host** column.
+
+![Filter traces by host](graphics/trace/trace_settings_8_filter_by_host.gif)
+
+To export the trace data, proceed as follows:
+
+1. Keep the **Host** filter active if only the WinCC Unified Runtime for Industrial Edge traces are required.
+2. Use the export or save function in Trace Viewer.
+3. Select the target folder.
+4. Save the exported trace file.
+5. Store the exported trace data in a safe location.
 
 ### Step 7: Prepare the diagnostic package
 
