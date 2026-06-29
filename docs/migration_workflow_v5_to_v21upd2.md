@@ -114,3 +114,27 @@ After the backup has been imported successfully, verify that the restored runtim
 The backup has now been imported into the V21 Upd 2 app. The restored runtime project can now be started and validated.
 
 ### Step 5: Start and validate the restored runtime project
+
+After the backup has been imported successfully, validate that the restored data is available and that the runtime project can be started.
+
+In the **SIMATIC WinCC Unified Runtime Manager**, check that all expected runtime projects are available.
+
+Select the runtime project that should be started and start the runtime.
+
+Wait until the project has been started successfully.
+
+Verify that the runtime project reaches the expected running state.
+
+If several runtime projects were restored, repeat this check for each relevant project.
+
+If log data was available before the migration, verify that the expected logs are still available after the backup import.
+
+Open the corresponding log view and check that the migrated log entries are displayed.
+
+The migration has been completed successfully when the following points have been verified:
+
+* All expected runtime projects are available.
+* The restored runtime project can be started successfully.
+* The runtime project reaches the expected running state.
+* Existing log data is available after the migration, if applicable.
+
