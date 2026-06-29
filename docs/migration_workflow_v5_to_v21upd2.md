@@ -60,3 +60,37 @@ When the app has been uninstalled successfully, an **Application Uninstalled** e
 ![Application uninstalled event](graphics/migration/migration_uninstall_3_uninstall_completed.png)
 
 The V5.0.0 app has now been removed and the V21 Upd 2 app can be installed.
+
+### Step 3: Install the V21 Upd 2 app
+
+After the existing V5.0.0 app has been uninstalled, install the new **WinCC Unified Runtime for Industrial Edge V21 Upd 2** app on the Industrial Edge Device.
+
+Wait until the installation process has finished.
+
+The installation progress can be checked in the task or event area of the Industrial Edge Device.
+
+When the app has been installed successfully, the new **SIMATIC WinCC Unified Runtime** app is displayed in the **Apps** screen.
+
+Open the installed app to access the **Simatic WinCC Unified Runtime Manager**.
+
+At the first login, use the default credentials:
+
+```text
+User: uoeuser
+Password: User@uoe
+```
+
+After the first login, the system requests a password change.
+
+Change the default password and store the new credentials in a safe location.
+
+> **Important:**
+> The default password must only be used for the initial login. After changing the password, use the new credentials to access the WinCC Unified Web Runtime Manager.
+
+After the password has been changed successfully, the **Simatic WinCC Unified Runtime Manager** can be accessed.
+
+The V21 Upd 2 app has now been installed and prepared. The previously created backup can now be imported.
+
+### Step 4: Import the backup into the V21 Upd 2 app
+
+### Step 5: Start and validate the restored runtime project
