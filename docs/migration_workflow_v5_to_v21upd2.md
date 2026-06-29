@@ -71,7 +71,7 @@ The installation progress can be checked in the task or event area of the Indust
 
 When the app has been installed successfully, the new **SIMATIC WinCC Unified Runtime** app is displayed in the **Apps** screen.
 
-Open the installed app to access the **Simatic WinCC Unified Runtime Manager**.
+Open the installed app to access the **SIMATIC WinCC Unified Runtime Manager**.
 
 At the first login, use the default credentials:
 
@@ -87,10 +87,30 @@ Change the default password and store the new credentials in a safe location.
 > **Important:**
 > The default password must only be used for the initial login. After changing the password, use the new credentials to access the WinCC Unified Web Runtime Manager.
 
-After the password has been changed successfully, the **Simatic WinCC Unified Runtime Manager** can be accessed.
+After the password has been changed successfully, the **SIMATIC WinCC Unified Runtime Manager** can be accessed.
 
 The V21 Upd 2 app has now been installed and prepared. The previously created backup can now be imported.
 
 ### Step 4: Import the backup into the V21 Upd 2 app
+
+After the **SIMATIC WinCC Unified Runtime Manager** can be accessed, import the backup that was created in the previous V5.0.0 app.
+
+In the **SIMATIC WinCC Unified Runtime Manager**, open the configuration settings from the left-side navigation bar. In the configuration menu, scroll down until **Export and Import Data** is visible and select it.
+
+In the **Export and Import Data** view, select the **Import Data** tab.
+
+Select the backup archive file that was created in the V5.0.0 app.
+
+The backup file must be the compressed **.tar.gz** archive that was exported during Step 1.
+
+Start the import process.
+
+Wait until the import process has finished. During this process, the backup data is restored into the new V21 Upd 2 app.
+
+When the import has been completed successfully, a success message is displayed.
+
+After the backup has been imported successfully, verify that the restored runtime project and configuration are available in the **SIMATIC WinCC Unified Runtime Manager**.
+
+The backup has now been imported into the V21 Upd 2 app. The restored runtime project can now be started and validated.
 
 ### Step 5: Start and validate the restored runtime project
