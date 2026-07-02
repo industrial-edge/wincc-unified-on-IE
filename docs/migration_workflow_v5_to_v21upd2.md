@@ -129,9 +129,14 @@ Wait until the import process has finished. During this process, the backup data
 
 When the import has been completed successfully, a success message is displayed.
 
-After the backup has been imported successfully, verify that the restored runtime project and configuration are available in the **SIMATIC WinCC Unified Runtime Manager**.
+After the import, the app may restart to apply the restored data. Wait until the **SIMATIC WinCC Unified Runtime Manager** is available again.
+
+Then verify that the runtime projects restored from the backup are displayed in the **SIMATIC WinCC Unified Runtime Manager**.
+
+![App restart and restored projects loaded](graphics/migration/migration_import_2_restart_and_projects_loaded.gif)
 
 The imported backup restores the runtime data, such as projects and media files. The required user configuration is completed in the next step by downloading it from TIA Portal.
+
 
 ### Step 5: Download the user configuration from TIA Portal and validate the migration
 
