@@ -123,6 +123,8 @@ The backup file must be the compressed **.tar.gz** archive that was exported dur
 
 Start the import process.
 
+![Select backup file and start import](graphics/migration/migration_import_1_select_backup_and_start_import.gif)
+
 Wait until the import process has finished. During this process, the backup data is restored into the new V21 Upd 2 app.
 
 When the import has been completed successfully, a success message is displayed.
