@@ -105,6 +105,8 @@ Change the default password and store the new credentials in a safe location.
 
 After the password has been changed successfully, the **SIMATIC WinCC Unified Runtime Manager** can be accessed.
 
+![First access to SIMATIC WinCC Unified Runtime Manager](graphics/migration/migration_install_2_first_access_runtime_manager.gif)
+
 The V21 Upd 2 app has now been installed and prepared. The previously created backup can now be imported.
 
 ### Step 4: Import the backup into the V21 Upd 2 app
