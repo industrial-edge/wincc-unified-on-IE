@@ -2,7 +2,7 @@
 
 This document describes how to collect diagnostic information from the **WinCC Unified Runtime for Industrial Edge** app.
 
-Logs and traces record the application activity on the Industrial Edge Device and can be configured from **Configuration > Logs and Traces**..
+Logs and traces record the application activity on the Industrial Edge Device and can be configured from **Configuration > Logs and Traces**.
 
 The **Logs and Traces** settings include the following components:
 
@@ -60,7 +60,7 @@ In the **Logs and Traces** view, select the **Trace Logging** tab.
 
 Enable Trace Logging if detailed trace files are required.
 
-![Enable App Logging](graphics/trace/trace_settings_2_app_logging_enabled.gif)
+![Enable Trace Logging](graphics/trace/trace_settings_2_app_logging_enabled.gif)
 
 Trace Logging creates `.csv` trace files in the **TraceLogs** folder. These files can be downloaded and analyzed later.
 
