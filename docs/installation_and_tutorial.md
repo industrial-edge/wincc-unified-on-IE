@@ -20,6 +20,9 @@
 - [Alarms](#alarms)
 - [Logs](#logs)
 - [Trends](#trends)
+- [Further engineering workflows](#further-engineering-workflows)
+  - [How to display Industrial Edge applications within WinCC Unified Runtime](#how-to-display-industrial-edge-applications-within-wincc-unified-runtime)
+  - [How to exchange HMI variables with IIH Essentials](#how-to-exchange-hmi-variables-with-iih-essentials)
 - [TIA Portal guidelines](#tia-portal-guidelines)
 - [How to use WinCC Unified Runtime Manager](#how-to-use-wincc-unified-runtime-manager)
   - [Start the runtime](#start-the-runtime)
@@ -213,6 +216,13 @@ In its properties to add different trends to appear in the item, go to Trends an
 In the runtime the trend will be filled:
 
 ![trends4](graphics/trends4.png)
+
+## Further engineering workflows
+
+For additional engineering workflows, see:
+
+- [How to display Industrial Edge applications within WinCC Unified Runtime](further_engineering_workflows.md#how-to-display-industrial-edge-applications-within-wincc-unified-runtime)
+- [How to exchange HMI variables with IIH Essentials](further_engineering_workflows.md#how-to-exchange-hmi-variables-with-iih-essentials)
 
 ## TIA Portal guidelines
 
