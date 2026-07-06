@@ -21,8 +21,6 @@
 - [Logs](#logs)
 - [Trends](#trends)
 - [Further engineering workflows](#further-engineering-workflows)
-  - [How to display Industrial Edge applications within WinCC Unified Runtime](#how-to-display-industrial-edge-applications-within-wincc-unified-runtime)
-  - [How to exchange HMI variables with IIH Essentials](#how-to-exchange-hmi-variables-with-iih-essentials)
 - [TIA Portal guidelines](#tia-portal-guidelines)
 - [How to use WinCC Unified Runtime Manager](#how-to-use-wincc-unified-runtime-manager)
   - [Start the runtime](#start-the-runtime)

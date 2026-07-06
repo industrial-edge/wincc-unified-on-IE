@@ -42,7 +42,7 @@ This example shows how to install and configure the "WinCC Unified Runtime" appl
 
 ## Documentation
 
-You can find information about the installation, tutorial and migration workflow in the following links:
+You can find the main documentation in the following links:
 
 - [Installation and Tutorial](docs/installation_and_tutorial.md)
 - [Further engineering workflows](docs/further_engineering_workflows.md)

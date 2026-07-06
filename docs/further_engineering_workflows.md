@@ -1,8 +1,8 @@
-## Further engineering workflows
+# Further engineering workflows
 
 This chapter describes additional engineering workflows that can be used together with **SIMATIC WinCC Unified Runtime for Industrial Edge**.
 
-### How to display Industrial Edge applications within WinCC Unified Runtime
+## How to display Industrial Edge applications within WinCC Unified Runtime
 
 Industrial Edge applications, such as Energy Manager or Performance Insight, can be displayed inside the **SIMATIC WinCC Unified Runtime** app by using a **Web browser control** in a WinCC Unified screen.
 
@@ -34,3 +34,5 @@ https://<ip-address-of-IED>/energymanager/#/my-plant/<plant-id>/dashboard/<dashb
 
 > **Note:**
 > The URL must be reachable from the runtime client where the WinCC Unified screen is opened. Depending on the Industrial Edge application, additional login, permissions or certificate handling may be required.
+
+## How to exchange HMI variables with IIH Essentials
