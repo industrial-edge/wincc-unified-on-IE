@@ -219,8 +219,9 @@ In the runtime the trend will be filled:
 
 For additional engineering workflows, see:
 
-- [How to display Industrial Edge applications within WinCC Unified Runtime](further_engineering_workflows.md#how-to-display-industrial-edge-applications-within-wincc-unified-runtime)
-- [How to exchange HMI variables with IIH Essentials](further_engineering_workflows.md#how-to-exchange-hmi-variables-with-iih-essentials)
+* [How to display Industrial Edge applications within WinCC Unified Runtime](further_engineering_workflows.md#how-to-display-industrial-edge-applications-within-wincc-unified-runtime)
+* [Connect WinCC Unified Runtime on Edge with IIH via OPC UA](further_engineering_workflows.md#connect-wincc-unified-runtime-on-edge-with-iih-via-opc-ua)
+* [How to exchange HMI variables with IIH Essentials](further_engineering_workflows.md#how-to-exchange-hmi-variables-with-iih-essentials)
 
 ## TIA Portal guidelines
 
