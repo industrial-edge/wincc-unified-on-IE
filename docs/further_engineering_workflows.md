@@ -222,3 +222,150 @@ If the values are not available, verify the following points:
 * The required mapping between IIH Essentials and IIH Semantics is available, if the data should originate from IIH Essentials.
 
 ## How to exchange HMI variables with IIH Essentials
+
+This section describes how WinCC Unified HMI variables can be accessed from **IIH Essentials** by using the **HMI Runtime connector**.
+
+The workflow starts from an existing WinCC Unified Runtime project. After the project has been downloaded and started on **SIMATIC WinCC Unified Runtime for Industrial Edge**, the HMI variables can be browsed in IIH Essentials and added to an asset model. These variables can then be used by Industrial Edge applications and dashboards.
+
+For a general introduction to Industrial Information Hub, refer to the official Siemens Industrial Operations X documentation:
+
+[Industrial Information Hub overview](https://docs.industrial-operations-x.siemens.cloud/r/en-us/v2.5/industrial-information-hub/first-steps/overview)
+
+> **Note:**
+> The workflow described in this section focuses on browsing and adding existing WinCC Unified HMI variables in IIH Essentials. The WinCC Unified Runtime project, the required HMI variables and the target asset model are assumed to already exist.
+
+The basic workflow is:
+
+1. Open IIH Essentials.
+2. Verify that the HMI Runtime connector is available.
+3. Open the target asset model.
+4. Browse the WinCC Unified HMI variables.
+5. Select the required HMI variables.
+6. Create attributes from the selected HMI variables.
+7. Validate that the variables are available in IIH Essentials.
+
+### Prerequisites
+
+Before starting the workflow, verify the following points:
+
+* **SIMATIC WinCC Unified Runtime for Industrial Edge** is installed on the Industrial Edge Device.
+* A WinCC Unified project has been downloaded to the runtime.
+* The WinCC Unified runtime project has been started.
+* The required HMI variables are available in the downloaded WinCC Unified project.
+* **IIH Essentials** is installed and available on the same Industrial Edge Device.
+* The **HMI Runtime connector** is available in IIH Essentials.
+* The target asset model is available in IIH Essentials.
+* The required user permissions are available in IIH Essentials.
+
+> **Note:**
+> The Industrial Edge applications involved in this workflow must run on the same Industrial Edge Device.
+
+### Step 1: Open IIH Essentials
+
+Open the **Apps** page of the Industrial Edge Device.
+
+Start **IIH Essentials**.
+
+The IIH Essentials user interface opens.
+
+### Step 2: Verify that the HMI Runtime connector is available
+
+In IIH Essentials, open **Connectors** from the left-side navigation.
+
+Check that the **HMI Runtime** connector is available.
+
+The HMI Runtime connector is used to access WinCC Unified Runtime data from IIH Essentials. In the Industrial Information Hub documentation, this connector is described as the **HMIRuntime connector (Open Pipe Path)**. It is based on SIMATIC HMI WinCC Unified Open Pipe and allows communication with WinCC Unified Runtime using variables and alarms.
+
+For additional information about the connector concept in Industrial Information Hub, refer to:
+
+[Industrial Information Hub - Get data](https://docs.industrial-operations-x.siemens.cloud/r/en-us/v2.5/industrial-information-hub/get-data)
+
+For additional technical information about the underlying Open Pipe communication, refer to:
+
+[SIMATIC HMI WinCC Unified Open Pipe](https://support.industry.siemens.com/cs/document/109778823/simatic-hmi-wincc-unified-open-pipe?dti=0&lc=en-WW)
+
+> **Important:**
+> The WinCC Unified runtime project must be running. If the runtime is not active, the HMI Runtime connector cannot access the runtime variables.
+
+### Step 3: Open the target asset model
+
+In the left-side navigation, open **Manage data**.
+
+Select the asset model where the WinCC Unified HMI variables should be added.
+
+In this application example, the asset model is used to organize production-related data, for example by using assets, attributes and areas such as assembly, body shop or painting shop.
+
+For additional information about creating and organizing asset models, refer to:
+
+[Industrial Information Hub - Manage data](https://docs.industrial-operations-x.siemens.cloud/r/en-us/v2.5/industrial-information-hub/manage-data)
+
+### Step 4: Browse the WinCC Unified HMI variables
+
+Inside the selected asset model, open the tag sidebar.
+
+Select the connected **HMI Runtime** connector.
+
+Browse the available connections and tags until the required WinCC Unified HMI variables are visible.
+
+The tag sidebar can be used to browse the available tags of a connected connector and select the tags that should be added to the asset model.
+
+For additional information about connecting data to an asset model, refer to:
+
+[Industrial Information Hub - Manage data](https://docs.industrial-operations-x.siemens.cloud/r/en-us/v2.5/industrial-information-hub/manage-data)
+
+See the section **Connecting data** in the Industrial Information Hub documentation.
+
+### Step 5: Select the required HMI variables
+
+Select the WinCC Unified HMI variables that should be used in IIH Essentials.
+
+Only select the variables that are required for the corresponding Industrial Edge application, dashboard or asset model.
+
+### Step 6: Create attributes from the selected HMI variables
+
+After selecting the required HMI variables, create attributes from the selected tags.
+
+Click **Create** to add the selected variables to the asset model.
+
+The selected WinCC Unified HMI variables are added as attributes in IIH Essentials. The tag information is used to create the corresponding attributes in the selected asset model.
+
+### Step 7: Validate the variables in IIH Essentials
+
+After the attributes have been created, verify that the expected variables are available in the selected asset model.
+
+Open the **Attributes** view of the corresponding asset and check the created attributes.
+
+Verify the following points:
+
+* The expected attributes are listed.
+* The attributes are mapped to the correct HMI Runtime tags.
+* The connection state does not indicate an error.
+* The current values are displayed as expected.
+
+If the attributes are connected to connector tags, the state indicator can be used to identify the connection state. The value column can be used to check the most recent value of the attribute.
+
+### Troubleshooting
+
+If the expected HMI variables are not available, verify the following points:
+
+* The WinCC Unified runtime project is running.
+* The required HMI variables exist in the downloaded WinCC Unified project.
+* The HMI Runtime connector is available in IIH Essentials.
+* The correct asset model has been selected.
+* The correct connector and connection have been selected in the tag sidebar.
+* The required HMI variables have been selected and added.
+* The Industrial Edge applications are running on the same Industrial Edge Device.
+
+If the issue cannot be solved with these checks, use the troubleshooting functions of IIH Essentials. For example, you can enable extended logging, check logs, use the browser debugger or restart the affected app or Industrial Edge Device.
+
+For additional troubleshooting information, refer to:
+
+[Industrial Information Hub - Troubleshooting](https://docs.industrial-operations-x.siemens.cloud/r/en-us/v2.5/industrial-information-hub/troubleshooting)
+
+### Next step: Use the variables in Industrial Edge dashboards
+
+After the WinCC Unified HMI variables have been added to the asset model in IIH Essentials, they can be used by Industrial Edge applications and dashboards.
+
+For information about displaying Industrial Edge application dashboards inside WinCC Unified Runtime, see:
+
+[How to display Industrial Edge applications within WinCC Unified Runtime](#how-to-display-industrial-edge-applications-within-wincc-unified-runtime)
