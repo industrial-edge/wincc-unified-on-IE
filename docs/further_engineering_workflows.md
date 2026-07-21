@@ -82,9 +82,14 @@ If the dashboard is not displayed, verify the following points:
 
 ## Connect WinCC Unified Runtime on Edge with IIH via OPC UA
 
-This section describes the engineering workflow to establish an OPC UA connection between **WinCC Unified Runtime on Edge** and **IIH Semantics** by using TIA Portal.
+This section describes how data from **IIH Semantics** can be made available in **WinCC Unified Runtime** through an OPC UA connection configured in TIA Portal.
 
 The workflow starts in IIH Semantics, where the asset model is exposed via OPC UA. The OPC UA server is then browsed from TIA Portal and variables from the IIH asset model are assigned to HMI tags in the WinCC Unified project. After the project has been compiled and downloaded to **SIMATIC WinCC Unified Runtime for Industrial Edge**, the configured HMI tags can be validated in runtime.
+
+> **Recommendation:**
+> Use this workflow when **IIH Semantics** is the data source and the data should be used in **WinCC Unified Runtime**.
+>
+> To make data from **WinCC Unified Runtime** available in **IIH Essentials**, use the **HMI Runtime connector** workflow described in [How to exchange HMI variables with IIH Essentials](#how-to-exchange-hmi-variables-with-iih-essentials).
 
 This workflow covers the following steps:
 
@@ -229,9 +234,14 @@ If the values are not available, verify the following points:
 
 ## How to exchange HMI variables with IIH Essentials
 
-This section describes how WinCC Unified HMI variables can be accessed from **IIH Essentials** by using the **HMI Runtime connector**.
+This section describes how data from **WinCC Unified Runtime** can be made available in **IIH Essentials** by using the **HMI Runtime connector**.
 
 The workflow starts from an existing WinCC Unified Runtime project. After the project has been downloaded and started on **SIMATIC WinCC Unified Runtime for Industrial Edge**, the HMI variables can be browsed in IIH Essentials and added to an asset model. These variables can then be used by Industrial Edge applications and dashboards.
+
+> **Recommendation:**
+> Use this workflow when **WinCC Unified Runtime** is the data source and the data should be used in **IIH Essentials**.
+>
+> To use data from **IIH Semantics** in **WinCC Unified Runtime**, use the [OPC UA workflow](#connect-wincc-unified-runtime-on-edge-with-iih-via-opc-ua).
 
 For a general introduction to Industrial Information Hub, refer to the official Siemens Industrial Operations X documentation:
 
