@@ -2,6 +2,12 @@
 
 This chapter describes additional engineering workflows that can be used together with **SIMATIC WinCC Unified Runtime for Industrial Edge**.
 
+## Table of contents
+
+- [How to display Industrial Edge applications within WinCC Unified Runtime](#how-to-display-industrial-edge-applications-within-wincc-unified-runtime)
+- [Connect WinCC Unified Runtime on Edge with IIH via OPC UA](#connect-wincc-unified-runtime-on-edge-with-iih-via-opc-ua)
+- [How to exchange HMI variables with IIH Essentials](#how-to-exchange-hmi-variables-with-iih-essentials)
+
 ## How to display Industrial Edge applications within WinCC Unified Runtime
 
 Industrial Edge applications, such as **Energy Manager** or **Performance Insight**, can be displayed inside **SIMATIC WinCC Unified Runtime** by using a **Web browser control** in a WinCC Unified screen.
