@@ -18,7 +18,7 @@ This allows operators to open Industrial Edge dashboards directly from the WinCC
 
 Before configuring the Web browser control, verify the following points:
 
-* The Industrial Edge application that should be displayed is installed and available.
+* All Industrial Edge applications involved in this workflow, including **SIMATIC WinCC Unified Runtime for Industrial Edge**, are installed and running on the same Industrial Edge Device.
 * The dashboard URL of the Industrial Edge application is known.
 * The dashboard URL can be reached from the runtime client where the WinCC Unified screen is opened.
 * The required user permissions for the Industrial Edge application are available.
