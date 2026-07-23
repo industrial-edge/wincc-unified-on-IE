@@ -238,9 +238,24 @@ When WinCC Unified Runtime Manager is opened for the first time, sign in with th
 * **User name:** `uoeuser`
 * **Password:** `User@uoe`
 
-After the first sign-in, you are required to change the default password before continuing. Use the new password for subsequent sign-ins.
-
 At least one user with administrator rights is required to access WinCC Unified Runtime Manager.
+
+After the first sign-in, the default password must be changed before you can continue.
+
+![Login to WinCC Unified Runtime Manager](graphics/runtime_manager/login.png)
+
+To change the default password, proceed as follows:
+
+1. Open the login page.
+2. Enter the user name `uoeuser`.
+3. Click **Change password**.
+4. Enter the current password.
+5. Enter and confirm the new password.
+6. Complete the password change process.
+
+![Change the default password](graphics/runtime_manager/changePassword.png)
+
+After the password has been changed, use the new password for all subsequent sign-ins.
 
 When a TIA Portal project containing UMC users is downloaded to the runtime, use the credentials configured in the project. The project-specific UMC user data replaces the default user credentials.
 
