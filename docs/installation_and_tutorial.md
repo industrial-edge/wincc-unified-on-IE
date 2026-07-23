@@ -229,45 +229,42 @@ In case you need more information related to the engineering of the project in T
 
 ## How to use WinCC Unified Runtime Manager
 
-To start the runtime, open the **WinCC Unified Runtime** app:
+To open WinCC Unified Runtime Manager, open the **WinCC Unified Runtime** app:
 
-![start1](graphics/runtime_manager/start1.png)
+![Open the WinCC Unified Runtime app](graphics/runtime_manager/start1.png)
 
-When WinCC Unified Runtime Manager is opened for the first time, sign in with the default credentials:
+When WinCC Unified Runtime Manager is opened for the first time, the default user password must be changed before you can sign in.
+
+The default credentials are:
 
 * **User name:** `uoeuser`
 * **Password:** `User@uoe`
-
-At least one user with administrator rights is required to access WinCC Unified Runtime Manager.
-
-After the first sign-in, the default password must be changed before you can continue.
 
 ![Login to WinCC Unified Runtime Manager](graphics/runtime_manager/login.png)
 
 To change the default password, proceed as follows:
 
-1. Open the login page.
-2. Enter the user name `uoeuser`.
-3. Click **Change password**.
-4. Enter the current password.
-5. Enter and confirm the new password.
-6. Complete the password change process.
+1. Enter the user name `uoeuser` on the login page.
+2. Click **Change Password**.
+3. Enter the default password in the **Old password** field.
+4. Enter and confirm the new password.
+5. Click **Change** to complete the password change.
 
 ![Change the default password](graphics/runtime_manager/changePassword.png)
 
-After the password has been changed, use the new password for all subsequent sign-ins.
+After changing the password, sign in with the user name `uoeuser` and the new password.
 
-When a TIA Portal project containing UMC users is downloaded to the runtime, use the credentials configured in the project. The project-specific UMC user data replaces the default user credentials.
+At least one user with administrator rights is required to access WinCC Unified Runtime Manager.
 
-![Login to WinCC Unified Runtime Manager](graphics/runtime_manager/login.png)
+When a TIA Portal project containing UMC users is downloaded to the runtime, sign in with the credentials configured in the project.
 
-If you want to add a user to change the access rights or any other reason, you can do it in the TIA Project:
+To add a user or modify access rights, configure the user in the TIA Portal project:
 
-![addUser](graphics/runtime_manager/addUser.png)
+![Configure users in TIA Portal](graphics/runtime_manager/addUser.png)
 
-If the project downloaded is running you will see a green light that indicates that the runtime is ready:
+When the downloaded project is running, a green status indicator shows that the runtime is ready:
 
-![start2](graphics/runtime_manager/start2.png)
+![Runtime project ready](graphics/runtime_manager/start2.png)
 
 ### Start the runtime
 
