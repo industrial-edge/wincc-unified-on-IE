@@ -89,25 +89,31 @@ When the app has been installed successfully, the new **SIMATIC WinCC Unified Ru
 
 Open the installed app to access the **SIMATIC WinCC Unified Runtime Manager**.
 
-At the first login, use the default credentials:
+#### First access and mandatory password change
 
-```text
-User: uoeuser
-Password: User@uoe
-```
+When the SIMATIC WinCC Unified Runtime Manager is opened for the first time, the default password must be changed before the first sign-in.
 
-After the first login, the system requests a password change.
+The default credentials are:
 
-Change the default password and store the new credentials in a safe location.
+* **User name:** `uoeuser`
+* **Password:** `User@uoe`
+
+To change the default password, proceed as follows:
+
+1. Enter the user name `uoeuser` on the login page.
+2. Click **Change Password**.
+3. Enter the default password in the **Old password** field.
+4. Enter and confirm the new password.
+5. Click **Change** to complete the password change.
+
+After changing the password, sign in with the user name `uoeuser` and the new password.
 
 > **Important:**
-> The default password must only be used for the initial login. After changing the password, use the new credentials to access the SIMATIC WinCC Unified Runtime Manager.
+> Use the default password only to complete the initial password change. Store the new password in a safe location and use it until the required user administration data is downloaded from TIA Portal in Step 5.
 
-After the password has been changed successfully, the **SIMATIC WinCC Unified Runtime Manager** can be accessed.
+![First access and mandatory password change](graphics/runtime_manager/first_access_runtime_manager.gif)
 
-![First access to SIMATIC WinCC Unified Runtime Manager](graphics/migration/migration_install_2_first_access_runtime_manager.gif)
-
-The V21 Upd 2 app has now been installed and prepared. The previously created backup can now be imported.
+After signing in successfully, the **SIMATIC WinCC Unified Runtime Manager** is available and the previously created backup can be imported.
 
 ### Step 4: Import the backup into the V21 Upd 2 app
 

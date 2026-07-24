@@ -229,18 +229,18 @@ In case you need more information related to the engineering of the project in T
 
 ## How to use WinCC Unified Runtime Manager
 
-To open WinCC Unified Runtime Manager, open the **WinCC Unified Runtime** app:
+To open the **SIMATIC WinCC Unified Runtime Manager**, open the **SIMATIC WinCC Unified Runtime** app:
 
-![Open the WinCC Unified Runtime app](graphics/runtime_manager/start1.png)
+![Open the SIMATIC WinCC Unified Runtime app](graphics/runtime_manager/start1.png)
 
-When WinCC Unified Runtime Manager is opened for the first time, the default user password must be changed before you can sign in.
+### First access and mandatory password change
+
+When the SIMATIC WinCC Unified Runtime Manager is opened for the first time, the default password must be changed before the first sign-in.
 
 The default credentials are:
 
 * **User name:** `uoeuser`
 * **Password:** `User@uoe`
-
-![Login to WinCC Unified Runtime Manager](graphics/runtime_manager/login.png)
 
 To change the default password, proceed as follows:
 
@@ -250,13 +250,16 @@ To change the default password, proceed as follows:
 4. Enter and confirm the new password.
 5. Click **Change** to complete the password change.
 
-![Change the default password](graphics/runtime_manager/changePassword.png)
-
 After changing the password, sign in with the user name `uoeuser` and the new password.
 
-At least one user with administrator rights is required to access WinCC Unified Runtime Manager.
+> **Important:**
+> Use the default password only to complete the initial password change. Store the new password in a safe location and use it for subsequent sign-ins.
 
-When a TIA Portal project containing UMC users is downloaded to the runtime, sign in with the credentials configured in the project.
+![First access and mandatory password change](graphics/runtime_manager/first_access_runtime_manager.gif)
+
+At least one user with administrator rights is required to access the SIMATIC WinCC Unified Runtime Manager.
+
+After downloading user administration data from TIA Portal, sign in with the credentials configured in the TIA Portal project.
 
 To add a user or modify access rights, configure the user in the TIA Portal project:
 
