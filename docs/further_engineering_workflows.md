@@ -253,9 +253,9 @@ For a general introduction to Industrial Information Hub, refer to the official 
 The basic workflow is:
 
 1. Open IIH Essentials.
-2. Verify that the HMI Runtime connector is available.
+2. Verify that the HmiRuntime connector is active and connected.
 3. Open the target asset model.
-4. Browse the WinCC Unified HMI variables.
+4. Browse the WinCC Unified HMI variables in the tag sidebar.
 5. Select the required HMI variables.
 6. Create attributes from the selected HMI variables.
 7. Validate that the variables are available in IIH Essentials.
@@ -284,13 +284,18 @@ Start **IIH Essentials**.
 
 The IIH Essentials user interface opens.
 
-### Step 2: Verify that the HMI Runtime connector is available
+### Step 2: Verify the HmiRuntime connector
 
 In IIH Essentials, open **Connectors** from the left-side navigation.
 
-Check that the **HMI Runtime** connector is available.
+Select **HmiRuntime** and verify the following states:
 
-The HMI Runtime connector is used to access WinCC Unified Runtime data from IIH Essentials. In the Industrial Information Hub documentation, this connector is described as the **HMIRuntime connector (Open Pipe Path)**. It is based on SIMATIC HMI WinCC Unified Open Pipe and allows communication with WinCC Unified Runtime using variables and alarms.
+* **State:** Active
+* **Connection:** Connected
+
+The connector is labeled **HmiRuntime** in IIH Essentials. In the Industrial Information Hub documentation, it is described as the **HMIRuntime connector (Open Pipe Path)**.
+
+The connector is based on SIMATIC HMI WinCC Unified Open Pipe and provides access to WinCC Unified Runtime variables and alarms from IIH Essentials.
 
 For additional information about the connector concept in Industrial Information Hub, refer to:
 
@@ -301,13 +306,15 @@ For additional technical information about the underlying Open Pipe communicatio
 [SIMATIC HMI WinCC Unified Open Pipe](https://support.industry.siemens.com/cs/document/109778823/simatic-hmi-wincc-unified-open-pipe?dti=0&lc=en-WW)
 
 > **Important:**
-> The WinCC Unified runtime project must be running. If the runtime is not active, the HMI Runtime connector cannot access the runtime variables.
+> The WinCC Unified runtime project must be running. If the runtime is not active, the HmiRuntime connector cannot access the runtime variables.
 
 ### Step 3: Open the target asset model
 
 In the left-side navigation, open **Manage data**.
 
 Select the asset model where the WinCC Unified HMI variables should be added.
+
+Open the asset or child asset where the corresponding attributes should be created.
 
 In this application example, the asset model is used to organize production-related data, for example by using assets, attributes and areas such as assembly, body shop or painting shop.
 
@@ -317,13 +324,19 @@ For additional information about creating and organizing asset models, refer to:
 
 ### Step 4: Browse the WinCC Unified HMI variables
 
-Inside the selected asset model, open the tag sidebar.
+Open the **Attributes** view of the selected asset.
 
-Select the connected **HMI Runtime** connector.
+Open the tag sidebar if it is not already visible.
 
-Browse the available connections and tags until the required WinCC Unified HMI variables are visible.
+Under **Connections**, select **HmiRuntime**.
 
-The tag sidebar can be used to browse the available tags of a connected connector and select the tags that should be added to the asset model.
+Expand the required runtime connection and browse the available tags until the required WinCC Unified HMI variables are visible.
+
+The tag sidebar can be used to browse the available connector tags and select the variables that should be added to the asset model.
+
+The following animation shows how to verify the HmiRuntime connector, open the target asset model and browse the available WinCC Unified HMI variables:
+
+![Verify the HmiRuntime connector and browse WinCC Unified HMI variables](graphics/further_engineering/iih_hmi_runtime_connector_and_variables.gif)
 
 For additional information about connecting data to an asset model, refer to:
 
