@@ -2,55 +2,76 @@
 
 This chapter describes additional engineering workflows that can be used together with **SIMATIC WinCC Unified Runtime for Industrial Edge**.
 
+The appropriate workflow depends on the integration scenario and the direction in which data or content should be exchanged.
+
+| Goal | Data or content flow | Recommended workflow |
+| --- | --- | --- |
+| Display an Industrial Edge application or dashboard inside WinCC Unified Runtime | Industrial Edge application → WinCC Unified Runtime | [Display Industrial Edge applications within WinCC Unified Runtime](#how-to-display-industrial-edge-applications-within-wincc-unified-runtime) |
+| Use data from IIH Semantics in WinCC Unified Runtime | IIH Semantics → WinCC Unified Runtime | [Connect WinCC Unified Runtime with IIH Semantics via OPC UA](#connect-wincc-unified-runtime-with-iih-semantics-via-opc-ua) |
+| Make WinCC Unified HMI variables available in IIH Essentials | WinCC Unified Runtime → IIH Essentials | [Exchange HMI variables with IIH Essentials](#how-to-exchange-hmi-variables-with-iih-essentials) |
+
 ## Table of contents
 
 - [How to display Industrial Edge applications within WinCC Unified Runtime](#how-to-display-industrial-edge-applications-within-wincc-unified-runtime)
-- [Connect WinCC Unified Runtime on Edge with IIH via OPC UA](#connect-wincc-unified-runtime-on-edge-with-iih-via-opc-ua)
+- [Connect WinCC Unified Runtime with IIH Semantics via OPC UA](#connect-wincc-unified-runtime-with-iih-semantics-via-opc-ua)
 - [How to exchange HMI variables with IIH Essentials](#how-to-exchange-hmi-variables-with-iih-essentials)
 
 ## How to display Industrial Edge applications within WinCC Unified Runtime
 
-Industrial Edge applications, such as **Energy Manager** or **Performance Insight**, can be displayed inside **SIMATIC WinCC Unified Runtime** by using a **Web browser control** in a WinCC Unified screen.
+Industrial Edge applications, such as **Energy Manager** or **Performance Insight**, can be displayed inside **SIMATIC WinCC Unified Runtime** by using a **Web control** in a WinCC Unified screen.
 
-This allows operators to open Industrial Edge dashboards directly from the WinCC Unified Runtime user interface.
+This allows operators to access Industrial Edge applications and dashboards directly from the WinCC Unified Runtime user interface.
 
 ### Prerequisites
 
-Before configuring the Web browser control, verify the following points:
+Before configuring the Web control, verify the following points:
 
 * All Industrial Edge applications involved in this workflow, including **SIMATIC WinCC Unified Runtime for Industrial Edge**, are installed and running on the same Industrial Edge Device.
-* The dashboard URL of the Industrial Edge application is known.
-* The dashboard URL can be reached from the runtime client where the WinCC Unified screen is opened.
+* The URL of the Industrial Edge application or dashboard is known.
+* The URL can be reached from the runtime client where the WinCC Unified screen is opened.
 * The required user permissions for the Industrial Edge application are available.
 * The WinCC Unified project is available in TIA Portal.
 
 > **Note:**
 > Depending on the Industrial Edge application and the system configuration, additional login, permissions or certificate handling may be required.
 
-### Engineering workflow
+### Step 1: Add the Web control
 
-To display an Industrial Edge application within WinCC Unified Runtime, proceed as follows:
+Open the WinCC Unified project in TIA Portal.
 
-1. Open the WinCC Unified project in TIA Portal.
-2. Open the screen where the Industrial Edge application should be displayed.
-3. Add a **Web browser control** to the screen.
-4. Resize and position the Web browser control according to the required screen layout.
-5. Configure the URL of the Industrial Edge application or dashboard.
-6. Download the project to **WinCC Unified Runtime for Industrial Edge**.
-7. Start the runtime project.
-8. Open the configured screen and verify that the Industrial Edge application is displayed inside the Web browser control.
+Open the screen where the Industrial Edge application should be displayed.
 
-### Dashboard URL
+In the **Toolbox**, locate the **Web control** and drag it onto the screen.
 
-Use the direct URL of the Industrial Edge application or dashboard that should be displayed.
+The following animation shows how to add the Web control to a WinCC Unified screen:
 
-Example for an Energy Manager dashboard:
+![Drag the Web control onto a WinCC Unified screen](graphics/further_engineering/web_browser_control_1_drag_and_drop.gif)
+
+After adding the Web control, resize and position it according to the required screen layout.
+
+### Step 2: Configure the application or dashboard URL
+
+Select the **Web control**.
+
+In the **Properties** tab, expand **General > Homepage URL** and enter the URL of the Industrial Edge application or dashboard in the **URL** field.
+
+The following animation shows how to configure the URL of the Web control:
+
+![Configure the URL in the Web control properties](graphics/further_engineering/web_browser_control_2_configure_url.gif)
+
+For example, Energy Manager can be opened directly by using the application URL:
+
+```text
+https://<ip-address-of-IED>/energymanager/
+```
+
+A specific Energy Manager dashboard can also be opened directly:
 
 ```text
 https://<ip-address-of-IED>/energymanager/#/my-plant/<plant-id>/dashboard/<dashboard-id>
 ```
 
-If the Energy Manager dashboard should be displayed without the side bar or navigation bar, add the following HTTP parameter to the end of the URL:
+To display an Energy Manager dashboard in a simplified embedded view, add the following URL parameter:
 
 ```text
 ?embeddedViewMode=readOnly
@@ -63,24 +84,35 @@ https://<ip-address-of-IED>/energymanager/#/my-plant/<plant-id>/dashboard/<dashb
 ```
 
 > **Note:**
-> If the URL already contains an HTTP query parameter, append additional parameters with `&` instead of `?`.
+> If the URL already contains a query parameter, append additional parameters with `&` instead of `?`.
 
-### Runtime validation
+### Step 3: Download and validate the project in runtime
 
-After downloading the project, open the corresponding screen in WinCC Unified Runtime.
+Download the project to **SIMATIC WinCC Unified Runtime for Industrial Edge**.
 
-Check that the dashboard is displayed inside the Web browser control.
+Start the runtime project and open the screen containing the Web control.
 
-If the dashboard is not displayed, verify the following points:
+Verify that the Industrial Edge application or dashboard is displayed inside the Web control.
+
+The following animation shows Energy Manager integrated into a WinCC Unified Runtime screen:
+
+![Display Energy Manager in WinCC Unified Runtime](graphics/further_engineering/web_browser_control_3_runtime_integration.gif)
+
+> **Note:**
+> The Web control displays web content in an iframe. Web applications that prevent their content from being embedded in an iframe cannot be displayed in the Web control.
+
+If the Industrial Edge application or dashboard is not displayed, verify the following points:
 
 * The configured URL is correct.
 * The URL can be reached from the runtime client.
 * The Industrial Edge application is running.
-* The user has the required permissions to access the dashboard.
+* The user has the required permissions to access the application or dashboard.
 * Required certificates or browser permissions have been accepted.
-* The dashboard can be opened directly in a browser outside of WinCC Unified Runtime.
+* The target application allows its content to be displayed in an iframe.
+* The application or dashboard can be opened directly in a browser outside of WinCC Unified Runtime.
 
-## Connect WinCC Unified Runtime on Edge with IIH via OPC UA
+
+## Connect WinCC Unified Runtime with IIH Semantics via OPC UA
 
 This section describes how data from **IIH Semantics** can be made available in **WinCC Unified Runtime** through an OPC UA connection configured in TIA Portal.
 
@@ -241,7 +273,7 @@ The workflow starts from an existing WinCC Unified Runtime project. After the pr
 > **Recommendation:**
 > Use this workflow when **WinCC Unified Runtime** is the data source and the data should be used in **IIH Essentials**.
 >
-> To use data from **IIH Semantics** in **WinCC Unified Runtime**, use the [OPC UA workflow](#connect-wincc-unified-runtime-on-edge-with-iih-via-opc-ua).
+> To use data from **IIH Semantics** in **WinCC Unified Runtime**, use the [OPC UA workflow](#connect-wincc-unified-runtime-with-iih-semantics-via-opc-ua).
 
 For a general introduction to Industrial Information Hub, refer to the official Siemens Industrial Operations X documentation:
 

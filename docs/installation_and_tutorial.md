@@ -10,9 +10,6 @@
   - [Create tags out of connection](#create-tags-out-of-connection)
   - [Create internal tags](#create-internal-tags)
 - [Connect tags to screen items](#connect-tags-to-screen-items)
-- [Scripting](#scripting)
-  - [Global Scripts](#global-scripts)
-  - [Shortcuts](#shortcuts)
 - [OPC UA Server](#opc-ua-server)
 - [Load a project into runtime](#load-a-project-into-runtime)
   - [Offline Download](#offline-download)
@@ -33,203 +30,240 @@
 
 ## Installation
 
-Download the app "WinCC Unified Runtime for Industrial Edge" from the Industrial Edge HUB into your Industrial Edge Management. The application should now be available in the IEM catalog.
+Download **SIMATIC WinCC Unified Runtime for Industrial Edge** from the Industrial Edge Hub to your Industrial Edge Management (IEM). The application is then available in the IEM catalog.
 
-1. Login on the IEM where you control your IED
-2. Go to the catalog
-3. Open the app "WinCC Unified Runtime" and install it on your IED
-4. Login to the IED where you installed the apps
-5. Click on the app icon of "WinCC Unified Runtime" to open this app
+To install the application on an Industrial Edge Device:
+
+1. Sign in to the IEM that manages the target Industrial Edge Device.
+2. Open the **Catalog**.
+3. Select **SIMATIC WinCC Unified Runtime** and install it on the target Industrial Edge Device.
+4. Sign in to the Industrial Edge Device after the installation has completed.
+5. Open the **Apps** page and select **SIMATIC WinCC Unified Runtime**.
 
 ## Creating a project
 
-Once you are in the TIA Portal you can click on **Project** -> **New** to start a new engineering project:
+In TIA Portal, select **Project > New** to create a new engineering project:
 
-![createproject1](graphics/createproject1.png)
+![Create a new project](graphics/createproject1.png)
 
-Now you will a popup asking for the Project Name and folder where you want to store your created project where you can click **Create** and start working on it:
+Enter the project name and select the folder where the project should be stored. Then click **Create**:
 
-![createproject2](graphics/createproject2.png)
+![Configure the new project](graphics/createproject2.png)
 
 ## Creating a device
 
-After creating a project, open the project view. The project tree on the left displays all configured devices. Click **Add new device** to create a device.
+After creating the project, open the project view.
 
-Add the **Unified Edge Device V21.0.1.0** from the device catalog.
+In the project tree, select **Add new device**.
 
-![device1](graphics/device1.png)
+Add **Unified Edge Device V21.0.1.0** from the device catalog:
+
+![Add a Unified Edge Device](graphics/device1.png)
 
 ## Creating a screen
 
-Once we have created a device, its properties are shown when it is accessed:
+After adding the Unified Edge Device, expand the device in the project tree:
 
-![createscreen1](graphics/createscreen1.png)
+![Open the Unified Edge Device](graphics/createscreen1.png)
 
-In the left side menu, click on **Screens** and then click on **Add new screen** button to add a new one:
+Open **Screens** and select **Add new screen**:
 
-![createscreen2](graphics/createscreen2.png)
+![Add a new screen](graphics/createscreen2.png)
 
-Now the created screen will appear under **Screens** and, since it is the first screen created, the screen will be set as the **Start Screen**:
+The newly created screen appears under **Screens**. If it is the first screen created for the device, it is automatically configured as the **Start Screen**:
 
-![createscreen3](graphics/createscreen3.png)
+![Created start screen](graphics/createscreen3.png)
 
 ## Screen items
 
-Once the screen is created and opened, items can be created by drag and drop from the toolbox:
+Open the required screen in TIA Portal.
 
-![screenitems1](graphics/screenitmes1_new.png)
+Screen objects can be added by dragging them from the **Toolbox** onto the screen:
 
-Place the item in the screen area and when it is created you will see all the properties of the item:
+![Add a screen object from the Toolbox](graphics/screenitmes1_new.png)
 
-![screenitems3](graphics/screenitmes3_new.jpg)
+Select a screen object to view and configure its properties:
+
+![Configure the properties of a screen object](graphics/screenitmes3_new.jpg)
 
 ## Connections
 
-To create a connection between the Industrial Edge device and a PLC, an Ethernet communication module is required to be added to the device:
+To configure communication between the Unified Edge Device and a PLC, add the required communication module to the device:
 
-![connections1](graphics/connections1.png)
+![Add a communication module](graphics/connections1.png)
 
-Connect the ports from the PLC to the added communication module in the **Network** view and in the **Connection** view:
+In the **Network view**, connect the PLC interface to the communication module of the Unified Edge Device. Then configure the corresponding connection in the **Connections** view:
 
-![connections2](graphics/connections2.png)
+![Configure the PLC connection](graphics/connections2.png)
 
 ## Tags
 
-There are different ways to create tags in our WinCC Unified project for Industrial Edge.
+WinCC Unified projects can use both tags connected to external data sources and internal HMI tags.
 
-### Create tags out of connection
+### Create tags from a connection
 
-When we establish a connection to a PLC, we can drag and drop a tag from the PLC to the HMI Tags:
+After a connection to the PLC has been configured, PLC tags can be added to the WinCC Unified project.
 
-![tags3](graphics/tags/tags3.png)
+Drag the required PLC tag into an HMI tag table:
+
+![Create an HMI tag from a PLC tag](graphics/tags/tags3.png)
 
 ### Create internal tags
 
-Also internal tags can be manually created in a HMI Tag Table and connection type must be set to **Internal Tag**:
+Internal tags can also be created manually in an HMI tag table.
 
-![tags1](graphics/tags/tags1.png)
+Create the required tag and set its connection to **Internal tag**:
+
+![Create an internal HMI tag](graphics/tags/tags1.png)
 
 ## Connect tags to screen items
 
-Once the tags are created, they can be connected to the screen items. Insert a screen item:
+HMI tags can be used to dynamize properties of screen objects.
 
-![tagstoscreen1](graphics/tags/tagstoscreen1_new.jpg)
+Select the required screen object:
 
-In properties go to three dots of the dynamization rectangle and select **Tag**:
+![Select a screen object](graphics/tags/tagstoscreen1_new.jpg)
 
-![tagstoscreen2](graphics/tags/tagstoscreen2-1.jpg)
+In the **Properties** tab, open the dynamization dialog for the required property and select **Tag**:
 
-Select 'Tag...' and then choose a tag that you want to connect:
+![Configure tag dynamization](graphics/tags/tagstoscreen2-1.jpg)
 
-![tagstoscreen3](graphics/tags/tagstoscreen3.png)
+Select the HMI tag that should be assigned to the property:
 
-Repeat the process for any screen item that you want to connect. You can easily Drag & Drop a tag into your screen to create automatically an IO-field with connected HMI tag:
+![Select an HMI tag](graphics/tags/tagstoscreen3.png)
 
-![tagstoscreen4](graphics/tags/tagstoscreen4.jpg)
+Alternatively, drag an HMI tag directly onto the screen. TIA Portal automatically creates an I/O field connected to the selected tag:
+
+![Create an I/O field by dragging an HMI tag onto the screen](graphics/tags/tagstoscreen4.jpg)
 
 ## OPC UA Server
 
-To operate as an OPC UA server, go to 'Runtime settings' in the left-side menu and enable the OPC UA server checkbox. The default port is 34002 in WinCC Unified Edge RT.
+WinCC Unified Runtime can provide HMI data through its integrated OPC UA server.
 
-![connections6](graphics/connections6.png)
+In the project tree, open **Runtime settings** and enable the **OPC UA server**.
+
+The default OPC UA server port for WinCC Unified Runtime for Industrial Edge is `34002`.
+
+![Enable the OPC UA server](graphics/connections6.png)
 
 ## Load a project into runtime
 
-To load the project in runtime on the Edge Device, you just need to configure its IP adress on the device configuration:
+To download a WinCC Unified project directly from TIA Portal to the Industrial Edge Device, configure the IP address of the target device in the device properties:
 
-![remote2](graphics/remotedown2.png)
+![Configure the Industrial Edge Device IP address](graphics/remotedown2.png)
 
-![remote1](graphics/remotedown1.png)
+Start the download from TIA Portal and select the configured Industrial Edge Device as the target:
 
-### Offline Download
+![Download the project to WinCC Unified Runtime](graphics/remotedown1.png)
 
-In case there is no online connection established to the IED, you have the chance to create an offline runtime project in TIA Portal by drag and drop to the card reader:
+### Offline download
 
-![offdown1](graphics/offdown1.png)
+If a direct online connection between TIA Portal and the Industrial Edge Device is not available, an offline runtime project can be generated in TIA Portal.
 
-Then, in WinCC Unified Runtime on IE you can upload the file that was downloaded by clicking on the 'Upload' button:
+Create the offline runtime project by using the card reader functionality in TIA Portal:
 
-![offdown2](graphics/offdown2.png)
+![Create an offline runtime project](graphics/offdown1.png)
+
+Open **SIMATIC WinCC Unified Runtime Manager** on the Industrial Edge Device and upload the generated runtime project:
+
+![Upload an offline runtime project](graphics/offdown2.png)
 
 ### Offline download via Industrial Edge Management
 
-An offline download to the IE Device is also possible via the IEM. Open the IEM, go to **My Installed Apps** and select **WinCC Unified Runtime**
+An offline runtime project can also be transferred through the Industrial Edge Management (IEM).
 
-![iemdownload](graphics/iem_download.png)
+In the IEM, open **My Installed Apps** and select **SIMATIC WinCC Unified Runtime**:
 
-Once the app's tab is open, click on the **Update configuration** button. Then, add the file in the **+** button within **autoDownload**. After the file is loaded, click on **Update Now**
+![Open WinCC Unified Runtime in the IEM](graphics/iem_download.png)
 
-![iemdownload3](graphics/iem_download3.png)
+Select **Update configuration**.
+
+In the **autoDownload** configuration, click **+** and add the generated offline runtime project file.
+
+After the file has been uploaded, click **Update Now** to transfer the configuration to the Industrial Edge Device:
+
+![Configure autoDownload in the IEM](graphics/iem_download3.png)
 
 ## Alarms
 
-The alarms are created at the desired trigger tag - in this case at an internal tag. We can create two different types: analog and discrete alarms. The alarm type depends on the selected tag data type. For this example we are creating both.
+WinCC Unified supports both analog and discrete alarms. The alarm type and trigger configuration depend on the tag and its data type.
 
-For the analog alarms, an 'Int' tag is created:
+In this example, internal HMI tags are used to trigger both alarm types.
 
-![alarms1](graphics/alarms1.png)
+For the analog alarm example, create an `Int` tag:
 
-On the bottom menu, tab 'Analog alarms', we create all the alarms we need with it's conditions:
+![Create the tag used for analog alarms](graphics/alarms1.png)
 
-![alarms2](graphics/alarms2.png)
+Open the **Analog alarms** tab and create the required alarms. Configure the trigger tag and the corresponding alarm conditions:
 
-For the discrete alarms, the creation is made in the same way, but the data type must be 'Word'. On the bottom menu, tab 'Analog alarms', the alarms are created:
+![Configure analog alarms](graphics/alarms2.png)
 
-![alarms4](graphics/alarms3.png)
+For discrete alarms, create or use a tag with a suitable data type, such as `Word`, and configure the alarms in the **Discrete alarms** tab:
 
-In this example, we are creating another screen with alarm control screen item and some different buttons to trigger different alarms:
+![Configure discrete alarms](graphics/alarms3.png)
 
-![alarms5](graphics/alarms5_new.png)
+To display the alarms in Runtime, add an **Alarm control** to a screen.
 
-When the runtime is active and the alarms are raised, they will appear in the alarm control:
+In this example, buttons are also added to the screen to trigger the configured alarms:
 
-![alarms6](graphics/alarms6.png)
+![Configure an Alarm control and alarm trigger buttons](graphics/alarms5_new.png)
+
+When the Runtime project is running and an alarm is triggered, the corresponding alarm appears in the Alarm control:
+
+![Display alarms in Runtime](graphics/alarms6.png)
 
 ## Logs
 
-The logs can be created for each tag - in this case at an internal tag. We can choose two different logging modes: 'Cyclic' and 'On change'.
+HMI tags can be logged to record their values over time.
 
-Create a logging with 'Cyclic' mode. On the bottom menu, tab 'Logging tags', the logging is created. 
+In this example, an internal HMI tag is used to demonstrate two logging modes: **Cyclic** and **On change**.
 
-![logs1](graphics/logs1.png)
+Open the **Logging tags** configuration and create a logging tag with **Cyclic** acquisition mode:
 
-Create a logging with 'On change' mode:
+![Configure cyclic tag logging](graphics/logs1.png)
 
-![logs3](graphics/logs2.png)
+A logging tag can also be configured with **On change** acquisition mode:
 
-Finally the logs are shown in the runtime:
+![Configure on-change tag logging](graphics/logs2.png)
 
-![logs6](graphics/logs6.png)
+After the Runtime project has been started and values have been logged, the recorded data can be displayed in Runtime:
+
+![Display logged values in Runtime](graphics/logs6.png)
 
 ## Trends
 
-To add a trend go to the Toolbox, select trend control and drag and drop into the screen:
+To visualize current or logged tag values over time, add a **Trend control** to a screen.
 
-![trends1](graphics/trends1.png)
+In the **Toolbox**, select the Trend control and drag it onto the required screen:
 
-In its properties to add different trends to appear in the item, go to Trends and select the tag/logging tag you want to control::
+![Add a Trend control to a screen](graphics/trends1.png)
 
-![trends2](graphics/trends2.png)
+Select the Trend control and open its **Trends** properties. Add the required tag or logging tag as a data source:
 
-In the runtime the trend will be filled:
+![Configure a trend data source](graphics/trends2.png)
 
-![trends4](graphics/trends4.png)
+After the Runtime project has been started, the configured values are displayed in the Trend control:
+
+![Display trend data in Runtime](graphics/trends4.png)
 
 ## Further engineering workflows
 
 For additional engineering workflows, see:
 
 * [How to display Industrial Edge applications within WinCC Unified Runtime](further_engineering_workflows.md#how-to-display-industrial-edge-applications-within-wincc-unified-runtime)
-* [Connect WinCC Unified Runtime on Edge with IIH via OPC UA](further_engineering_workflows.md#connect-wincc-unified-runtime-on-edge-with-iih-via-opc-ua)
+* [Connect WinCC Unified Runtime with IIH Semantics via OPC UA](further_engineering_workflows.md#connect-wincc-unified-runtime-with-iih-semantics-via-opc-ua)
 * [How to exchange HMI variables with IIH Essentials](further_engineering_workflows.md#how-to-exchange-hmi-variables-with-iih-essentials)
 
 ## TIA Portal guidelines
 
-In case you need more information related to the engineering of the project in TIA Portal, you can refer to the following [documentation](https://support.industry.siemens.com/cs/document/109782433/simatic-wincc-unified-tutorial-center-(videos)?dti=0&lc=en-WW). In addition, there is an available guideline for efficient engineering in [SIOS](https://support.industry.siemens.com/cs/document/109827603/engineering-guideline-for-wincc-unified?dti=0&lc=en-US).
+For additional information about engineering WinCC Unified projects in TIA Portal, refer to the following Siemens resources:
+
+* [SIMATIC WinCC Unified Tutorial Center](https://support.industry.siemens.com/cs/document/109782433/simatic-wincc-unified-tutorial-center-(videos)?dti=0&lc=en-WW)
+* [Engineering Guideline for WinCC Unified](https://support.industry.siemens.com/cs/document/109827603/engineering-guideline-for-wincc-unified?dti=0&lc=en-US)
 
 ## How to use WinCC Unified Runtime Manager
 
-To open the **SIMATIC WinCC Unified Runtime Manager**, open the **SIMATIC WinCC Unified Runtime** app:
+To open the **SIMATIC WinCC Unified Runtime Manager**, open the **SIMATIC WinCC Unified Runtime** app on the Industrial Edge Device:
 
 ![Open the SIMATIC WinCC Unified Runtime app](graphics/runtime_manager/start1.png)
 
@@ -265,53 +299,82 @@ To add a user or modify access rights, configure the user in the TIA Portal proj
 
 ![Configure users in TIA Portal](graphics/runtime_manager/addUser.png)
 
-When the downloaded project is running, a green status indicator shows that the runtime is ready:
+When the downloaded project is running, a green status indicator shows that the Runtime project is ready:
 
 ![Runtime project ready](graphics/runtime_manager/start2.png)
 
 ### Start the runtime
 
-Click on the WinCC Unified Runtime button:
+In the SIMATIC WinCC Unified Runtime Manager, open the Runtime project:
 
-![start3](graphics/runtime_manager/start3.png)
+![Open the Runtime project](graphics/runtime_manager/start3.png)
 
-And the Start Screen that is indicated in the project will appear:
+The configured **Start Screen** is displayed in Runtime:
 
-![start4](graphics/runtime_manager/start4.jpg)
+![Display the configured Start Screen](graphics/runtime_manager/start4.jpg)
 
 ### Stop the runtime
 
-To stop the runtime, select **Stop Project** in the WinCC Unified Web Runtime Manager:
+To stop the running project, select **Stop Project** in the SIMATIC WinCC Unified Runtime Manager:
 
-![start5](graphics/runtime_manager/start5.png)
+![Stop the Runtime project](graphics/runtime_manager/start5.png)
 
-Wait until the runtime status is on not started, and in the WinCC Runtime app a red light will be now on the project:
+Wait until the project status indicates that the Runtime project is no longer running. The status indicator changes accordingly:
 
-![start7](graphics/runtime_manager/start7.png)
+![Stopped Runtime project](graphics/runtime_manager/start7.png)
 
 ### Secure download
 
-To prevent unauthorized runtime access, activate the secure download option in the TIA Project as well as the WinCC Unified Runtime Manager.
+Secure download can be used to protect project transfer to the Runtime.
 
-TIA Portal:
+Enable secure download both in the TIA Portal project and in the SIMATIC WinCC Unified Runtime Manager.
 
-![secureDown2](graphics/runtime_manager/secureDown2.png)
+Configure secure download in TIA Portal:
 
-WinCC Unified Runtime Manager:
+![Configure secure download in TIA Portal](graphics/runtime_manager/secureDown2.png)
 
-![secureDown1](graphics/runtime_manager/secureDown.png)
+Then enable the corresponding secure download setting in the SIMATIC WinCC Unified Runtime Manager:
+
+![Configure secure download in Runtime Manager](graphics/runtime_manager/secureDown.png)
 
 ### AutoScale
 
-Enabling AutoScale option adapts screen automatically on window size of client / web browser. Screens designed on a certain device with is displayed on another device with different window size maintaining consistency.
+Enable **AutoScale** to automatically adapt the Runtime screen to the available browser or client window size.
 
-![autoScale](graphics/runtime_manager/autoScale.png)
+This allows screens designed for a specific resolution to be scaled when they are displayed on a device with a different window size:
+
+![Configure AutoScale](graphics/runtime_manager/autoScale.png)
 
 ### Media files
 
-Upload media files via the Web Runtime Manager to your Unified application and display them via Web Control or Media Control.
+Media files can be uploaded to the Runtime project through the **SIMATIC WinCC Unified Runtime Manager**.
 
-![mediaFiles](graphics/runtime_manager/mediaFiles.png)
+Open the media file management section and upload the required file:
+
+![Upload media files in Runtime Manager](graphics/runtime_manager/mediaFiles.png)
+
+Uploaded files are made available through the Runtime web server and can be accessed using the following URL:
+
+```text
+https://<IED-IP>/WebRH/mediafiles/<FileName>
+```
+
+For example:
+
+```text
+https://<IED-IP>/WebRH/mediafiles/changePassword.png
+```
+
+The URL can be used in a **Web control** to display the uploaded content inside a WinCC Unified screen.
+
+The following file types have been verified with the Web control in V21 Update 2:
+
+* `.png` images
+* `.gif` animations
+* `.mp4` videos
+
+> **Note:**
+> Support for uploading a file through Runtime Manager and support for displaying that file in a specific WinCC Unified control are separate aspects. The target control and client browser must support the corresponding file format.
 
 ## Migration workflow from V5.0.0 to V21 Upd 2
 

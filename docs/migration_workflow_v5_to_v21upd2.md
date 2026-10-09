@@ -6,6 +6,16 @@ The migration consists of exporting the existing runtime data, replacing the app
 
 The backup and import steps are performed in the **SIMATIC WinCC Unified Runtime Manager**. The uninstall and installation steps are performed from the Industrial Edge Device or the corresponding Industrial Edge app management workflow. The final project download is performed from **TIA Portal V21 Update 2**.
 
+## Table of contents
+
+- [Prerequisites](#prerequisites)
+- [Migration procedure](#migration-procedure)
+  - [Step 1: Create and store a backup in the V5.0.0 app](#step-1-create-and-store-a-backup-in-the-v500-app)
+  - [Step 2: Uninstall the existing V5.0.0 app](#step-2-uninstall-the-existing-v500-app)
+  - [Step 3: Install the V21 Upd 2 app](#step-3-install-the-v21-upd-2-app)
+  - [Step 4: Import the backup into the V21 Upd 2 app](#step-4-import-the-backup-into-the-v21-upd-2-app)
+  - [Step 5: Download the user configuration from TIA Portal and validate the migration](#step-5-download-the-user-configuration-from-tia-portal-and-validate-the-migration)
+
 The basic workflow is:
 
 1. Create a backup in the existing V5.0.0 app and store the backup file safely.
@@ -26,10 +36,18 @@ The basic workflow is:
 Before starting the migration, verify the following points:
 
 * The existing **WinCC Unified Runtime for Industrial Edge V5.0.0** app is running on the Industrial Edge Device.
-* You have access to the Industrial Edge Device and to the corresponding Industrial Edge app management workflow.
+* You have access to the Industrial Edge Device and the corresponding Industrial Edge Management (IEM).
+* **WinCC Unified Runtime for Industrial Edge V21 Upd 2** is available for installation on the target Industrial Edge Device.
 * **TIA Portal V21 Update 2** is installed.
 * A TIA Portal project containing the required user configuration is available.
-* A safe storage location is available for the backup archive file.
+* A safe storage location outside the Industrial Edge Device is available for the backup archive file.
+* A maintenance window is available for the migration, because the Runtime app must be uninstalled and reinstalled.
+
+> **Important:**
+> Before uninstalling V5.0.0, make sure that the backup `.tar.gz` file has been successfully downloaded from the Industrial Edge Device and can be accessed from the system where it will be stored.
+
+> **Recommendation:**
+> Keep the V5.0.0 backup until the migration to V21 Upd 2 has been completed and the restored Runtime project has been fully validated.
 
 ## Migration procedure
 

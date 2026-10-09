@@ -14,31 +14,51 @@ This example shows how to use the Industrial Edge App "WinCC Unified Runtime".
   - [License and Legal Information](#license-and-legal-information)
 
 ## Description
-### Overview
-This example shows how to use the Industrial Edge App "WinCC Unified Runtime for Industrial Edge" and how to engineer the application in TIA Portal. The application is used to run a WinCC Unified application which comprises a modern UI, integrated alarming system and logging system and much more... You will need "WinCC Unified Runtime" Edge app and TIA Portal for the Engineering.
 
-![introimage](docs/graphics/introimage2.png)
+### Overview
+
+This repository provides an example of how to install, configure and use **SIMATIC WinCC Unified Runtime for Industrial Edge** and how to engineer a corresponding WinCC Unified project in TIA Portal.
+
+WinCC Unified Runtime for Industrial Edge provides HMI functionality on an Industrial Edge Device, including visualization, alarming, logging and communication with external data sources.
+
+![WinCC Unified Runtime for Industrial Edge](docs/graphics/introimage2.png)
 
 ### General Task
-This example shows how to install and configure the "WinCC Unified Runtime" application and how to use the basic functionalities offered by the app. See the [documentation](#documentation) part for more information.
+
+The documentation covers the basic setup and operation of **SIMATIC WinCC Unified Runtime for Industrial Edge**, as well as additional engineering, migration and diagnostic workflows.
+
+See the [Documentation](#documentation) section for the available guides.
 
 ## Requirements
 
 ### Prerequisites
 
--	Access to an Industrial Edge Management System (IEM)
--	Onboarded Industrial Edge Device on IEM
--	Edge device is connected to PLC
--	TIA Portal project loaded on PLC
--	HTML-5 capable Internet browser
+The following prerequisites are required for the basic workflows described in this repository:
+
+- Access to an Industrial Edge Management (IEM)
+- An Industrial Edge Device onboarded to the IEM
+- A supported web browser
+- TIA Portal for engineering WinCC Unified projects
+
+For workflows that require communication with a PLC, the following additional components are required:
+
+- A PLC that can be reached from the Industrial Edge Device
+- A corresponding TIA Portal project containing the PLC configuration
 
 ### Used components
 
-- Industrial Edge Management (IEM) V2.4
-  - WinCC Unified EDGE Runtime V21 Upd 2
--	Industrial Edge Virtual Device V1.24 or newer 
--	TIA Portal V21 Upd 1 or higher
--	S7-PLCSIM Advanced V8.0
+The following component versions were used for the workflows documented in this repository:
+
+| Component | Version |
+| --- | --- |
+| SIMATIC WinCC Unified Runtime for Industrial Edge | V21 Upd 2 |
+| Industrial Edge Management (IEM) | V2.4 |
+| Industrial Edge Virtual Device | V1.24 or newer |
+| TIA Portal | V21 Upd 1 or higher |
+| S7-PLCSIM Advanced | V8.0 |
+
+> **Note:**
+> S7-PLCSIM Advanced is only required when a simulated PLC is used. A physical PLC can be used instead where applicable.
 
 ## Documentation
 
